@@ -23,8 +23,9 @@ public struct SettingsPreview<Content: View>: View {
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .overlay(RoundedRectangle(cornerRadius: 16).strokeBorder(.white.opacity(0.35), lineWidth: 0.7))
                 .accessibilityLabel(title)
-                .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .frame(maxWidth: maxWidth)
+        .frame(maxWidth: .infinity, alignment: .center)
         .padding(.vertical, 6)
     }
 

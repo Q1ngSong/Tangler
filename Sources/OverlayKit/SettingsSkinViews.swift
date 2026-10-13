@@ -33,13 +33,19 @@ struct SettingsPreviewBackdrop: View {
         GeometryReader { room in
             ZStack {
                 if skin == .liquidGlass {
-                    LinearGradient(colors: [color(0xCADBFB), color(0x7CAAED), color(0x8B87C7)],
+                    LinearGradient(colors: [color(0x4B75C9), color(0x7798DD), color(0x8582CC)],
                                    startPoint: .topLeading, endPoint: .bottomTrailing)
-                    RadialGradient(colors: [color(0xECBBD0), .clear], center: UnitPoint(x: 0.83, y: 0.1),
+                    RadialGradient(colors: [color(0xB3A7FF), .clear], center: UnitPoint(x: 0.83, y: 0.1),
                                    startRadius: 0, endRadius: room.size.width * 0.55)
                     RadialGradient(colors: [color(0x506BB9), .clear], center: UnitPoint(x: 0.18, y: 0.9),
                                    startRadius: 0, endRadius: room.size.width * 0.7)
                     PhaseAnimator(reduceMotion ? [0.0] : [0.0, 1.0]) { phase in
+                        ZStack {
+                        SettingsPreviewFold(phase: 1 - phase)
+                            .fill(LinearGradient(colors: [color(0xA6BFFF), color(0x8170CB).opacity(0.4)],
+                                                 startPoint: .topLeading, endPoint: .bottomTrailing))
+                            .overlay(SettingsPreviewFold(phase: 1 - phase).stroke(.white.opacity(0.55), lineWidth: 0.8))
+                            .rotationEffect(.degrees(180)).scaleEffect(1.5).offset(x: room.size.width * 0.12, y: -room.size.height * 0.2)
                         SettingsPreviewFold(phase: phase)
                             .fill(LinearGradient(stops: [
                                 .init(color: color(0xF4EAFF), location: 0),
@@ -55,6 +61,7 @@ struct SettingsPreviewBackdrop: View {
                             }
                             .shadow(color: .white.opacity(0.55), radius: 5, y: -3)
                             .shadow(color: color(0x303E91).opacity(0.32), radius: 9, y: 8)
+                        }
                     } animation: { _ in .easeInOut(duration: 5) }
                 } else {
                     LinearGradient(colors: [color(0xDCE3EF), color(0xAAB8D0)],
@@ -113,6 +120,7 @@ private struct SettingsPreviewSurface: ViewModifier {
     @Environment(\.skin) private var skin
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @State private var hovered = false
 
     private var shape: RoundedRectangle { RoundedRectangle(cornerRadius: cornerRadius, style: .continuous) }
 
@@ -123,7 +131,11 @@ private struct SettingsPreviewSurface: ViewModifier {
                 .overlay(shape.strokeBorder(
                     LinearGradient(colors: [.white.opacity(0.95), .white.opacity(0.25), .white.opacity(0.62)],
                                    startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 0.8))
-                .overlay(shape.inset(by: 2).strokeBorder(.white.opacity(0.16), lineWidth: 0.5))
+                .overlay(shape.inset(by: 2).strokeBorder(.white.opacity(hovered ? 0.45 : 0.23), lineWidth: 0.7))
+                .overlay(shape.fill(LinearGradient(colors: [.white.opacity(hovered ? 0.14 : 0), .clear],
+                                                  startPoint: .topLeading, endPoint: .bottomTrailing)).allowsHitTesting(false))
+                .onHover { hovered = $0 }
+                .animation(.easeOut(duration: 0.2), value: hovered)
                 .shadow(color: Color(red: 0.08, green: 0.14, blue: 0.34).opacity(0.25), radius: 10, y: 6)
         case .classic:
             content.background(.background, in: shape)
@@ -168,30 +180,37 @@ struct SettingsAppearanceScene: View {
         ZStack {
             SettingsPreviewBackdrop()
                 .scaleEffect(hovering && !reduceMotion ? 1.04 : 1)
-            Group {
-                if skin == .liquidGlass {
-                    glassControls
-                        .padding(16).frame(width: 144, height: 99)
-                        .settingsPreviewSurface(cornerRadius: 24)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 24)
-                                .strokeBorder(.white.opacity(hovering ? 0.4 : 0), lineWidth: 1)
-                        }
-                } else {
-                    SettingsWindowIllustration(title: L10n.text("overlaykit.document"), bundleID: "com.apple.TextEdit")
-                        .frame(width: 144, height: 99)
-                        .settingsPreviewSurface(cornerRadius: 9)
-                }
+            GeometryReader { room in
+                miniature
+                    .scaleEffect(min(1, max(0.1, (room.size.width - 32) / 144)))
+                    .frame(width: room.size.width, height: room.size.height)
+                    // Keep live glass sampling intact; a 3D transform makes it opaque.
+                    .offset(y: hovering && !reduceMotion ? -3 : 0)
             }
-            // A 3D transform flattens the system glass into an opaque grey surface.
-            // A simple translation keeps its live backdrop sampling intact.
-            .offset(y: hovering && !reduceMotion ? -3 : 0)
         }
         .environment(\.skin, skin)
         .frame(height: 140)
         .clipShape(RoundedRectangle(cornerRadius: 14))
         .animation(reduceMotion ? nil : .smooth(duration: 0.3), value: hovering)
         .accessibilityHidden(true)
+    }
+
+    private var miniature: some View {
+        Group {
+            if skin == .liquidGlass {
+                glassControls
+                    .padding(16).frame(width: 144, height: 99)
+                    .settingsPreviewSurface(cornerRadius: 24)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 24)
+                            .strokeBorder(.white.opacity(hovering ? 0.4 : 0), lineWidth: 1)
+                    }
+            } else {
+                SettingsWindowIllustration(title: L10n.text("overlaykit.document"), bundleID: "com.apple.TextEdit")
+                    .frame(width: 144, height: 99)
+                    .settingsPreviewSurface(cornerRadius: 9)
+            }
+        }
     }
 
     private var glassControls: some View {
@@ -327,7 +346,7 @@ public struct SettingsCheckpointTile: View {
 
     public var body: some View {
         GeometryReader { room in
-            VStack(spacing: tabs.isEmpty ? 0 : 4) {
+            VStack(spacing: tabs.isEmpty ? 0 : 5) {
                 if !tabs.isEmpty {
                     SettingsTabIllustration(tabs: tabs, active: active, height: min(26, room.size.height * 0.28),
                                             showsNames: showsNames, onSelect: onSelect)
@@ -343,33 +362,12 @@ public struct SettingsCheckpointTile: View {
     }
 
     private var window: some View {
-        GeometryReader { room in
-            let compact = room.size.height < 72
-            let iconSize = max(8, min(36, room.size.width * 0.3, room.size.height - (compact ? 24 : 42)))
-            VStack(spacing: compact ? 3 : 6) {
-                icon.resizable().scaledToFit()
-                    .frame(width: iconSize, height: iconSize)
-                    .accessibilityHidden(true)
-                Text(title)
-                    .font(.system(size: compact ? 9 : 11, weight: .medium))
-                    .foregroundStyle(.primary)
-                    .multilineTextAlignment(.center)
-                    .lineLimit(compact ? 1 : 2)
-                    .truncationMode(.tail)
-            }
-            .padding(.horizontal, min(10, room.size.width * 0.1))
-            .frame(width: room.size.width, height: room.size.height)
-        }
-            .clipped()
+        SettingsWindowIllustration(title: title, bundleID: bundleID, contentStyle: .appIdentity)
             .settingsPreviewSurface(cornerRadius: 8)
             .overlay(RoundedRectangle(cornerRadius: 8)
                 .strokeBorder(focused ? AnyShapeStyle(.tint) : AnyShapeStyle(.clear), lineWidth: 2))
     }
 
-    private var icon: Image {
-        if let image = AppIconProvider.shared.icon(pid: nil, bundleID: bundleID) { return Image(nsImage: image) }
-        return Image(systemName: "macwindow")
-    }
 }
 
 public struct SettingsCheckpointBackground: View {
@@ -392,6 +390,7 @@ private struct SettingsLibraryCard: ViewModifier {
     let selected: Bool
     @Environment(\.skin) private var skin
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @State private var hovered = false
     @Environment(\.colorSchemeContrast) private var contrast
     private var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 14, style: .continuous) }
 

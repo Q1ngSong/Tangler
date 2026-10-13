@@ -442,10 +442,9 @@
 </table>
 <h2 id="build-from-source">Build from source</h2>
 <p>Requires macOS 26+, <strong>Swift 6.2+</strong>, and the corresponding macOS SDK. Run from the repository root:</p>
-<pre><code class="language-sh">scripts/build-app.sh          # Build build/Tangler.app
-scripts/install-app.sh        # Build, replace /Applications/Tangler.app, and launch
+<pre><code class="language-sh">TANGLER_SIGNING_IDENTITY=- scripts/build-app.sh  # Explicit ad-hoc test build: build/Tangler.app
 </code></pre>
-<p>Without a configured local signing identity, the build uses ad-hoc signing. An Apple Developer account is not required. Current builds are not notarized; if macOS blocks a downloaded build, verify its origin and follow <a href="https://support.apple.com/en-us/102445">Apple's opening instructions</a>.</p>
+<p>Maintainer builds and releases require the fixed certificate pinned in <code>Configuration/signing.json</code>; its private key is not included in source. The command above explicitly opts into an ad-hoc build for your own testing, which may require granting privacy permissions again after rebuilding. There is no silent fallback to ad-hoc signing, and the installer and release packager reject it. An Apple Developer account is not required. Current builds are not notarized; if macOS blocks a downloaded build, verify its origin and follow <a href="https://support.apple.com/en-us/102445">Apple's opening instructions</a>.</p>
 <p>Downloads and release notes live on <a href="https://github.com/Q1ngSong/Tangler/releases">GitHub Releases</a>. In <strong>Settings → Diagnostics → Software Update</strong>, check for a new version and choose manual checks, automatic checks with a notification, or automatic downloads and installation. The default checks every 6 hours and asks before installing; automatic installation usually happens when you quit. In-app updates use Sparkle and require a configured production update public key and a published update feed.</p>
 <h2 id="license">License</h2>
 <p><a href="https://github.com/Q1ngSong/Tangler/blob/main/LICENSE">PolyForm Noncommercial 1.0.0</a>. Noncommercial use, modification, and redistribution are permitted within its terms. <strong>Commercial use is not authorized, including internal business use by for-profit companies.</strong> This is source-available software under a noncommercial license.</p>

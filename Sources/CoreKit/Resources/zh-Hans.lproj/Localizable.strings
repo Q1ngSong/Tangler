@@ -1759,3 +1759,30 @@
 /* Sources/CommandKit/CommandCatalog.swift */
 "commandkit.keyConflict" = "键位冲突：%1$@（%2$@）和 %3$@（%4$@）";
 "commandkit.shortcutConflict" = "全局快捷键冲突：%1$@ 和 %2$@ 都用 %3$@";
+"settings.preferences" = "使用偏好";
+"settings.behavior" = "切换行为";
+"settings.window.gap" = "窗口间距";
+"settings.animation.duration" = "动画时长";
+"settings.tabs.height" = "标签栏高度";
+"settings.tabs.join" = "加入标签组";
+
+/* Interactive settings previews */
+"settings.preview.switch.left" = "← 向左切换";
+"settings.preview.switch.right" = "向右切换 →";
+"settings.preview.switch.click" = "（鼠标点击也可以切换）";
+"settings.preview.search.open" = "打开搜索";
+"settings.preview.search.execute" = "执行「左半屏」";
+"settings.preview.click" = "点击窗口或标签";
+"settings.preview.dock.hover" = "悬停在 App 上";
+"settings.preview.dock.disabled" = "开启 Dock 预览后体验";
+"settings.preview.browser.references" = "灵感与参考";
+"settings.preview.browser.guide" = "Tangler 使用指南";
+"settings.preview.code.website" = "网站预览";
+"settings.preview.finder.documents" = "文稿";
+"settings.preview.finder.downloads" = "下载";
+"settings.preview.tabs.title" = "整理你的标签组";
+"settings.preview.commands.title" = "试用命令";
+"settings.preview.try.command" = "预览这个命令";
+"settings.preview.health.title" = "检查 Tangler 状态";
+"settings.preview.health.permissions" = "查看权限";
+"settings.preview.layout.title" = "将窗口放到合适的位置";

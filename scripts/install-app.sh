@@ -2,6 +2,8 @@
 # Validate a staged bundle, then replace the installation with rollback on failure.
 set -euo pipefail
 ROOT="${0:A:h:h}"
+export TANGLER_INSTALL_BUILD=1
+source "$ROOT/scripts/signing.sh"
 "$ROOT/scripts/build-app.sh"
 INSTALL_DIR="${TANGLER_INSTALL_DIR:-/Applications}"
 mkdir -p "$INSTALL_DIR"
@@ -58,7 +60,15 @@ BACKUP="$TRANSACTION/previous.app"
 ditto "$ROOT/build/Tangler.app" "$STAGED"
 plutil -lint "$STAGED/Contents/Info.plist"
 [[ -x "$STAGED/Contents/MacOS/Tangler" ]]
-codesign --verify --deep --strict "$STAGED"
+verify_app_signing "$STAGED" || exit 1
+# Reject identity changes before stopping the running installation or moving files.
+if [[ -e "$TARGET" || -L "$TARGET" ]] && ! verify_app_signing "$TARGET"; then
+  if [[ ${TANGLER_ALLOW_SIGNING_CHANGE:-0} != 1 ]]; then
+    print -u2 'Installed App uses a different or invalid signature. Nothing replaced. For an intentional migration, rerun with TANGLER_ALLOW_SIGNING_CHANGE=1; privacy permissions may need reauthorization.'
+    exit 1
+  fi
+  print -u2 'Explicit signing migration: Accessibility and Screen Recording may need reauthorization.'
+fi
 
 is_target_process() {
   local executable

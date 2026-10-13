@@ -89,11 +89,10 @@
 需要 macOS 26+、**Swift 6.2+** 及对应 macOS SDK。在仓库根目录运行：
 
 ```sh
-scripts/build-app.sh          # 构建到 build/Tangler.app
-scripts/install-app.sh        # 构建、替换 /Applications/Tangler.app 并启动
+TANGLER_SIGNING_IDENTITY=- scripts/build-app.sh  # 显式临时签名，仅供测试：build/Tangler.app
 ```
 
-未配置本机签名身份时使用临时签名，无需 Apple 开发者账号。当前构建未经过 Apple 公证；如果 macOS 阻止打开下载的应用，请先确认来源，再按 [Apple 的说明](https://support.apple.com/en-us/102445)操作。
+维护者构建和正式打包统一使用 `Configuration/signing.json` 固定的证书，私钥不包含在源码中。上述命令显式使用 ad-hoc 临时签名，供自行构建测试；重新构建后可能需要重新授予隐私权限。缺少证书时不会自动降级，安装脚本和正式打包也不接受 ad-hoc 签名。无需 Apple 开发者账号。当前构建未经过 Apple 公证；如果 macOS 阻止打开下载的应用，请先确认来源，再按 [Apple 的说明](https://support.apple.com/en-us/102445)操作。
 
 安装包和更新说明见 [GitHub Releases](https://github.com/Q1ngSong/Tangler/releases)。在**设置 → 诊断 → 软件更新**中检查新版本，并选择手动检查、自动检查并提醒，或自动下载与安装。默认每 6 小时检查一次，由你确认安装；开启自动安装后，通常在退出时完成。应用内更新使用 Sparkle，需要配置生产更新公钥并发布更新源。
 

@@ -113,7 +113,7 @@ public extension EnvironmentValues {
     }
 }
 
-/// One compact legend for every preview; the Tangler mark stands for the configured entry key.
+/// One compact legend for every preview, including the actual configured entry key.
 public struct SettingsPreviewInputHint: View {
     let input: SettingsPreviewInput
     let active: Bool
@@ -154,9 +154,9 @@ public struct SettingsPreviewInputHint: View {
 
     @ViewBuilder private func cap(_ token: SettingsInputBindings.Token) -> some View {
         switch token {
-        case .entry: TanglerMark().frame(width: 16, height: 16)
+        case .entry(let label): Text(label)
         case .key(let key): Text(key)
-        case .symbol(let symbol, _): Image(systemName: symbol).font(.system(size: 13))
+        case .symbol(let symbol, let label): Label(label, systemImage: symbol)
         case .next: EmptyView()
         }
     }

@@ -1759,3 +1759,30 @@
 /* Sources/CommandKit/CommandCatalog.swift */
 "commandkit.keyConflict" = "Key conflict: %1$@ (%2$@) and %3$@ (%4$@)";
 "commandkit.shortcutConflict" = "Global shortcut conflict: %1$@ and %2$@ both use %3$@";
+"settings.preferences" = "Preferences";
+"settings.behavior" = "Behavior";
+"settings.window.gap" = "Window gap";
+"settings.animation.duration" = "Animation duration";
+"settings.tabs.height" = "Tab bar height";
+"settings.tabs.join" = "Join a group";
+
+/* Interactive settings previews */
+"settings.preview.switch.left" = "← Switch left";
+"settings.preview.switch.right" = "Switch right →";
+"settings.preview.switch.click" = "(You can also click a window to switch.)";
+"settings.preview.search.open" = "Open search";
+"settings.preview.search.execute" = "Run Left Half";
+"settings.preview.click" = "Click a window or tab";
+"settings.preview.dock.hover" = "Hover over an app";
+"settings.preview.dock.disabled" = "Enable Dock previews to try it";
+"settings.preview.browser.references" = "Inspiration & references";
+"settings.preview.browser.guide" = "Tangler guide";
+"settings.preview.code.website" = "Website preview";
+"settings.preview.finder.documents" = "Documents";
+"settings.preview.finder.downloads" = "Downloads";
+"settings.preview.tabs.title" = "Organize your tab groups";
+"settings.preview.commands.title" = "Try a command";
+"settings.preview.try.command" = "Preview this command";
+"settings.preview.health.title" = "Check Tangler status";
+"settings.preview.health.permissions" = "View permissions";
+"settings.preview.layout.title" = "Place windows where you need them";

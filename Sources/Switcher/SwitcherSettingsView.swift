@@ -19,19 +19,15 @@ struct SwitcherSettingsView: View {
     var body: some View {
         Form {
             Section {
-                SettingsFeaturePreview(L10n.text("switcher.switch.windows"), scene: .switcher(height: settings.effectivePreviewHeight),
-                    input: .command("switcher.allWindows"))
+                SettingsFeaturePreview(L10n.text("switcher.switch.windows"), scene: .switcher(height: settings.effectivePreviewHeight))
+                SettingsSlider(L10n.text("switcher.thumbnail.height"), value: binding(\.previewHeight),
+                    in: SwitcherSettings.previewHeightRange, step: 10,
+                    formattedValue: L10n.text("switcher.pt", String(Int(settings.effectivePreviewHeight))))
             }
             Section {
                 Toggle(L10n.text("switcher.include.minimized.windows"), isOn: binding(\.includeMinimized))
-                LabeledContent(L10n.text("switcher.thumbnail.height")) {
-                    HStack {
-                        Slider(value: binding(\.previewHeight), in: SwitcherSettings.previewHeightRange, step: 10)
-                        Text(L10n.text("switcher.pt", String(describing: (Int(settings.effectivePreviewHeight)))))
-                            .monospacedDigit()
-                            .frame(width: 52, alignment: .trailing)
-                    }
-                }
+            } header: {
+                Text(L10n.text("settings.behavior"))
             }
             if !notes.isEmpty {
                 Section(L10n.text("switcher.notes")) {

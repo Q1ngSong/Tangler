@@ -22,8 +22,9 @@ struct DockPreviewSettingsView: View {
     var body: some View {
         Form {
             Section {
-                SettingsFeaturePreview(L10n.text("dockpreview.hover.to.preview.application.windows"), scene: .dock(enabled: settings.previewsEnabled),
-                    input: .gesture(symbol: "cursorarrow", label: L10n.text("dockpreview.hover")))
+                SettingsFeaturePreview(L10n.text("dockpreview.hover.to.preview.application.windows"), scene: .dock(enabled: settings.previewsEnabled, showDelay: settings.effectiveShowDelay,
+                        hideDelay: settings.effectiveDismissDelay, singleWindow: settings.showsSingleWindowApps,
+                        animates: settings.animates))
             }
             Section {
                 Toggle(L10n.text("dockpreview.preview.windows.when.hovering.over.a.dock"), isOn: $settings.previewsEnabled)
@@ -31,16 +32,13 @@ struct DockPreviewSettingsView: View {
                     Toggle(L10n.text("dockpreview.preview.apps.with.only.one.window"), isOn: $settings.showsSingleWindowApps)
                     delay(L10n.text("dockpreview.show.delay"), value: $settings.showDelay, in: DockPreviewSettings.showDelayRange)
                     delay(L10n.text("dockpreview.hide.delay"), value: $settings.dismissDelay, in: DockPreviewSettings.dismissDelayRange)
-                    Toggle(L10n.text("dockpreview.animate.previews"), isOn: $settings.animates)
-                    Text(L10n.text("dockpreview.fade.in.and.slide.gently.from.the"))
-                        .font(SettingsTypography.caption)
-                        .foregroundStyle(.secondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Toggle(L10n.text("dockpreview.hide.dock.icon.labels"), isOn: $settings.hidesDockHover)
-                    Text(hoverNote)
-                        .font(SettingsTypography.caption)
-                        .foregroundStyle(.secondary)
-                        .fixedSize(horizontal: false, vertical: true)
+                    Toggle(isOn: $settings.animates) {
+                        SettingsControlLabel(L10n.text("dockpreview.animate.previews"),
+                            detail: L10n.text("dockpreview.fade.in.and.slide.gently.from.the"))
+                    }
+                    Toggle(isOn: $settings.hidesDockHover) {
+                        SettingsControlLabel(L10n.text("dockpreview.hide.dock.icon.labels"), detail: hoverNote)
+                    }
                 }
                 .disabled(!settings.previewsEnabled)
             } header: {
@@ -78,13 +76,7 @@ struct DockPreviewSettingsView: View {
     }
 
     private func delay(_ title: String, value: Binding<Double>, in range: ClosedRange<Double>) -> some View {
-        LabeledContent(title) {
-            HStack {
-                Slider(value: value, in: range, step: 0.05)
-                Text(L10n.text("commandpalette.s", value.wrappedValue.formatted(.number.precision(.fractionLength(2)).locale(L10n.current.locale))))
-                    .monospacedDigit()
-                    .frame(width: 56, alignment: .trailing)
-            }
-        }
+        SettingsSlider(title, value: value, in: range, step: 0.05,
+            formattedValue: L10n.text("commandpalette.s", value.wrappedValue.formatted(.number.precision(.fractionLength(2)).locale(L10n.current.locale))))
     }
 }

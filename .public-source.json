@@ -8,7 +8,7 @@
     },
     ".github/workflows/release.yml": {
       "mode": "100644",
-      "oid": "dc5d48ff4f071ca9aeab416cba4e6ce5ef62a0ca"
+      "oid": "df59fbfbde039300fd8c7144bd76c87147afdfae"
     },
     ".gitignore": {
       "mode": "100644",
@@ -34,6 +34,10 @@
       "mode": "100644",
       "oid": "e6512b6987b5248bdc8ff4df976cfc97c23095ef"
     },
+    "Configuration/signing.json": {
+      "mode": "100644",
+      "oid": "048e68196ca73015595fc9b79107fb0bdc49f95f"
+    },
     "Configuration/updates.json": {
       "mode": "100644",
       "oid": "d77ca0a57af32142985af2ea06e26e704b6c4bd8"
@@ -56,7 +60,7 @@
     },
     "README.md": {
       "mode": "100644",
-      "oid": "a51bf9edea1b1ceb8a922a9d2df7cef13d979e2d"
+      "oid": "3f9b1d066132790e6f7dd1555e7496d52faf6ec3"
     },
     "Sources/App/AppDelegate.swift": {
       "mode": "100644",
@@ -100,7 +104,7 @@
     },
     "Sources/App/Settings/SettingsView.swift": {
       "mode": "100644",
-      "oid": "97c456900f67c3fa8afe9eab9b00293d0fa60739"
+      "oid": "26cbd1a79d92bea02e264c79dc17a72f1098bfb3"
     },
     "Sources/App/Settings/SettingsWindowController.swift": {
       "mode": "100644",
@@ -108,11 +112,11 @@
     },
     "Sources/App/Settings/ShortcutsPage.swift": {
       "mode": "100644",
-      "oid": "72b43ce1cfa4581bcb0224b9857d0d0d8f271639"
+      "oid": "484509c46a344c66b60496c5830e31f87155e60f"
     },
     "Sources/App/Settings/UpdateSettingsSection.swift": {
       "mode": "100644",
-      "oid": "fcd7117eb514f530304f49d09e63616f4e04e8db"
+      "oid": "c5167baccc22ebf669a0eb50ba0ee6b289804706"
     },
     "Sources/App/StatusMenu.swift": {
       "mode": "100644",
@@ -276,7 +280,7 @@
     },
     "Sources/CommandPalette/Settings/PaletteSettingsView.swift": {
       "mode": "100644",
-      "oid": "60ad46fc2562d59d9f882a1c1f37469a15aaf956"
+      "oid": "3136d8a3e4b1bdd77eebb6f2291898368a783908"
     },
     "Sources/CommandPalette/Support/OverlayArea.swift": {
       "mode": "100644",
@@ -368,19 +372,19 @@
     },
     "Sources/CoreKit/Resources/en.lproj/Localizable.strings": {
       "mode": "100644",
-      "oid": "1e3bb06202edb902addca58f9dad7e52c3d75a8a"
+      "oid": "3b74b65fcb3c06daa72b72284e1d2f9e3c30a7ab"
     },
     "Sources/CoreKit/Resources/en.lproj/Localizable.stringsdict": {
       "mode": "100644",
-      "oid": "e5e74e02353dfefe5d2e395d3c369515051fec01"
+      "oid": "50bea82c52245e7e6f660bf78e26c891ae64827c"
     },
     "Sources/CoreKit/Resources/zh-Hans.lproj/Localizable.strings": {
       "mode": "100644",
-      "oid": "2380eb15fa7131adfa3de5c6fbc778ef03b10c25"
+      "oid": "4b82ab28fb78823b4107249f963f79b821b923cb"
     },
     "Sources/CoreKit/Resources/zh-Hans.lproj/Localizable.stringsdict": {
       "mode": "100644",
-      "oid": "75bf9ad3434a7ff36169fd66bb70aa4205b133e0"
+      "oid": "9bbc851a791d06dfd240a954d19766b8f5fbf0ea"
     },
     "Sources/CoreKit/ScreenCoordinates.swift": {
       "mode": "100644",
@@ -464,7 +468,7 @@
     },
     "Sources/DockPreview/DockPreviewSettingsView.swift": {
       "mode": "100644",
-      "oid": "4c7d95504718d19c844261e617c2930016fb1e4d"
+      "oid": "c2c4a2087a114cf5eaf6b1e2b237ff7ce885b841"
     },
     "Sources/DockPreview/DockPreviewView.swift": {
       "mode": "100644",
@@ -610,9 +614,17 @@
       "mode": "100644",
       "oid": "6b75f9cfead321ab5dfd4c7364ea04d24030c3c7"
     },
+    "Sources/OverlayKit/SettingsControls.swift": {
+      "mode": "100644",
+      "oid": "4516e66fc2354aff3ff4c825019dbc8903cef58b"
+    },
+    "Sources/OverlayKit/SettingsDockIllustration.swift": {
+      "mode": "100644",
+      "oid": "7c5c87a70beb88b8e8155a4a2ee2a370c8db06d0"
+    },
     "Sources/OverlayKit/SettingsFeaturePreview.swift": {
       "mode": "100644",
-      "oid": "4acef2af204a224f884879d7b2e206f4e2c66003"
+      "oid": "a9ec04f0524c62f9a0a642c1cba6c25dbfc7dd44"
     },
     "Sources/OverlayKit/SettingsPageTemplate.swift": {
       "mode": "100644",
@@ -620,15 +632,19 @@
     },
     "Sources/OverlayKit/SettingsPreview.swift": {
       "mode": "100644",
-      "oid": "1511e689e60b73bfac3c6b140978e3c5055af2e0"
+      "oid": "ecaf78f5b5bc055b5f2dde159a0287d664c6fdc5"
+    },
+    "Sources/OverlayKit/SettingsPreviewAction.swift": {
+      "mode": "100644",
+      "oid": "9ac05421ea9cdfb3c17a32dd83f5f70339b58391"
     },
     "Sources/OverlayKit/SettingsPreviewInput.swift": {
       "mode": "100644",
-      "oid": "62d8d8d6e2c99cbb2aea813c7526298158d1cf09"
+      "oid": "4b7a905278ac9b2cc627b3ba4beaf2e428559b27"
     },
     "Sources/OverlayKit/SettingsPreviewPlayback.swift": {
       "mode": "100644",
-      "oid": "3dc70078eb8303a82c1f9b998b7517f288ee6cb5"
+      "oid": "11a65b2337c081206dbbcfd270b39a4c7396c842"
     },
     "Sources/OverlayKit/SettingsSidebarStyle.swift": {
       "mode": "100644",
@@ -636,7 +652,7 @@
     },
     "Sources/OverlayKit/SettingsSkinViews.swift": {
       "mode": "100644",
-      "oid": "18f3efc9778f8be2a6c1ec2b56ccac22f12b7256"
+      "oid": "7bcb7ac2535fdc46beadd170cdae90a3d9b466bc"
     },
     "Sources/OverlayKit/SettingsStyle.swift": {
       "mode": "100644",
@@ -648,7 +664,7 @@
     },
     "Sources/OverlayKit/SettingsWindowIllustration.swift": {
       "mode": "100644",
-      "oid": "a7b7878bdae6df73cba245f3d6437faacb19458e"
+      "oid": "af16684ac5e0ddfe2655e668c91cc66a7617a407"
     },
     "Sources/OverlayKit/ShortcutKeycaps.swift": {
       "mode": "100644",
@@ -768,7 +784,7 @@
     },
     "Sources/Switcher/SwitcherSettingsView.swift": {
       "mode": "100644",
-      "oid": "316bb8047637284eee8c4cd14b567c846f6c934d"
+      "oid": "20f76eee3cd27c8f4c920201946574d3bce589d1"
     },
     "Sources/Switcher/SwitcherText.swift": {
       "mode": "100644",
@@ -864,7 +880,7 @@
     },
     "Sources/TabGroups/TabGroupsSettingsView.swift": {
       "mode": "100644",
-      "oid": "1938e895b24c139e958b758e3fe87aa52cf42be8"
+      "oid": "4709d3d77677aeeed266951e4591ba30f22a9df3"
     },
     "Sources/WindowKit/AX/AXFailure.swift": {
       "mode": "100644",
@@ -1240,7 +1256,7 @@
     },
     "Sources/WindowLayout/LayoutSettingsView.swift": {
       "mode": "100644",
-      "oid": "03e823b904932c4b7dbf7839892e9e59eb67fce9"
+      "oid": "f44524190896d987fd43f6bf781331a9c535b28f"
     },
     "Sources/WindowLayout/OuterEdges.swift": {
       "mode": "100644",
@@ -1460,7 +1476,7 @@
     },
     "docs/README.zh-CN.md": {
       "mode": "100644",
-      "oid": "c5bf98552ef0990247597146321d7193ec4a77a6"
+      "oid": "33c96a4c28a8665d290fa8b53f1401bd3767e51c"
     },
     "docs/assets/badge-commands.svg": {
       "mode": "100644",
@@ -1512,11 +1528,15 @@
     },
     "index.html": {
       "mode": "100644",
-      "oid": "63ae1ff1fee2d84ea9dcf90ef219108d36e440d6"
+      "oid": "98ed97ccb39f5c8cc7b7b0ad93989748a9071c0c"
     },
     "scripts/build-app.sh": {
       "mode": "100755",
-      "oid": "9434183fcbc2414ac17f4ec0ec7576b1b22f37aa"
+      "oid": "eda028cd880901fb889982916e30fdb38a4c03db"
+    },
+    "scripts/ci-package-release.sh": {
+      "mode": "100755",
+      "oid": "66d3c578e618274249b105a23c9b53e62b4f4d24"
     },
     "scripts/env.sh": {
       "mode": "100755",
@@ -1524,11 +1544,15 @@
     },
     "scripts/install-app.sh": {
       "mode": "100755",
-      "oid": "fa9705f9e0f675ca5e46193ee5d9583fbdd33830"
+      "oid": "3259f36024a80d503318eeaabe6f0bcb08f875d2"
     },
     "scripts/package-release.sh": {
       "mode": "100755",
-      "oid": "d3f675c95b28fffc212f0d0f33d3e911931315ed"
+      "oid": "8221267a88afe69c581137a977108fd9c47f982d"
+    },
+    "scripts/signing.sh": {
+      "mode": "100644",
+      "oid": "9ed464642ae8ae39cde8dc5ba545c2513c3b2ea6"
     },
     "site/build.py": {
       "mode": "100644",

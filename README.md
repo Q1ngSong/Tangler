@@ -89,11 +89,10 @@ A workspace currently represents one desktop on one display. It saves applicatio
 Requires macOS 26+, **Swift 6.2+**, and the corresponding macOS SDK. Run from the repository root:
 
 ```sh
-scripts/build-app.sh          # Build build/Tangler.app
-scripts/install-app.sh        # Build, replace /Applications/Tangler.app, and launch
+TANGLER_SIGNING_IDENTITY=- scripts/build-app.sh  # Explicit ad-hoc test build: build/Tangler.app
 ```
 
-Without a configured local signing identity, the build uses ad-hoc signing. An Apple Developer account is not required. Current builds are not notarized; if macOS blocks a downloaded build, verify its origin and follow [Apple's opening instructions](https://support.apple.com/en-us/102445).
+Maintainer builds and releases require the fixed certificate pinned in `Configuration/signing.json`; its private key is not included in source. The command above explicitly opts into an ad-hoc build for your own testing, which may require granting privacy permissions again after rebuilding. There is no silent fallback to ad-hoc signing, and the installer and release packager reject it. An Apple Developer account is not required. Current builds are not notarized; if macOS blocks a downloaded build, verify its origin and follow [Apple's opening instructions](https://support.apple.com/en-us/102445).
 
 Downloads and release notes live on [GitHub Releases](https://github.com/Q1ngSong/Tangler/releases). In **Settings → Diagnostics → Software Update**, check for a new version and choose manual checks, automatic checks with a notification, or automatic downloads and installation. The default checks every 6 hours and asks before installing; automatic installation usually happens when you quit. In-app updates use Sparkle and require a configured production update public key and a published update feed.
 

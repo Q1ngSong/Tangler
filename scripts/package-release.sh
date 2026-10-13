@@ -20,7 +20,7 @@ mkdir -p "$OUT"
 WORK=$(mktemp -d "$ROOT/build/package.XXXXXX")
 trap 'rm -rf "$WORK"' EXIT
 codesign --verify --deep --strict --verbose=2 "$APP"
-# Assessment is diagnostic: self-signed/ad-hoc bundles are not notarized distributions.
+# Assessment is diagnostic: a fixed self-signed identity does not provide notarization.
 spctl -a -vv "$APP" || true
 xattr -lr "$APP"
 ditto "$APP" "$WORK/Tangler.app"

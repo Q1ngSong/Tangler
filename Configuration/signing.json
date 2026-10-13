@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "name": "Tangler Local Signing",
+  "identifier": "app.local.tangler",
+  "certificateSHA1": "2485A56BDDE6B8244B3EAE337CCE666E757C2648",
+  "certificateSHA256": "67EB71141ECBA4F18719BE9FECA06C7F38184CC738C02B819E95AD663B6E3FAE"
+}

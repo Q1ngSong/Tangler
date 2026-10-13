@@ -4,29 +4,34 @@ import SwiftUI
 
 struct UpdateSettingsSection: View {
     let updates: AppUpdates
+    var onShowPermissions: (() -> Void)? = nil
 
     var body: some View {
         Section(L10n.text("app.software.updates")) {
-            ViewThatFits(in: .horizontal) {
-                HStack(spacing: 16) {
+            SettingsPreview(L10n.text("settings.preview.health.title"), maxWidth: 560) {
+                VStack(spacing: 10) {
+                    TanglerMark().frame(width: 34, height: 34)
                     version
-                    Spacer(minLength: 8)
-                    checkButton
+                    if updates.checkStatus == .checking { ProgressView().controlSize(.small) }
                 }
-                VStack(alignment: .leading, spacing: 10) {
-                    version
-                    checkButton
+                .multilineTextAlignment(.center)
+                .padding(16).frame(maxWidth: 310)
+                .settingsPreviewSurface(cornerRadius: 22)
+                .padding(.horizontal, 16)
+            }
+            HStack(spacing: 8) {
+                checkButton
+                if let onShowPermissions {
+                    Button(L10n.text("settings.preview.health.permissions"), action: onShowPermissions)
                 }
             }
-            VStack(alignment: .leading, spacing: 6) {
-                Picker(L10n.text("app.update.policy"), selection: Binding(get: { updates.updateMode }, set: updates.setUpdateMode)) {
-                    ForEach(AppUpdateMode.allCases) { mode in Text(mode.title).tag(mode) }
-                }
-                .disabled(!updates.isConfigured || updates.startupProblem != nil)
-                Text(updates.isConfigured ? updates.updateMode.detail : L10n.text("app.online.updates.are.not.configured.in.this"))
-                    .font(SettingsTypography.caption).foregroundStyle(.secondary)
-                    .fixedSize(horizontal: false, vertical: true)
+            Picker(selection: Binding(get: { updates.updateMode }, set: updates.setUpdateMode)) {
+                ForEach(AppUpdateMode.allCases) { mode in Text(mode.title).tag(mode) }
+            } label: {
+                SettingsControlLabel(L10n.text("app.update.policy"), detail:
+                    updates.isConfigured ? updates.updateMode.detail : L10n.text("app.online.updates.are.not.configured.in.this"))
             }
+            .disabled(!updates.isConfigured || updates.startupProblem != nil)
             if let problem = updates.startupProblem {
                 Text(problem).font(SettingsTypography.caption).foregroundStyle(.red)
             }
@@ -34,7 +39,7 @@ struct UpdateSettingsSection: View {
     }
 
     private var version: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(spacing: 6) {
             Text("Tangler \(TanglerMain.version)").fontWeight(.medium)
             if updates.isConfigured {
                 Text(updates.checkStatus.message)

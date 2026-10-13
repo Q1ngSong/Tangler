@@ -7,7 +7,6 @@ import SwiftUI
 struct TabGroupsSettingsView: View {
     /// Each command's name and its keys after the leader trigger, with the user's overrides.
     private let keys: [(title: String, keys: String)]
-    @State private var joiningPreview = false
     @State private var model: TabGroupsSettingsModel
 
     init(store: any SettingsStore, commands: [CommandSpec]) {
@@ -18,34 +17,25 @@ struct TabGroupsSettingsView: View {
     var body: some View {
         Form {
             Section {
-                Picker(L10n.text("app.function"), selection: $joiningPreview) {
-                    Text(L10n.text("tabgroups.adjust.tab.bar.height")).tag(false)
-                    Text(L10n.text("tabgroups.add.any.window.to.a.tab.group")).tag(true)
-                }.pickerStyle(.segmented).labelsHidden()
-                SettingsFeaturePreview(joiningPreview ? L10n.text("tabgroups.add.any.window.to.a.tab.group") : L10n.text("tabgroups.adjust.tab.bar.height"),
-                    scene: .tabs(height: model.settings.barHeight, joining: joiningPreview),
-                    input: joiningPreview ? .command("tabs.addWindow")
-                        : .gesture(symbol: "slider.horizontal.3", label: L10n.text("tabgroups.adjust.tab.bar.height")))
-            }
-            Section {
-                Toggle(L10n.text("tabgroups.group.windows.snapped.to.the.same.area"), isOn: $model.settings.mergesOnSnap)
-                note(L10n.text("tabgroups.when.a.window.settles.into.the.exact"))
-                Toggle(L10n.text("tabgroups.hold.and.drag.a.window.onto.a"), isOn: $model.settings.joinsByCommandDrag)
-                note(L10n.text("tabgroups.hold.before.dragging.to.detach.a.window"))
-            } header: {
-                Text(L10n.text("tabgroups.grouping"))
-            }
-            Section {
-                LabeledContent(L10n.text("tabgroups.height")) {
-                    HStack {
-                        Slider(value: $model.settings.barHeight, in: TabGroupsSettings.barHeightRange, step: 2)
-                        Text(L10n.text("switcher.pt", String(describing: (Int(model.settings.barHeight))))).monospacedDigit().frame(width: 44, alignment: .trailing)
-                    }
-                }
-            } header: {
-                Text(L10n.text("tabgroups.tab.bar"))
+                SettingsFeaturePreview(L10n.text("settings.preview.tabs.title"),
+                    scene: .tabs(height: model.settings.barHeight, joining: false))
+                SettingsSlider(L10n.text("tabgroups.height"), value: $model.settings.barHeight,
+                    in: TabGroupsSettings.barHeightRange, step: 2,
+                    formattedValue: L10n.text("switcher.pt", String(Int(model.settings.barHeight))))
             } footer: {
                 Text(L10n.text("tabgroups.clicking.a.tab.brings.only.that.window"))
+            }
+            Section {
+                Toggle(isOn: $model.settings.mergesOnSnap) {
+                    SettingsControlLabel(L10n.text("tabgroups.group.windows.snapped.to.the.same.area"),
+                        detail: L10n.text("tabgroups.when.a.window.settles.into.the.exact"))
+                }
+                Toggle(isOn: $model.settings.joinsByCommandDrag) {
+                    SettingsControlLabel(L10n.text("tabgroups.hold.and.drag.a.window.onto.a"),
+                        detail: L10n.text("tabgroups.hold.before.dragging.to.detach.a.window"))
+                }
+            } header: {
+                Text(L10n.text("tabgroups.grouping"))
             }
             Section {
                 ForEach(keys, id: \.title) { entry in
@@ -59,7 +49,4 @@ struct TabGroupsSettingsView: View {
         .onDisappear { model.flush() }
     }
 
-    private func note(_ text: String) -> some View {
-        Text(text).font(SettingsTypography.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
-    }
 }

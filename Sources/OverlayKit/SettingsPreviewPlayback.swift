@@ -1,11 +1,13 @@
 import SwiftUI
 
-/// All demonstration movement uses the same eight-second rhythm and eased transitions.
+/// A shared eased phase. Interactive one-shot playback holds its result without looping.
 public struct SettingsDemoPhase {
     public static let duration = 8.0
     public let time: Double
+    private let repeats: Bool
 
     public init(time: Double, repeats: Bool = true) {
+        self.repeats = repeats
         self.time = repeats ? max(0, time).truncatingRemainder(dividingBy: Self.duration)
             : min(Self.duration, max(0, time))
     }
@@ -16,7 +18,7 @@ public struct SettingsDemoPhase {
     }
 
     public var entered: Double { ramp(0.2, 1.4) }
-    public var action: Double { ramp(1.8, 2.8) * (1 - ramp(6.3, 7.5)) }
+    public var action: Double { ramp(1.8, 2.8) * (repeats ? 1 - ramp(6.3, 7.5) : 1) }
     public var travel: Double { ramp(0.6, 1.8) * (1 - ramp(6.5, 7.6)) }
     public var cursorOpacity: Double { ramp(0.2, 0.6) * (1 - ramp(6.2, 7.2)) }
     public var click: Double { time >= 1.8 && time <= 2.35 ? (time - 1.8) / 0.55 : -1 }
@@ -38,15 +40,19 @@ public extension EnvironmentValues {
 public struct SettingsPreviewPlayback<Content: View>: View {
     private let replay: Int
     private let repeats: Bool
+    private let autoplays: Bool
+    private let speed: Double
     private let content: (SettingsDemoPhase) -> Content
     @State private var started = Date()
     @State private var finished = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.settingsPreviewTime) private var fixedTime
 
-    public init(replay: Int = 0, repeats: Bool = true, @ViewBuilder content: @escaping (SettingsDemoPhase) -> Content) {
+    public init(replay: Int = 0, repeats: Bool = true, autoplays: Bool = true, speed: Double = 1, @ViewBuilder content: @escaping (SettingsDemoPhase) -> Content) {
         self.replay = replay
         self.repeats = repeats
+        self.autoplays = autoplays
+        self.speed = max(0.1, speed)
         self.content = content
     }
 
@@ -54,17 +60,19 @@ public struct SettingsPreviewPlayback<Content: View>: View {
         Group {
             if let fixedTime {
                 content(SettingsDemoPhase(time: fixedTime, repeats: repeats))
+            } else if !autoplays && replay == 0 {
+                content(SettingsDemoPhase(time: 0, repeats: repeats))
             } else {
                 TimelineView(.animation(minimumInterval: 1.0 / 30, paused: reduceMotion || finished)) { context in
-                    content(SettingsDemoPhase(time: reduceMotion ? 4.2 : context.date.timeIntervalSince(started), repeats: repeats))
+                    content(SettingsDemoPhase(time: reduceMotion ? 4.2 : min(repeats ? .infinity : 4.2, context.date.timeIntervalSince(started) * speed), repeats: repeats))
                 }
             }
         }
         .task(id: replay) {
             started = Date()
             finished = false
-            guard !repeats, fixedTime == nil else { return }
-            try? await Task.sleep(for: .seconds(SettingsDemoPhase.duration))
+            guard !repeats, fixedTime == nil, autoplays || replay > 0 else { return }
+            try? await Task.sleep(for: .seconds(4.2 / speed))
             guard !Task.isCancelled else { return }
             finished = true
         }

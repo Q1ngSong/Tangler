@@ -146,5 +146,21 @@
 			<string>%ld 个页面</string>
 		</dict>
 	</dict>
+	<key>settings.preview.windows</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>ld</string>
+			<key>one</key>
+			<string>%ld 个窗口</string>
+			<key>other</key>
+			<string>%ld 个窗口</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

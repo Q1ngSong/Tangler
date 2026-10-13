@@ -4,6 +4,8 @@ set -euo pipefail
 ROOT="${0:A:h:h}"
 cd "$ROOT"
 source "$ROOT/scripts/env.sh"
+source "$ROOT/scripts/signing.sh"
+require_signing_identity
 
 # Reject a release without a real updater key before doing an expensive build.
 python3 - <<'CHECK'
@@ -65,20 +67,13 @@ info={
 if key: info['SUPublicEDKey']=key
 Path(sys.argv[1]).write_bytes(plistlib.dumps(info))
 PLIST
-IDENTITY="${TANGLER_SIGNING_IDENTITY:-Tangler Local Signing}"
-KEYCHAIN_ARGS=()
-if [[ -n ${TANGLER_KEYCHAIN:-} ]]; then KEYCHAIN_ARGS=(--keychain "$TANGLER_KEYCHAIN"); fi
-if [[ "$IDENTITY" != '-' ]] && ! security find-identity -v -p codesigning ${TANGLER_KEYCHAIN:-} | grep -qF "\"$IDENTITY\""; then
-  if [[ -n ${TANGLER_SIGNING_IDENTITY:-} ]]; then print -u2 "Requested signing identity not found: $IDENTITY"; exit 1; fi
-  IDENTITY='-'
-fi
 SIGN_ARGS=(--force --sign "$IDENTITY" "${KEYCHAIN_ARGS[@]}")
-if [[ "$IDENTITY" == 'Developer ID Application:'* ]]; then SIGN_ARGS+=(--options runtime --timestamp); fi
 for nested in "$FRAMEWORK"/Versions/B/XPCServices/*.xpc(N) "$FRAMEWORK/Versions/B/Updater.app" "$FRAMEWORK/Versions/B/Autoupdate"; do
   codesign "${SIGN_ARGS[@]}" --preserve-metadata=entitlements "$nested"
 done
 codesign "${SIGN_ARGS[@]}" "$FRAMEWORK"
-codesign "${SIGN_ARGS[@]}" --identifier app.local.tangler "$APP"
-codesign --verify --deep --strict "$APP"
+codesign "${SIGN_ARGS[@]}" --identifier "$SIGNING_IDENTIFIER" "$APP"
+if [[ "$IDENTITY" == '-' ]]; then codesign --verify --deep --strict "$APP"
+else verify_app_signing "$APP"; fi
 lipo -archs "$APP/Contents/MacOS/Tangler"
 print "已生成 $APP（签名：$IDENTITY）"

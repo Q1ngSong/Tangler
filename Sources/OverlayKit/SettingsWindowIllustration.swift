@@ -1,20 +1,28 @@
 import CoreKit
 import SwiftUI
 
-/// A small synthetic document, using only an installed app's icon and illustrative content.
+/// A preview window, showing an app identity or a synthetic document.
 /// No window capture or application launch is involved.
 public struct SettingsWindowIllustration: View {
+    public enum ContentStyle { case document, appIdentity }
+
     private let title: String
     private let bundleID: String?
+    private let variant: Int
+    private let contentStyle: ContentStyle
 
-    public init(title: String, bundleID: String?) {
+    public init(title: String, bundleID: String?, variant: Int = 0, contentStyle: ContentStyle = .document) {
         self.title = title
         self.bundleID = bundleID
+        self.variant = variant
+        self.contentStyle = contentStyle
     }
 
     public var body: some View {
         GeometryReader { room in
-            if room.size.width < 70 || room.size.height < 45 {
+            if contentStyle == .appIdentity {
+                identity(in: room.size)
+            } else if room.size.width < 70 || room.size.height < 45 {
                 icon.resizable().scaledToFit()
                     .frame(width: min(26, room.size.width * 0.55), height: min(26, room.size.height * 0.55))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -24,7 +32,7 @@ public struct SettingsWindowIllustration: View {
                         ForEach([Color.red, .yellow, .green], id: \.self) { color in
                             Circle().fill(color.opacity(0.8)).frame(width: 4, height: 4)
                         }
-                        Spacer(minLength: 3)
+                        Color.clear.frame(width: 4)
                         icon.resizable().scaledToFit().frame(width: 10, height: 10)
                         Text(title).font(.system(size: 8, weight: .medium)).lineLimit(1)
                         Spacer(minLength: 3)
@@ -40,6 +48,25 @@ public struct SettingsWindowIllustration: View {
             }
         }
         .accessibilityHidden(true)
+    }
+
+    /// Saved workspaces identify the real window instead of inventing document contents.
+    private func identity(in size: CGSize) -> some View {
+        let showsTitle = size.width >= 32 && size.height >= 30
+        let iconSize = max(0, min(32, size.width - 12, size.height * 0.38, size.height - (showsTitle ? 26 : 8)))
+        return VStack(spacing: 5) {
+            icon.resizable().scaledToFit().frame(width: iconSize, height: iconSize)
+            if showsTitle {
+                Text(title).font(.system(size: 10, weight: .medium))
+                    .multilineTextAlignment(.center)
+                    .lineLimit(size.height >= 72 ? 2 : 1)
+                    .truncationMode(.tail)
+                    .frame(maxWidth: .infinity)
+            }
+        }
+        .padding(.horizontal, 6).padding(.vertical, 4)
+        .frame(width: size.width, height: size.height)
+        .clipped()
     }
 
     private var icon: Image {
@@ -58,7 +85,7 @@ public struct SettingsWindowIllustration: View {
                 // A small switcher tile has room for fewer folders than a full preview.
                 ForEach(0..<max(1, min(3, Int((availableWidth - 22) / 26))), id: \.self) { _ in
                     VStack(spacing: 5) {
-                        Image(systemName: "folder.fill").font(.system(size: 17)).foregroundStyle(.blue.gradient)
+                        Image(systemName: variant == 0 ? "folder.fill" : "doc.fill").font(.system(size: 17)).foregroundStyle(.blue.gradient)
                         line(19)
                     }.frame(maxWidth: .infinity)
                 }
@@ -67,18 +94,27 @@ public struct SettingsWindowIllustration: View {
             VStack(alignment: .leading, spacing: 7) {
                 HStack(spacing: 4) {
                     Image(systemName: "lock.fill").font(.system(size: 5))
-                    Text("apple.com").font(.system(size: 7))
+                    Text(variant == 0 ? "tangler.app" : "tangler.app/guide").font(.system(size: 7))
                 }
                 .foregroundStyle(.secondary).frame(maxWidth: .infinity)
                 .padding(3).background(.primary.opacity(0.035), in: Capsule())
                 HStack(alignment: .top, spacing: 8) {
-                    Image(systemName: "apple.logo").font(.system(size: 18)).frame(width: 24)
+                    Image(systemName: variant == 0 ? "rectangle.3.group" : "book.closed").font(.system(size: 18)).frame(width: 24)
                     VStack(alignment: .leading, spacing: 4) {
                         line(42, accent: true)
                         line(56)
                         line(35)
                     }.padding(.top, 2)
                 }
+            }
+        } else if bundleID == "com.microsoft.VSCode" {
+            VStack(alignment: .leading, spacing: 5) {
+                Text(variant == 0 ? "struct Workspace {" : "<main class=\"glass\">")
+                    .font(.system(size: 8, design: .monospaced)).foregroundStyle(.indigo).lineLimit(1)
+                line(64, accent: true).padding(.leading, 10)
+                line(82).padding(.leading, 10)
+                line(50, accent: true).padding(.leading, 10)
+                Text(variant == 0 ? "}" : "</main>").font(.system(size: 8, design: .monospaced)).foregroundStyle(.indigo)
             }
         } else {
             VStack(alignment: .leading, spacing: 5) {

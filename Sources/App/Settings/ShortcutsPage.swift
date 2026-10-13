@@ -8,6 +8,8 @@ struct ShortcutsPage: View {
     let model: SettingsModel
     @Environment(\.settingsCompactLayout) private var compact
     @State private var query = ""
+    @State private var previewCommand: CommandID = "layout.leftHalf"
+    @State private var previewReplay = 0
     @State private var module: ModuleID?
     @State private var trigger: LeaderTrigger = .holdRightCommand
 
@@ -35,27 +37,34 @@ struct ShortcutsPage: View {
 
     var body: some View {
         SettingsPageTemplate {
-            VStack(spacing: 16) {
-                LeaderTriggerSettingsSection(store: model.composition.settings, input: model.composition.input,
-                                             commands: model.composition.commands.commands,
-                                             onTriggerChange: { trigger = $0 })
-                searchField
-                ScrollView(.horizontal) {
-                    HStack(spacing: 4) {
-                        filter(L10n.text("app.all"), id: nil)
-                        ForEach(filters, id: \.id) { filter($0.title, id: $0.id) }
+            ScrollViewReader { scroll in
+                ScrollView {
+                    VStack(spacing: 16) {
+                        SettingsFeaturePreview(L10n.text("settings.preview.commands.title"), scene: .command(previewCommand),
+                            replay: previewReplay).id("command-preview")
+                        LeaderTriggerSettingsSection(store: model.composition.settings, input: model.composition.input,
+                                                     commands: model.composition.commands.commands,
+                                                     onTriggerChange: { trigger = $0 })
+                        searchField
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 4) {
+                                filter(L10n.text("app.all"), id: nil)
+                                ForEach(filters, id: \.id) { filter($0.title, id: $0.id) }
+                            }
+                        }
+                        .scrollIndicators(.hidden).fixedSize(horizontal: false, vertical: true)
+                        .accessibilityElement(children: .contain).accessibilityLabel(L10n.text("app.filter.shortcuts.by.module"))
+                        commandTable
+                            .onChange(of: previewReplay) { _, _ in scroll.scrollTo("command-preview", anchor: .top) }
+                        HStack {
+                            Text(L10n.count("app.features", groups.reduce(0) { $0 + $1.specs.count }))
+                            Spacer(minLength: 4)
+                            Text(L10n.text("app.record.then.save.esc.to.revert"))
+                        }.font(SettingsTypography.caption).foregroundStyle(.secondary)
                     }
+                    .padding(compact ? 16 : SettingsPageLayout.contentInset)
                 }
-                .scrollIndicators(.hidden).fixedSize(horizontal: false, vertical: true)
-                .accessibilityElement(children: .contain).accessibilityLabel(L10n.text("app.filter.shortcuts.by.module"))
-                commandTable
-                HStack {
-                    Text(L10n.count("app.features", groups.reduce(0) { $0 + $1.specs.count }))
-                    Spacer(minLength: 4)
-                    Text(L10n.text("app.record.then.save.esc.to.revert"))
-                }.font(SettingsTypography.caption).foregroundStyle(.secondary)
             }
-            .padding(compact ? 16 : SettingsPageLayout.contentInset)
         }
         .onAppear { model.refresh() }
     }
@@ -88,19 +97,16 @@ struct ShortcutsPage: View {
             if groups.isEmpty {
                 ContentUnavailableView.search(text: query).frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
-                ScrollView {
-                    VStack(spacing: 0) {
-                        ForEach(groups, id: \.module) { group in
-                            ForEach(group.specs, id: \.id) { spec in
-                                commandRow(spec, module: group.module)
-                                Divider()
-                            }
+                LazyVStack(spacing: 0) {
+                    ForEach(groups, id: \.module) { group in
+                        ForEach(group.specs, id: \.id) { spec in
+                            commandRow(spec, module: group.module)
+                            Divider()
                         }
                     }
                 }
             }
         }
-        .frame(maxHeight: .infinity)
         .settingsGroupSurface()
         .accessibilityElement(children: .contain).accessibilityLabel(L10n.text("app.shortcut.commands"))
     }
@@ -121,7 +127,18 @@ struct ShortcutsPage: View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 0) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(spec.title).font(SettingsTypography.body.weight(.medium))
+                    if SettingsPreviewAction(command: spec.id) != nil {
+                        Button {
+                            previewCommand = spec.id
+                            previewReplay += 1
+                        } label: {
+                            Text(spec.title).font(SettingsTypography.body.weight(.medium))
+                                .foregroundStyle(.primary).multilineTextAlignment(.leading)
+                        }
+                        .buttonStyle(.plain).help(L10n.text("settings.preview.try.command"))
+                    } else {
+                        Text(spec.title).font(SettingsTypography.body.weight(.medium))
+                    }
                     Text(module).font(SettingsTypography.caption).foregroundStyle(.secondary)
                 }
                 .padding(.trailing, 8)

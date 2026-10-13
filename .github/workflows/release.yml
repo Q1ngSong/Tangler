@@ -17,7 +17,6 @@ jobs:
     runs-on: macos-26
     timeout-minutes: 45
     env:
-      TANGLER_SIGNING_IDENTITY: "-"
       TANGLER_ARCHS: "arm64 x86_64"
     steps:
       - uses: actions/checkout@v7.0.1
@@ -30,15 +29,9 @@ jobs:
       - name: Package and sign update
         env:
           SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
-        run: |
-          set -euo pipefail
-          test -n "$SPARKLE_PRIVATE_KEY" || { echo 'Missing SPARKLE_PRIVATE_KEY repository secret'; exit 1; }
-          umask 077
-          export SPARKLE_PRIVATE_KEY_FILE="$RUNNER_TEMP/tangler-update.private-key"
-          trap 'rm -f "$SPARKLE_PRIVATE_KEY_FILE"' EXIT
-          printf '%s' "$SPARKLE_PRIVATE_KEY" > "$SPARKLE_PRIVATE_KEY_FILE"
-          unset SPARKLE_PRIVATE_KEY
-          ./scripts/package-release.sh
+          TANGLER_SIGNING_P12_BASE64: ${{ secrets.TANGLER_SIGNING_P12_BASE64 }}
+          TANGLER_SIGNING_P12_PASSWORD: ${{ secrets.TANGLER_SIGNING_P12_PASSWORD }}
+        run: ./scripts/ci-package-release.sh
       - uses: actions/upload-artifact@v7.0.2
         with:
           name: Tangler-release
@@ -78,7 +71,7 @@ jobs:
 
             Download the DMG, then drag Tangler.app into Applications. Grant Accessibility in **Settings → Diagnostics → Permissions**; Screen Recording enables window thumbnails.
 
-            This build is ad-hoc signed and **not notarized by Apple**. If macOS blocks first launch, verify the source and follow [Apple's opening instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper globally.
+            This build uses Tangler’s fixed self-signed certificate and is **not notarized by Apple**. Moving from an older ad-hoc build may require granting Accessibility and Screen Recording again. If macOS blocks first launch, verify the source and follow [Apple's opening instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper globally.
 
             Check for updates from the Tangler menu or **Settings → Diagnostics → Software Update**. Older development builds labeled 0.1.0 need a manual installation of this first public 0.0.1; automatic updates do not downgrade versions.
 

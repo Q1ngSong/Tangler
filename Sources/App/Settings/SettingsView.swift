@@ -117,16 +117,6 @@ private struct GeneralPage: View {
 
     var body: some View {
         Form {
-            Section(L10n.text("settings.language.title")) {
-                Picker(L10n.text("settings.language.interface"), selection: Binding(
-                    get: { model.appSettings.language }, set: model.setLanguage)) {
-                    ForEach(AppLanguage.allCases, id: \.self) { language in
-                        Text(language.title).tag(language)
-                    }
-                }
-                Text(L10n.text("settings.language.immediate"))
-                    .font(SettingsTypography.caption).foregroundStyle(.secondary)
-            }
             Section(L10n.text("app.appearance")) {
                 HStack(spacing: 16) {
                     ForEach(Skin.allCases, id: \.self) { skin in
@@ -154,16 +144,33 @@ private struct GeneralPage: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 4)
             }
-            Section(L10n.text("app.startup")) {
+            Section(L10n.text("settings.preferences")) {
+                Picker(selection: Binding(get: { model.appSettings.language }, set: model.setLanguage)) {
+                    ForEach(AppLanguage.allCases, id: \.self) { language in
+                        Text(language.title).tag(language)
+                    }
+                } label: {
+                    SettingsControlLabel(L10n.text("settings.language.interface"), detail: L10n.text("settings.language.immediate"))
+                }
                 Toggle(L10n.text("app.launch.tangler.at.login"), isOn: Binding(get: { model.launchAtLogin }, set: model.setLaunchAtLogin))
                 if let problem = model.launchAtLoginProblem { Text(problem).font(SettingsTypography.caption).foregroundStyle(.red) }
             }
-            Section(L10n.text("app.modules")) {
+            Section {
                 ForEach(FeatureCatalog.names, id: \.id) { module in
-                    Toggle(module.name, isOn: Binding(get: { model.appSettings.isEnabled(module.id) },
-                                                      set: { model.setModule(module.id, enabled: $0) }))
+                    Toggle(isOn: Binding(get: { model.appSettings.isEnabled(module.id) },
+                                         set: { model.setModule(module.id, enabled: $0) })) {
+                        Label {
+                            Text(module.name)
+                        } icon: {
+                            Image(systemName: FeatureCatalog.symbol(for: module.id))
+                                .foregroundStyle(.secondary).frame(width: 18)
+                        }
+                    }
                 }
-                Text(L10n.text("app.restart.tangler.to.apply.changes.to.enabled")).font(SettingsTypography.caption).foregroundStyle(.secondary)
+            } header: {
+                Text(L10n.text("app.modules"))
+            } footer: {
+                Text(L10n.text("app.restart.tangler.to.apply.changes.to.enabled"))
             }
         }
         .settingsFormStyle()
@@ -177,19 +184,23 @@ private struct PermissionRow: View {
     let granted: Bool
     let request: () -> Void
     let open: () -> Void
+    @Environment(\.settingsCompactLayout) private var compact
 
     var body: some View {
-        HStack {
-            Image(systemName: granted ? "checkmark.circle.fill" : "exclamationmark.circle")
-                .foregroundStyle(granted ? .green : .orange)
-            VStack(alignment: .leading) {
-                Text(title)
-                Text(detail).font(SettingsTypography.caption).foregroundStyle(.secondary)
+        (compact ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10)) : AnyLayout(HStackLayout(spacing: 16))) {
+            HStack(alignment: .top, spacing: 10) {
+                Image(systemName: granted ? "checkmark.circle.fill" : "exclamationmark.circle")
+                    .foregroundStyle(granted ? .green : .orange).padding(.top, 3)
+                SettingsControlLabel(title, detail: detail)
             }
-            Spacer()
+            .frame(maxWidth: .infinity, alignment: .leading)
             if !granted {
-                Button(L10n.text("app.request.access"), action: request)
-                Button(L10n.text("app.open.system.settings"), action: open)
+                HStack {
+                    Button(L10n.text("app.request.access"), action: request)
+                    Button(action: open) { Image(systemName: "arrow.up.right.square") }
+                        .help(L10n.text("app.open.system.settings"))
+                        .accessibilityLabel(L10n.text("app.open.system.settings"))
+                }.fixedSize()
             }
         }
     }
@@ -218,48 +229,63 @@ private struct DiagnosticsPage: View {
     let model: SettingsModel
 
     var body: some View {
-        Form {
-            if !model.failures.isEmpty {
-                Section(L10n.text("app.needs.attention")) {
-                    ForEach(model.failures.sorted(by: { $0.key.rawValue < $1.key.rawValue }), id: \.key) { failure in
-                        Label(L10n.text("text.labelValue", failure.key.rawValue, failure.value), systemImage: "exclamationmark.triangle")
-                            .font(SettingsTypography.body).foregroundStyle(.orange)
-                    }
-                }
-            }
-            if let updates = model.updates { UpdateSettingsSection(updates: updates) }
-            Section(L10n.text("app.permissions")) {
-                PermissionRow(title: L10n.text("app.accessibility"), detail: L10n.text("app.move.windows.list.windows.and.handle.global"), granted: model.accessibilityGranted,
-                              request: model.requestAccessibility, open: { Permissions.open(.accessibility) })
-                PermissionRow(title: L10n.text("app.screen.recording"), detail: L10n.text("app.window.thumbnails.in.the.switcher.and.dock"), granted: model.screenRecordingGranted,
-                              request: model.requestScreenRecording, open: { Permissions.open(.screenRecording) })
-                Text(L10n.text("app.tangler.detects.newly.granted.access.automatically.screen"))
-                    .font(SettingsTypography.caption).foregroundStyle(.secondary)
-                if !model.accessibilityGranted {
-                    DisclosureGroup(L10n.text("app.access.granted.but.still.not.working")) {
-                        Text(L10n.text("app.macos.may.retain.a.signature.record.from"))
-                            .font(SettingsTypography.caption).foregroundStyle(.secondary)
-                    }
-                }
-            }
-            Section(L10n.text("app.system.capabilities")) {
-                ForEach(model.capabilityStatuses, id: \.name) { status in
-                    if let reason = status.reason {
-                        DisclosureGroup {
-                            Text(reason).font(SettingsTypography.caption).foregroundStyle(.secondary)
-                        } label: {
-                            Label(status.name, systemImage: status.isAvailable ? "checkmark.circle.fill" : "exclamationmark.circle")
-                                .foregroundStyle(status.isAvailable ? .green : .orange)
+        ScrollViewReader { scroll in
+            Form {
+                if !model.failures.isEmpty {
+                    Section(L10n.text("app.needs.attention")) {
+                        ForEach(model.failures.sorted(by: { $0.key.rawValue < $1.key.rawValue }), id: \.key) { failure in
+                            Label(L10n.text("text.labelValue", failure.key.rawValue, failure.value), systemImage: "exclamationmark.triangle")
+                                .font(SettingsTypography.body).foregroundStyle(.orange)
                         }
-                    } else {
-                        Label(status.name, systemImage: status.isAvailable ? "checkmark.circle.fill" : "xmark.circle")
-                            .foregroundStyle(status.isAvailable ? .green : .secondary)
                     }
                 }
+                if let updates = model.updates {
+                    UpdateSettingsSection(updates: updates, onShowPermissions: { scroll.scrollTo("permissions", anchor: .top) })
+                }
+                Section {
+                    PermissionRow(title: L10n.text("app.accessibility"), detail: L10n.text("app.move.windows.list.windows.and.handle.global"), granted: model.accessibilityGranted,
+                                  request: model.requestAccessibility, open: { Permissions.open(.accessibility) })
+                    PermissionRow(title: L10n.text("app.screen.recording"), detail: L10n.text("app.window.thumbnails.in.the.switcher.and.dock"), granted: model.screenRecordingGranted,
+                                  request: model.requestScreenRecording, open: { Permissions.open(.screenRecording) })
+                    if !model.accessibilityGranted {
+                        DisclosureGroup(L10n.text("app.access.granted.but.still.not.working")) {
+                            Text(L10n.text("app.macos.may.retain.a.signature.record.from"))
+                                .font(SettingsTypography.caption).foregroundStyle(.secondary)
+                        }
+                    }
+                } header: {
+                    Text(L10n.text("app.permissions"))
+                } footer: {
+                    Text(L10n.text("app.tangler.detects.newly.granted.access.automatically.screen"))
+                }.id("permissions")
+                Section {
+                    DisclosureGroup(L10n.text("app.system.capabilities")) {
+                        ForEach(model.capabilityStatuses, id: \.name) { status in
+                            if let reason = status.reason {
+                                DisclosureGroup {
+                                    Text(reason).font(SettingsTypography.caption).foregroundStyle(.secondary)
+                                } label: {
+                                    capabilityLabel(status.name, available: status.isAvailable)
+                                }
+                            } else {
+                                capabilityLabel(status.name, available: status.isAvailable)
+                            }
+                        }
+                    }
+                }
+                if model.updates == nil { Section(L10n.text("app.version")) { Text("Tangler \(TanglerMain.version)") } }
             }
-            if model.updates == nil { Section(L10n.text("app.version")) { Text("Tangler \(TanglerMain.version)") } }
+            .settingsFormStyle()
+            .onAppear { model.refresh(loginItem: false) }
         }
-        .settingsFormStyle()
-        .onAppear { model.refresh(loginItem: false) }
+    }
+
+    private func capabilityLabel(_ title: String, available: Bool) -> some View {
+        Label {
+            Text(title)
+        } icon: {
+            Image(systemName: available ? "checkmark.circle.fill" : "exclamationmark.circle")
+                .foregroundStyle(available ? .green : .orange)
+        }
     }
 }

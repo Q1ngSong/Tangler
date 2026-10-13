@@ -146,5 +146,21 @@
 			<string>%ld pages</string>
 		</dict>
 	</dict>
+	<key>settings.preview.windows</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>ld</string>
+			<key>one</key>
+			<string>%ld window</string>
+			<key>other</key>
+			<string>%ld windows</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
