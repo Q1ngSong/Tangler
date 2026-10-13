@@ -1,0 +1,89 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 45
+    env:
+      TANGLER_SIGNING_IDENTITY: "-"
+      TANGLER_ARCHS: "arm64 x86_64"
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Configure build cache
+        run: echo "TANGLER_BUILD_ROOT=$RUNNER_TEMP/tangler-build" >> "$GITHUB_ENV"
+      - name: Require exported source
+        run: |
+          test -f .public-source.json
+          test ! -d Tests
+      - name: Package and sign update
+        env:
+          SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$SPARKLE_PRIVATE_KEY" || { echo 'Missing SPARKLE_PRIVATE_KEY repository secret'; exit 1; }
+          umask 077
+          export SPARKLE_PRIVATE_KEY_FILE="$RUNNER_TEMP/tangler-update.private-key"
+          trap 'rm -f "$SPARKLE_PRIVATE_KEY_FILE"' EXIT
+          printf '%s' "$SPARKLE_PRIVATE_KEY" > "$SPARKLE_PRIVATE_KEY_FILE"
+          unset SPARKLE_PRIVATE_KEY
+          ./scripts/package-release.sh
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: Tangler-release
+          path: |
+            build/release/*.dmg
+            build/release/appcast.xml
+            build/release/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8.0.2
+        with:
+          name: Tangler-release
+          path: release
+      - uses: softprops/action-gh-release@v3.0.3
+        with:
+          name: Tangler ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          fail_on_unmatched_files: true
+          generate_release_notes: true
+          files: |
+            release/*.dmg
+            release/appcast.xml
+            release/SHA256SUMS
+          body: |
+            Native macOS window management: keyboard layouts, cross-app tab groups, saved workspaces, window switching, and Dock previews.
+
+            **macOS 26 or later · Apple Silicon and Intel**
+
+            Download the DMG, then drag Tangler.app into Applications. Grant Accessibility in **Settings → Diagnostics → Permissions**; Screen Recording enables window thumbnails.
+
+            This build is ad-hoc signed and **not notarized by Apple**. If macOS blocks first launch, verify the source and follow [Apple's opening instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper globally.
+
+            Check for updates from the Tangler menu or **Settings → Diagnostics → Software Update**. Older development builds labeled 0.1.0 need a manual installation of this first public 0.0.1; automatic updates do not downgrade versions.
+
+            The DMG and appcast.xml carry Sparkle Ed25519 signatures. Use SHA256SUMS to verify download integrity.
+
+            [Website and guide](https://q1ngsong.github.io/Tangler/) · [Command reference](https://github.com/Q1ngSong/Tangler/blob/main/docs/COMMANDS.md)
+
+            [PolyForm Noncommercial 1.0.0](https://github.com/Q1ngSong/Tangler/blob/main/LICENSE). Commercial use, including internal business use by for-profit companies, is not authorized.

@@ -1,0 +1,1761 @@
+/* Tangler interface text. Keys are stable; edit values in both languages together. */
+
+/* Sources/App/AppUpdates.swift */
+"app.the.update.service.is.unavailable" = "更新服务暂时不可用：%1$@";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.manually" = "手动检查";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.automatically.and.notify" = "自动检查并提醒";
+
+/* Sources/App/AppUpdates.swift */
+"app.download.and.install.automatically" = "自动下载与安装";
+
+/* Sources/App/AppUpdates.swift */
+"app.look.for.updates.only.when.you.click" = "仅在点击「检查更新」时查找新版本。";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.about.every.hours.while.tangler.is" = "运行期间约每 6 小时检查一次，发现新版本后在菜单和此处提示，由你确认下载安装。";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.for.and.download.updates.automatically.usually" = "自动检查并下载更新，通常在退出时安装；需要授权或立即重启时会提示。";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.for.a.newer.version" = "检查是否有可用的新版本。";
+
+/* Sources/App/AppUpdates.swift */
+"app.checking.for.updates" = "正在检查更新…";
+
+/* Sources/App/AppUpdates.swift */
+"app.you.re.up.to.date" = "已是最新版本";
+
+/* Sources/App/AppUpdates.swift */
+"app.version.is.available" = "新版本 %1$@ 可用";
+
+/* Sources/App/AppUpdates.swift */
+"app.version.has.been.downloaded" = "新版本 %1$@ 已下载";
+
+/* Sources/App/AppUpdates.swift */
+"app.update.check.or.download.failed" = "检查或下载更新失败：%1$@";
+
+/* Sources/App/AppUpdates.swift */
+"app.this.version.is.newer.than.the.latest" = "当前版本高于最新发布版本，无需更新。";
+
+/* Sources/App/AppUpdates.swift */
+"app.no.update.is.compatible.with.this.mac" = "没有适用于此 Mac 的更新。%1$@";
+
+/* Sources/App/MenuModel.swift */
+"app.leader" = "入口键 ";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.could.not.change.the.setting" = "无法更改：%1$@";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.allow.tangler.in.system.settings.general.login" = "请在「系统设置 → 通用 → 登录项」中允许 Tangler。";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.conflicts.with.the.leader.key" = "与总入口键冲突";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.already.used.by" = "已被「%1$@」使用";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.general" = "通用";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.shortcuts" = "快捷键";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.modules" = "模块";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.support" = "支持";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.diagnostics" = "诊断";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.appearance" = "外观";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.startup" = "开机启动";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.launch.tangler.at.login" = "登录时启动 Tangler";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.restart.tangler.to.apply.changes.to.enabled" = "开关模块后，重新打开 Tangler 生效。";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.request.access" = "请求授权";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.open.system.settings" = "打开系统设置";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.this.module.has.no.settings" = "这个模块没有设置项。";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.this.module.is.not.running.enable.it" = "这个模块没有运行。可以在「通用」里打开它。";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.grant.accessibility.access.in.diagnostics.to.start" = "在「诊断」里授予辅助功能权限后，模块会自动启动。";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.needs.attention" = "需要处理";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.permissions" = "权限";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.accessibility" = "辅助功能";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.move.windows.list.windows.and.handle.global" = "移动窗口、读取窗口列表、全局按键";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.screen.recording" = "屏幕录制";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.window.thumbnails.in.the.switcher.and.dock" = "切换器和 Dock 预览的窗口缩略图";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.tangler.detects.newly.granted.access.automatically.screen" = "授权后 Tangler 会自动生效；屏幕录制可能需要重新打开 Tangler。";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.access.granted.but.still.not.working" = "已经授权，但仍未生效？";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.macos.may.retain.a.signature.record.from" = "系统中可能保留了旧版本的签名记录。可在辅助功能列表中删除 Tangler，再通过「请求授权」重新添加。";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.system.capabilities" = "系统能力";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.version" = "版本";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.search" = "搜索";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.all" = "全部";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.filter.shortcuts.by.module" = "快捷键模块筛选";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.record.then.save.esc.to.revert" = "录制后保存 · Esc 复原";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.search.commands.modules.or.keys" = "搜索命令、模块或按键";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.clear.search" = "清除搜索";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.function" = "功能";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.command" = "命令";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.shortcut.commands" = "快捷键命令";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.shortcut.for" = "%1$@的快捷键";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.restore.default.shortcut" = "恢复默认快捷键";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.restore.the.default.shortcut.for" = "恢复%1$@的默认快捷键";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.software.updates" = "软件更新";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.update.policy" = "更新方式";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.online.updates.are.not.configured.in.this" = "此构建尚未启用在线更新。";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.last.checked" = "上次检查：%1$@";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.not.checked.yet" = "尚未检查";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.checking" = "正在检查…";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.check.for.updates" = "检查更新…";
+
+/* Sources/App/StatusMenu.swift */
+"app.settings" = "设置…";
+
+/* Sources/App/StatusMenu.swift */
+"app.update.to" = "更新至 %1$@…";
+
+/* Sources/App/StatusMenu.swift */
+"app.quit.tangler" = "退出 Tangler";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.needs.or.to.avoid.interfering.with.typing" = "%1$@ 没有 ⌃、⌥ 或 ⌘，会挡住平常打字";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.this.command.cannot.use.a.leader.sequence" = "这个命令不能从总入口键执行";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.a.key.sequence.cannot.be.empty" = "键位不能为空";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.esc.is.reserved.for.leaving.leader.mode" = "Esc 留给退出入口模式";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.and.conflict" = "%1$@ 和 %2$@ 互相冲突";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.conflicts.with" = "%1$@ 和「%2$@」（%3$@）冲突";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.is.already.used.by" = "%1$@ 已被「%2$@」使用";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.global.shortcut" = "全局快捷键 %1$@ %2$@";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.duplicate.group" = "分组 %1$@ 重复";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.command.is.not.registered" = "命令 %1$@ 未注册";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.no.longer.exists" = "「%1$@」已不存在";
+
+/* Sources/CommandKit/ShortcutBindings.swift */
+"commandkit.already.used.by" = "已被 %1$@ 使用";
+
+/* Sources/CommandKit/ShortcutBindings.swift */
+"commandkit.could.not.register" = "无法注册：%1$@";
+
+/* Sources/CommandPalette/CommandPaletteModule.swift */
+"commandpalette.command.search" = "搜索面板";
+
+/* Sources/CommandPalette/CommandPaletteModule.swift */
+"commandpalette.command.search.is.disabled" = "搜索面板已停用";
+
+/* Sources/CommandPalette/Palette/PaletteController.swift */
+"commandpalette.add.a.number.after.the.name.then" = "在名称后面加上数字再按回车";
+
+/* Sources/CommandPalette/Palette/PaletteController.swift */
+"commandpalette.add.a.number.for.example" = "在后面加上数字，例如「%1$@ 2」";
+
+/* Sources/CommandPalette/Palette/PaletteItem.swift */
+"commandpalette.minimized" = "%1$@ · 已最小化";
+
+/* Sources/CommandPalette/Palette/PaletteItem.swift */
+"commandpalette.enter.a.number.after.the.name" = "在名称后面输入数字";
+
+/* Sources/CommandPalette/Palette/PaletteRowView.swift */
+"commandpalette.leader" = "总入口键 %1$@";
+
+/* Sources/CommandPalette/Palette/PaletteRowView.swift */
+"commandpalette.shortcut" = "快捷键 %1$@";
+
+/* Sources/CommandPalette/Palette/PaletteView.swift */
+"commandpalette.search.windows.and.commands.including.pinyin" = "搜索窗口和命令，支持拼音";
+
+/* Sources/CommandPalette/Palette/PaletteView.swift */
+"commandpalette.no.matching.windows.or.commands" = "没有找到窗口或命令";
+
+/* Sources/CommandPalette/PaletteCommands.swift */
+"commandpalette.open.command.search" = "打开搜索面板";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.leader.key" = "总入口键";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.trigger" = "入口键";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.right.command" = "右 Command";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.key.combination" = "组合键";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.hold.the.leader.key.then.enter.the" = "按住入口键，再依次按序列";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.press.the.leader.key.then.enter.the" = "按下入口键，再依次按序列";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.global.shortcuts.work.without.the.leader.key" = "独立快捷键无需先按入口键。";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.hold.to.enter.keys" = "按住再按键";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.use.left.command.for.regular.shortcuts.while" = "按住时，常用 ⌘ 快捷键请使用左 Command。";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.press.and.release.right.command.then.enter" = "按下并松开右 Command 后，再按序列。";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.record.combination" = "录制组合键";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.no.combination.is.set.right.command.is" = "尚未设置组合键，暂时使用右 Command。";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.uses.this.combination.too.setting.it.as" = "「%1$@」也用这个组合键，设为总入口键后它就不起作用了。";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.find.and.run.commands.and.quickly.locate" = "搜索并执行命令，快速定位窗口与工作空间。";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.linger" = "停留";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.stay.after.a.layout.command" = "执行布局命令后停留";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.s" = "%1$@ 秒";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.while.lingering.repeat.the.same.key.to" = "停留期间再按同一个键可以在 1/2、1/3、2/3 之间循环；没有按键就自动退出，不会吞掉接下来要打的字。";
+
+/* Sources/CommandPalette/Support/WindowErrorText.swift */
+"commandpalette.accessibility.access.is.required" = "需要辅助功能权限";
+
+/* Sources/CommandPalette/Support/WindowErrorText.swift */
+"commandpalette.this.window.has.closed" = "这个窗口已经关闭";
+
+/* Sources/CommandPalette/Support/WindowErrorText.swift */
+"commandpalette.the.application.is.not.responding" = "应用没有响应";
+
+/* Sources/Contracts/Input.swift */
+"contracts.space" = "空格";
+
+/* Sources/Contracts/Input.swift */
+"contracts.return" = "回车";
+
+/* Sources/Contracts/Input.swift */
+"contracts.digit" = "数字";
+
+/* Sources/Contracts/WindowService.swift */
+"contracts.empty.desktops.cannot.be.cleaned.up.safely" = "无法安全清理空桌面";
+
+/* Sources/DockPreview/DockClickBehavior.swift */
+"dockpreview.system.default" = "保持系统默认";
+
+/* Sources/DockPreview/DockClickBehavior.swift */
+"dockpreview.minimize.focused.window" = "最小化当前窗口";
+
+/* Sources/DockPreview/DockClickBehavior.swift */
+"dockpreview.hide.application" = "隐藏应用";
+
+/* Sources/DockPreview/DockPreviewController+Preview.swift */
+"dockpreview.enable.screen.recording.to.show.thumbnails" = "开启屏幕录制权限后显示缩略图";
+
+/* Sources/DockPreview/DockPreviewController+Preview.swift */
+"dockpreview.only.windows.on.the.current.desktop.are" = "只显示当前桌面的窗口";
+
+/* Sources/DockPreview/DockPreviewModule.swift */
+"dockpreview.dock.preview" = "Dock 预览";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hover.to.preview.application.windows" = "悬停查看应用窗口";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hover" = "悬停";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.preview.windows.when.hovering.over.a.dock" = "鼠标停在 Dock 图标上时预览窗口";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.preview.apps.with.only.one.window" = "只有一个窗口的应用也预览";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.show.delay" = "显示延时";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hide.delay" = "关闭延时";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.animate.previews" = "预览动画";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.fade.in.and.slide.gently.from.the" = "从 Dock 一侧淡入、轻轻滑出，在图标之间移动时平滑跟随，关闭时淡出。系统设置里打开了“减弱动态效果”时只淡入淡出。";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hide.dock.icon.labels" = "隐藏 Dock 自带的名字";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hover.previews" = "悬停预览";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.click.behavior" = "点击行为";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.clicking.a.dock.icon" = "点击 Dock 图标";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.applies.only.to.the.frontmost.app.s" = "只在点击最前面那个应用的图标时生效；点击其他应用的图标仍由 Dock 照常处理。";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.unavailable.when.the.dock.hides.automatically.pointer" = "Dock 设为自动隐藏时这一项不起作用：鼠标移到屏幕边缘才能把 Dock 叫出来，不能拦。";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.tangler.intercepts.pointer.movement.over.dock.icons" = "Tangler 把 Dock 图标上的鼠标移动拦下来，Dock 就不显示名字了，它的放大效果也会一起消失。点击、右键和拖放照常；退出 Tangler 后自动恢复。";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.windows.on.other.desktops.are.excluded" = "预览不含其他桌面的窗口：%1$@";
+
+/* Sources/OverlayKit/HintRow.swift */
+"overlaykit.more.keys.available" = "%1$@：%2$@，还有下一级";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.notes" = "备忘录";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.document" = "文稿";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.design.draft" = "设计文稿";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.finder" = "访达";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.start.page" = "开始页";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.design.document" = "设计文档";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.search.commands.windows.and.workspaces" = "搜索命令、窗口和工作空间";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.left.half" = "左半屏";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.open.workspace" = "打开工作空间";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.click.a.window.preview" = "点按窗口预览";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.leader" = "入口键：%1$@";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.then" = "然后";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.drag" = "拖动";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.no.shortcut.assigned" = "未设置快捷键";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.preview.tab" = "预览标签：%1$@";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.select.and.focus.it.when.opening.the" = "选择%1$@，打开工作空间后聚焦";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.bring.to.front.in.preview" = "预览中置前：%1$@";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.bring.to.front.in.the.preview.and" = "在预览中置前，打开工作空间后聚焦";
+
+/* Sources/OverlayKit/SettingsWindowIllustration.swift */
+"overlaykit.ideas.and.plans" = "灵感与计划";
+
+/* Sources/OverlayKit/ShortcutKeycaps.swift */
+"overlaykit.right" = "右 ⌘";
+
+/* Sources/OverlayKit/ShortcutKeycaps.swift */
+"overlaykit.no.leader.sequence" = "无入口键序列";
+
+/* Sources/OverlayKit/ShortcutKeycaps.swift */
+"overlaykit.or" = "，或 ";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.record.shortcut" = "录制快捷键";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.press.a.key.combination.esc.cancels.delete" = "按下组合键；Esc 取消，Delete 清除";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.click.then.press.a.new.key.combination" = "点击后按下新的组合键";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.save" = "保存";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.record" = "录制";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.save.the.new.shortcut.esc.reverts" = "保存新按键；Esc 复原";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.record.a.global.shortcut.then.save.to" = "录制独立快捷键，保存后生效";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.click.save.after.recording.esc.reverts.delete" = "录制后点击保存；Esc 复原；Delete 清除独立快捷键";
+
+/* Sources/OverlayKit/ShortcutRecorderSession.swift */
+"overlaykit.clear.shortcut" = "清除快捷键";
+
+/* Sources/OverlayKit/ShortcutRecorderSession.swift */
+"overlaykit.press.a.key.combination" = "按下组合键…";
+
+/* Sources/OverlayKit/ShortcutRecording.swift */
+"overlaykit.this.key.is.not.supported" = "不支持这个键";
+
+/* Sources/OverlayKit/ShortcutRecording.swift */
+"overlaykit.hold.or.as.well" = "需要同时按住 ⌘、⌥ 或 ⌃";
+
+/* Sources/OverlayKit/Skin.swift */
+"overlaykit.liquid.glass" = "液态玻璃";
+
+/* Sources/OverlayKit/Skin.swift */
+"overlaykit.classic" = "经典";
+
+/* Sources/OverlayKit/ThumbnailCard.swift */
+"overlaykit.minimize.window" = "最小化窗口";
+
+/* Sources/OverlayKit/ThumbnailCard.swift */
+"overlaykit.close.window" = "关闭窗口";
+
+/* Sources/OverlayKit/WindowPicker.swift */
+"overlaykit.click.a.window.to.select.it" = "点击要选择的窗口";
+
+/* Sources/OverlayKit/WindowPickerOverlay.swift */
+"overlaykit.esc.to.cancel" = "%1$@ · Esc 取消";
+
+/* Sources/OverlayKit/WindowPickerOverlay.swift */
+"overlaykit.nclick.to.select.esc.to.cancel" = "%1$@\n点击选择 · Esc 取消";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.windows" = "切换窗口";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.windows.of.the.same.app" = "切换同一应用的窗口";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.windows.in.reverse" = "反向切换窗口";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.same.app.windows.in.reverse" = "反向切换同一应用的窗口";
+
+/* Sources/Switcher/SwitcherModule.swift */
+"switcher.switcher" = "切换器";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.include.minimized.windows" = "列出已最小化的窗口";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.thumbnail.height" = "缩略图高度";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.pt" = "%1$@ 点";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.notes" = "注意";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.accessibility.access.is.required.to.switch.windows" = "需要辅助功能权限才能切换窗口";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.no.windows.available.to.switch.to" = "没有可以切换的窗口";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.current.app.has.no.windows.available" = "当前应用没有可以切换的窗口";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.system.tab.switcher.could.not.be" = "无法关闭系统自带的 ⌘Tab 切换器，按 ⌘Tab 时它可能仍会出现。";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.switcher.has.stopped" = "切换器已停止";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.only.windows.on.the.current.desktop.are" = "只显示当前桌面的窗口（%1$@）";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.window.has.closed" = "窗口已经关闭";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.close" = "关闭 %1$@";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.remove.from.tab.group" = "移出标签组";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.ungroup.windows" = "解散标签组";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.will.join" = "将加入：%1$@";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.press.t.then.a.number" = "按 T 后再按数字";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.there.is.no.tab" = "没有第 %1$@ 个标签";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.no.focused.window" = "没有当前窗口";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.no.other.windows.in.this.area" = "这个区域没有其他窗口";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.other.windows.minimum.sizes.exceed.this" = "其他窗口的最小尺寸比这个区域大，放不进来";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.these.windows.already.belong.to.another.tab" = "这些窗口已经在别的标签组里";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.selected.window.is.already.focused" = "选中的就是当前窗口";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.window.from.does.not.fit.in" = "%1$@ 的窗口放不进这个区域";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.selected.window.could.not.be.found" = "找不到选中的窗口";
+
+/* Sources/TabGroups/Control/TabsController+Service.swift */
+"tabgroups.this.area.cannot.fit.the.tab.bar" = "这个区域放不下标签栏和窗口";
+
+/* Sources/TabGroups/Control/TabsController+Service.swift */
+"tabgroups.a.tab.group.requires.at.least.two" = "标签组至少要两个开着的窗口";
+
+/* Sources/TabGroups/Control/TabsController+Service.swift */
+"tabgroups.the.window.s.minimum.size.exceeds.this" = "窗口的最小尺寸比这个区域大，放不进来";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.the.focused.window.is.not.in.a" = "当前窗口不在标签组里";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.the.tab.group.module.has.stopped" = "标签组模块已停止";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.these.windows.are.not.on.the.current" = "这些窗口不在当前桌面上";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.this.window.is.not.in.a.tab" = "这个窗口不在标签组里";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.the.window.could.not.be.found.it" = "找不到这个窗口，它可能已经关闭";
+
+/* Sources/TabGroups/Model/TabGroup.swift */
+"tabgroups.tab.group" = "标签组 %1$@";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.tab.groups" = "标签组";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.group.windows.in.the.same.area" = "合并同一区域的窗口";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.pick.a.window.to.add.to.a" = "点选窗口加入标签组";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.next.tab" = "下一个标签";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.previous.tab" = "上一个标签";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.select.tab.n" = "切到第 N 个标签";
+
+/* Sources/TabGroups/TabGroupsModule.swift */
+"tabgroups.click.a.window.to.add.to.the" = "点击要加入标签组的窗口";
+
+/* Sources/TabGroups/TabGroupsModule.swift */
+"tabgroups.the.tab.group.module.is.not.running" = "标签组模块没有运行";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.adjust.tab.bar.height" = "调整标签栏高度";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.add.any.window.to.a.tab.group" = "将任意窗口加入标签组";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.group.windows.snapped.to.the.same.area" = "吸附到同一区域时自动合并";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.when.a.window.settles.into.the.exact" = "窗口吸附或摆到另一个窗口（或标签组）正好占着的区域，停稳后两者合成一个标签组。";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.hold.and.drag.a.window.onto.a" = "按住 ⌘ 把窗口拖到标签栏上加入";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.hold.before.dragging.to.detach.a.window" = "先按住 ⌘ 再开始拖动窗口：它离开原来的标签组；拖到别的标签栏上松手，就加入那个组。";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.grouping" = "建组";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.height" = "高度";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.tab.bar" = "标签栏";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.clicking.a.tab.brings.only.that.window" = "点标签只把那一个窗口提到最前，同一应用的其他窗口保持原来的位置。";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.keys.after.the.leader.key" = "按键（按总入口键之后）";
+
+/* Sources/WindowKit/AX/AXFailure.swift */
+"windowkit.does.not.support.this.operation" = "%1$@ 不支持这个操作";
+
+/* Sources/WindowKit/AX/AXFailure.swift */
+"windowkit.accessibility.call.failed.error" = "辅助功能调用失败（错误 %1$@）";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.this.app.s.previous.new.window.has" = "这个应用的上一个新窗口还没有开出来";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.this.app.has.no.new.window.menu" = "这个应用的菜单里没有“新建窗口”";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.cancelled" = "已取消";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.could.not.click.new.window" = "没能点到“新建窗口”";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.the.app.did.not.open.a.new" = "应用没有开出新窗口";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.the.new.window.did.not.appear.in" = "新窗口没有出现在窗口清单里";
+
+/* Sources/WindowKit/Frames/FrameApplier.swift */
+"windowkit.does.not.allow.this.window.to.be" = "%1$@ 不允许移动或调整这个窗口";
+
+/* Sources/WindowKit/Frames/FramePipeline.swift */
+"windowkit.the.window.service.has.stopped" = "窗口服务已停止";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.matching.windows.by.process" = "私有接口不可用，改为按进程、位置和标题匹配窗口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.exact.window.ids.are.required.only.current" = "需要精确窗口 ID，只列出当前桌面和已经认识的窗口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.only.current.desktop.and" = "私有接口不可用，只列出当前桌面和已经认识的窗口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.cannot.read.the.desktop" = "私有接口不可用，无法读取桌面列表";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.window.server.did.not.return.a" = "窗口服务器没有返回桌面列表";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.cannot.read.the.desktop.list" = "无法读取桌面列表";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.enable.displays.have.separate.spaces.in.system" = "需要在系统设置的“桌面与程序坞”中开启“显示器具有单独的空间”，并重新登录";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.requires.macos.or.later" = "需要 macOS 26.4 或更高版本";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.system.does.not.provide.an.api" = "系统没有提供把窗口移到其他桌面的接口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.activating.the.app.before" = "私有接口不可用，改为先激活应用，再把窗口提到最前";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.system.does.not.provide.an.api.capabilityprobe" = "系统没有提供打开调度中心的接口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.system.cannot.report.window.desktop.membership" = "系统没有提供读取窗口所在桌面的接口，无法确认临时桌面是空的";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.exact.window.ids" = "精确窗口 ID";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.windows.on.other.desktops" = "列出其他桌面的窗口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.desktop.list" = "桌面列表";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.move.to.another.desktop" = "移到其他桌面";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.precise.window.focus" = "精确聚焦窗口";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.create.and.remove.desktops" = "新建和删除桌面";
+
+/* Sources/WindowKit/Spaces/DesktopSwitch.swift */
+"windowkit.could.not.read.the.desktop.list" = "读不到桌面列表";
+
+/* Sources/WindowKit/Spaces/DesktopSwitch.swift */
+"windowkit.the.target.desktop.does.not.exist.or" = "目标桌面不存在或不是普通桌面";
+
+/* Sources/WindowKit/Spaces/DesktopSwitch.swift */
+"windowkit.could.not.switch.to.the.target.desktop" = "没能切到目标桌面";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.temporary.desktop.could.not.be.removed" = "临时桌面没能删掉，可以在调度中心手动删除最后那个桌面";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.could.not.read.mission.control.s.state" = "读不到调度中心的状态，它可能还开着";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.did.not.close" = "调度中心没有关上";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.screen.is.locked" = "屏幕已锁定";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.previous.desktop.operation.has.not.finished" = "上一个桌面操作还没有完成";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.could.not.read.mission.control.s.state.missioncontrol" = "读不到调度中心的状态";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.is.open.close.it.first" = "调度中心正开着，请先退出调度中心";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.this.display.has.no.desktops" = "这台显示器没有桌面";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.did.not.open" = "调度中心没有打开";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.no.new.desktop.appeared.mission.control.may" = "没有出现新桌面：系统的调度中心界面变了，或者桌面数量已到上限";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.has.changed.the.target.desktop" = "系统的调度中心界面变了，认不出目标桌面";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.last.desktop.on.this.display.cannot" = "这是这台显示器上最后一个桌面，不能删除";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.desktop.has.windows.or.could.not" = "桌面已有窗口或无法确认为空，已保留";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.desktop.has.windows.could.not.be" = "桌面已有窗口、无法确认为空或已是最后一个桌面，已保留";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.a.removal.request.was.sent.but.the" = "发出了删除请求，但桌面还在";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.has.changed.the.desktop.to" = "系统的调度中心界面变了，认不出要删的桌面";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.this.window.s.previous.move.has.not" = "这个窗口的上一次移动还没有完成";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.cannot.determine.which.desktop.contains.the.window" = "无法确认窗口在哪个桌面";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.only.windows.on.regular.desktops.can.be" = "只能移动普通桌面里的窗口，不支持全屏、分屏或出现在所有桌面上的窗口";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.the.move.was.requested.but.arrival.on" = "已经发出移动请求，但没能确认窗口到了目标桌面";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.the.target.frame.is.invalid" = "目标位置无效";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.could.not.read.back.the.window.frame" = "没有读回窗口的位置";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.did.not.switch.to.this.window" = "%1$@ 没有切换到这个窗口";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.the.app.could.not.be.found.it" = "找不到这个应用，它可能已经退出";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.application" = "应用";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.refused.to.hide" = "%1$@ 拒绝隐藏";
+
+/* Sources/WindowKit/SystemWindowService.swift */
+"windowkit.unavailable.on.this.mac" = "这台 Mac 上不可用";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.left" = "左侧";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.right" = "右侧";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.above" = "上方";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.below" = "下方";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.cannot.determine.this.window.s.desktop" = "不知道这个窗口在哪个桌面";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.no.desktop.to.the.left" = "左边没有其他桌面";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.no.desktop.to.the.right" = "右边没有其他桌面";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.a.desktop.number.is.required" = "需要桌面编号";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.there.is.no.desktop" = "没有桌面 %1$@";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.create.and.switch.to.a.desktop" = "新建桌面并切过去";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.remove.current.desktop" = "删除当前桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.clean.up.all.empty.desktops" = "清理所有空桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.switch.to.desktop.n" = "切到第 N 个桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.switch.to.desktop.on.the.left" = "切到左边的桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.switch.to.desktop.on.the.right" = "切到右边的桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.could.not.read.the.display.list" = "读不到显示器";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktop.cleanup.is.already.running" = "空桌面清理正在进行";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.cannot.manage.desktops" = "无法管理桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed.cleanup.was.cancelled" = "已清理 %1$@ 个空桌面，清理已取消";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed.could.not.read.the" = "已清理 %1$@ 个空桌面；读不到桌面列表";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.removal.failed" = "删除失败";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed" = "已清理 %1$@ 个空桌面；%2$@";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed.kept.desktops.with.uncertain" = "已清理 %1$@ 个空桌面；%2$@ 个桌面的窗口归属不明，已保留。可显示隐藏窗口、还原最小化窗口后重试";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.created.desktop.but.could.not.switch.to" = "已新建桌面 %1$@，但没能切过去";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.the.current.space.is.not.a.regular" = "当前显示的不是普通桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.already.on.the.leftmost.desktop" = "已经是最左边的桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.already.on.the.rightmost.desktop" = "已经是最右边的桌面";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.desktop.does.not.exist.total" = "没有第 %1$@ 个桌面（共 %2$@ 个）";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.this.mac.cannot.move.windows.between.desktops" = "这台 Mac 不能把窗口移到其他桌面";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.no.window.available.to.operate.on" = "没有可以操作的窗口";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.full.screen.windows.cannot.be.moved" = "全屏窗口不能移动";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.the.window.is.minimized" = "窗口已最小化";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.this.window.has.no.earlier.position" = "这个窗口没有更早的位置";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.no.other.display.in.this.direction" = "%1$@没有其他显示器";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.displays.and.desktops" = "显示器和桌面";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.right.half" = "右半屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.top.half" = "上半屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.bottom.half" = "下半屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.top.left.quarter" = "左上四分之一屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.top.right.quarter" = "右上四分之一屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.bottom.left.quarter" = "左下四分之一屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.bottom.right.quarter" = "右下四分之一屏";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.maximize" = "最大化";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.center" = "居中";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.restore.previous.position" = "回到上一次的位置";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.left.display" = "移到左侧显示器";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.right.display" = "移到右侧显示器";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.display.above" = "移到上方显示器";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.display.below" = "移到下方显示器";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.desktop.on.the.left" = "移到左边的桌面";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.desktop.on.the.right" = "移到右边的桌面";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.desktop.n" = "移到第 N 个桌面";
+
+/* Sources/WindowLayout/LayoutSettingsModel.swift */
+"windowlayout.move.left.a.space" = "向左移动一个空间";
+
+/* Sources/WindowLayout/LayoutSettingsModel.swift */
+"windowlayout.move.right.a.space" = "向右移动一个空间";
+
+/* Sources/WindowLayout/LayoutSettingsModel.swift */
+"windowlayout.switch.to.desktop" = "切换到桌面 1…";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.arrange.windows.on.a.grid" = "按网格摆放窗口";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.dragging.windows" = "拖动窗口";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.snap.windows.at.screen.edges" = "拖到屏幕边缘时吸附";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.show.the.grid.when.dragging.with.modifiers" = "按住修饰键拖动时显示网格";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.grid.modifiers" = "网格修饰键";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.grid.columns" = "网格列数：%1$@";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.grid.rows" = "网格行数：%1$@";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.use.glass.for.snap.previews" = "吸附预览用玻璃";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.with.liquid.glass.appearance.show.the.target" = "只在“液态玻璃”外观下生效：打开后，窗口将要落下的区域是一块真玻璃，而不是描边的区域。";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.placement" = "摆放";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.window.gap.pt" = "窗口间距：%1$@ 点";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.animation.duration" = "动画时长：%1$@";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.desktops" = "桌面";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.let.tangler.handle.desktop.shortcuts" = "由 Tangler 处理桌面快捷键";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.use.and.number.to.switch.desktops.through" = "打开后 ⌃←、⌃→、⌃数字 由 Tangler 切换桌面，不等系统的动画";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.disable.system.desktop.shortcuts" = "关闭系统自带的桌面快捷键…";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.tangler.does.not.change.system.settings.in" = "Tangler 不会修改系统设置。请在“系统设置 › 键盘 › 键盘快捷键… › 调度中心”里取消勾选：\n";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.system.window.tiling.conflicts" = "和系统的窗口平铺冲突";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.tangler.does.not.change.system.settings.turn" = "Tangler 不会修改系统设置。请在“系统设置 › 桌面与程序坞 › 窗口”里关掉上面的选项。";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.open.desktop.dock.settings" = "打开桌面与程序坞设置";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.check.again" = "重新检测";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.no.animation" = "无动画";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"layout.animation.secondsFormat" = "%.2f 秒";
+
+/* Sources/WindowLayout/SystemTiling.swift */
+"windowlayout.drag.windows.to.left.or.right.edge" = "系统设置里开启了“拖移窗口至屏幕左或右边缘实现平铺”，拖到左右边缘时系统也会平铺窗口。";
+
+/* Sources/WindowLayout/SystemTiling.swift */
+"windowlayout.drag.windows.to.menu.bar.to.fill" = "系统设置里开启了“拖移窗口至菜单栏以充满屏幕”，拖到顶部时系统也会让窗口充满屏幕。";
+
+/* Sources/WindowLayout/SystemTiling.swift */
+"windowlayout.hold.key.while.dragging.windows.to.tile" = "系统设置里开启了“拖移窗口时按住⌥键实现平铺”，按住 Option 拖动时系统也会平铺窗口。";
+
+/* Sources/WindowLayout/WindowLayoutModule.swift */
+"windowlayout.layout" = "布局";
+
+/* Sources/WindowLayout/WindowLayoutModule.swift */
+"windowlayout.the.layout.module.is.not.running" = "布局模块没有运行";
+
+/* Sources/Workspaces/Desktops/WorkspaceDesktops.swift */
+"workspaces.open.desktop" = "已打开 · 桌面 %1$@";
+
+/* Sources/Workspaces/Desktops/WorkspaceDesktops.swift */
+"workspaces.closed" = "未打开";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.contents.not.opened" = "没有打开内容";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.this.entry.has.no.application.identifier" = "条目没有记下是哪个应用";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.could.not.read.the.application.menu" = "读不到应用的菜单";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.the.app.has.no.available.windows" = "应用没有可用的窗口";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.matched.by.application" = "按应用匹配";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.cannot.open.this.target" = "无法打开这个目标。";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.waiting" = "等待中";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.already.on.the.desktop" = "已经在桌面里";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.moved.here" = "挪过来了";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.opened.a.new.window" = "新开了窗口";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.launched.the.app" = "启动了应用";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.app.not.running" = "应用没有运行";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.no.new.window.opened" = "没有开出新窗口";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.not.moved" = "没有挪过来";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.timed.out.waiting.for.a.window" = "等待窗口超时";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.expansion.countWithStatus" = "%1$@ 个%2$@";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.not.running" = "没有运行";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.without.a.new.window" = "没有开出窗口";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.timed.out" = "超时";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.windows.ready" = "到位 %1$@/%2$@ 个窗口";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.expansion.stopped.because.accessibility.access.was.revoked" = "辅助功能权限已关闭，展开已停止。请在系统设置的“隐私与安全性 › 辅助功能”里重新打开 Tangler。";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.target.desktop.no.longer.exists" = "目标桌面不在了";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.switch.to.the.target.desktop" = "没有切到目标桌面：%1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.you.left.this.desktop.no.more.windows" = "中途离开了这个桌面，没有再开新窗口";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.you.have.left.this.desktop" = "已经离开这个桌面";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.contents.appeared.in.an.existing.app.window" = "内容显示在应用已有的窗口里";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.app.s.process.could.not.be" = "找不到应用的进程，点不到它的菜单";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.open.contents" = "没有打开内容：%1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.window.opened.on.another.desktop.and" = "窗口开在了别的桌面，没能挪过来：%1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.only.one.tab.group.window.arrived.placed" = "标签组只到了一个窗口，按自己的位置摆放";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.you.left.this.desktop.windows.were.placed" = "已经离开这个桌面，标签组没有合成，按各自的位置摆放";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.join.the.tab.group.placed" = "没有并进标签组，按自己的位置摆放";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.form.the.tab.group.placed" = "标签组没有合成（%1$@），按各自的位置摆放";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.tab.group.module.is.disabled.windows" = "标签组模块已关闭，按各自的位置摆放";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.read.the.display.list.or" = "读不到显示器，标签组没有合成";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.saved.display.is.unavailable.placed.on" = "桌面的显示器不在，摆到了主屏";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.window.closed.before.placement" = "窗口已经关闭，没有摆放";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.place.the.window" = "没有摆到位置上：%1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.placement.service.returned.no.result" = "摆放服务没有返回结果";
+
+/* Sources/Workspaces/Feedback/WorkspaceHUDView.swift */
+"workspaces.workspace" = "工作空间「%1$@」";
+
+/* Sources/Workspaces/Feedback/WorkspaceHUDView.swift */
+"workspaces.expanding.workspace" = "正在展开工作空间「%1$@」";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.document" = "文档";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.folder" = "文件夹";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.web.page" = "网址";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.this.app.has.no.valid.identifier.and" = "这个应用没有有效的标识，无法重新打开。";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.enter.an.absolute.path.a.file.url" = "请输入绝对路径、file:// 地址或完整的 http(s) 网址。";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.web.urls.must.begin.with.http.or" = "网址必须以 http:// 或 https:// 开头。";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.documents.and.folders.require.an.absolute.path" = "文档和文件夹需要绝对路径或 file:// 地址。";
+
+/* Sources/Workspaces/Model/Windowing.swift */
+"workspaces.automatic" = "自动";
+
+/* Sources/Workspaces/Model/Windowing.swift */
+"workspaces.open.a.new.window" = "新开一个窗口";
+
+/* Sources/Workspaces/Model/Windowing.swift */
+"workspaces.use.its.only.window" = "用它唯一的窗口";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.accessibility.access.is.missing.windows.cannot.be" = "没有辅助功能权限，无法移动窗口";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.window.rejected.this.position" = "窗口没有接受这个位置：%1$@";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.app.could.not.be.found" = "找不到这个应用";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.system.did.not.respond.while.launching" = "启动应用时系统没有回应";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.system.did.not.respond.while.reopening" = "重新打开时系统没有回应";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.could.not.launch.the.app" = "启动应用失败";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.could.not.reopen.some.apps.require.automation" = "重新打开失败；有的应用需要在系统设置中允许“自动化”";
+
+/* Sources/Workspaces/Saving/WorkspaceLibrary.swift */
+"workspaces.workspace.workspacelibrary" = "工作空间 %1$@";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.there.are.no.windows.to.save" = "当前没有可以保存的窗口。";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.a.workspace.name.cannot.be.empty" = "工作空间名称不能为空。";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.this.workspace.no.longer.exists" = "这个工作空间已经不存在了。";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.this.entry.no.longer.exists" = "这个条目已经不在了。";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.the.system.did.not.identify.this.desktop" = "系统没有给这个桌面标识，不能绑定到工作空间。";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.place.only" = "只摆放";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.tab" = "第 %1$@ 个标签";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.no.checkpoint.yet" = "还没有检查点";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.checkpoint" = "检查点 %1$@ · %2$@";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.checkpoint.entrysummary" = "检查点 · %1$@";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.open.contents" = "打开内容";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.type" = "类型";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.absolute.path.to.file.or.folder" = "/绝对路径/文件或文件夹";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.remove.this.item" = "删除这一项";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.add" = "添加";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.only.absolute.paths.file.urls.and.complete" = "只接受绝对路径、file:// 地址和完整的 http(s) 网址。不执行 Shell 命令或 AppleScript。";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.window.behavior" = "窗口方式";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.remove.this.entry" = "移除这个条目";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.cancel" = "取消";
+
+/* Sources/Workspaces/Settings/WorkspaceAppList.swift */
+"workspaces.apps.and.windows" = "应用与窗口";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.workspace.settings" = "工作空间设置";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.autosave" = "自动保存";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.autosave.interval" = "自动保存间隔";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.locked.templates.are.saved.manually.only.empty" = "锁定的模板仅手动保存。空桌面不会覆盖检查点。";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.save.the.current.workspace.periodically.and.when" = "定时保存当前工作空间；离开、释放和退出时也保存。空桌面不会覆盖检查点。";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.restore" = "还原";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.delete.permanently" = "永久删除";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.no.saved.windows" = "没有保存的窗口";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.restore.workspace" = "还原工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.window.layout.of.the.deleted.workspace" = "已回收工作空间的窗口布局";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.workspace.details" = "工作空间详情";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.window.layout" = "窗口布局";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.focus.on.open.click.a.tab.or" = "打开后聚焦：%1$@ · 点击标签或窗口可更改";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.click.a.tab.or.window.to.focus" = "点击标签或窗口，设为打开后的焦点";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.rename.workspace" = "重命名工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.name" = "名称";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.more" = "更多";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.rename" = "重命名";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.release" = "释放";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.release.and.remove.desktop" = "释放并删除桌面";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.more.workspace.actions" = "更多工作空间操作";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.cancel.expansion" = "取消展开";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.moved.to.trash.you.can.restore.it" = "「%1$@」已移到回收站，%2$@ 天内可以还原。";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.launch.options" = "启动选项";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.lock.as.template.manual.saves.only" = "锁定为模板（仅手动保存）";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.launch.apps.that.are.not.running" = "启动没有运行的应用";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.open.recorded.contents" = "打开记录的内容";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.existing.windows.are.placed.without.opening.duplicates" = "已经打开的窗口直接摆放，不会再打开一份。内容只用上面每个条目记录的，不执行 Shell 命令或 AppleScript，也不根据窗口标题猜测路径。";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.last.expansion" = "上次展开";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.expanding" = "正在展开";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.no.expansion.history" = "还没有展开记录";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.open.the.workspace.to.see.the.restoration" = "打开工作空间后，在这里查看每个窗口的恢复结果。";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.open" = "打开";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.switch.to.desktop" = "切到桌面";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.save.checkpoint" = "保存检查点";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.restore.checkpoint" = "恢复到检查点";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.delete" = "删除";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.expansion.is.in.progress.wait.before.saving" = "正在展开，完成后再保存";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.this.workspace.s.desktop.is.not.visible" = "这个工作空间的桌面没有显示，%1$@";
+
+/* Sources/Workspaces/Settings/WorkspacePreview.swift */
+"workspaces.no.checkpoint.yet.open.this.workspace.arrange" = "还没有检查点。打开这个工作空间，摆好窗口后保存检查点。";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash" = "回收站";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.workspaces" = "工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.new.workspace" = "新建工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.empty.workspace" = "空白工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.save.current.desktop" = "保存当前桌面";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.deleted.workspaces.stay.in.trash.for.days" = "回收的工作空间保留 %1$@ 天，之后自动删除。";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.back.to.workspaces" = "返回工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.open.trash" = "打开回收站";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash.is.open" = "回收站已打开";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash.is.closed" = "回收站已关闭";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.workspace.name.optional" = "工作空间名称（可以留空）";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.create" = "创建";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.permanently.delete" = "永久删除「%1$@」？";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.delete.now" = "立即删除";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.this.cannot.be.undone" = "删除后不能还原。";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.select.a.workspace.to.inspect.and.restore" = "选择工作空间，查看并还原";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.double.click.to.open.drag.to.reorder" = "双击打开工作空间；拖动调整入口键顺序";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash.is.empty" = "回收站是空的";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.no.workspaces.yet" = "还没有工作空间";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.template.locked" = "模板（锁定）";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.was.restored" = "「%1$@」已还原。";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.empty" = "空";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.select.a.workspace" = "选择一个工作空间";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.custom.area" = "自定义区域";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.entire.screen" = "整个屏幕";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.top.left" = "左上";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.top.right" = "右上";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.bottom.left" = "左下";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.bottom.right" = "右下";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.left.third" = "左侧三分之一";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.middle.third" = "中间三分之一";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.right.third" = "右侧三分之一";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.left.two.thirds" = "左侧三分之二";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.right.two.thirds" = "右侧三分之二";
+
+/* Sources/Workspaces/WorkspaceCommands.swift */
+"workspaces.open.workspace.n" = "打开第 N 个工作空间";
+
+/* Sources/Workspaces/WorkspaceCommands.swift */
+"workspaces.release.current.workspace" = "释放当前工作空间";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.layout.module.is.disabled.so.the" = "布局模块已关闭，没有摆放窗口的服务，无法展开工作空间。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.accessibility.access.is.missing.windows.cannot.be.workspacescontroller" = "没有辅助功能权限，读不到也动不了窗口。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.layout.module.is.disabled.the.placement" = "布局模块已关闭，没有摆放窗口的服务。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.accessibility.access.is.missing.windows.cannot.be.workspacescontroller.2" = "没有辅助功能权限，读不到窗口。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.saved.desktop.as" = "已把桌面 %1$@ 存为「%2$@」";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.saved" = "已保存「%1$@」";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.apps.workspacescontroller" = "：%1$@ 个应用";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.press.to.open" = "，按 %1$@ 打开";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.read.the.desktop.list.no" = "。读不到桌面列表，没有绑定桌面。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.not.open.its.checkpoint.was.not" = "「%1$@」没有打开，检查点没有改动";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.expanding.wait.for.it.to.finish" = "「%1$@」正在展开，完成后再保存。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.no.workspaces.yet.press.w.s.to" = "还没有工作空间，按 W S 把当前桌面存成一个。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.press.w.and.a.number.or.search" = "请按 W 加数字，或在搜索面板里搜索工作空间的名称。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.workspace.does.not.exist.total" = "没有第 %1$@ 个工作空间（共 %2$@ 个）。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.placement.service.is.unavailable" = "没有摆放窗口的服务。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.expanding" = "「%1$@」正在展开";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.has.no.checkpoint.arrange.the.windows.then" = "「%1$@」还没有检查点，摆好窗口后按 W S 保存";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.already.in" = "已经在「%1$@」";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.switch.to.the.desktop.for" = "没有切到「%1$@」的桌面：%2$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.read.the.display.list.to" = "读不到显示器，无法为「%1$@」新建桌面";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.open" = "没有打开「%1$@」：%2$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.deleted.the.newly.created.desktop.was.kept" = "已删除「%1$@」；新建的桌面留作普通桌面";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.created.desktop.for" = "为「%1$@」新建了桌面 %2$@。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.expansion.was.cancelled.go.to.that.desktop" = "，展开被取消；到那个桌面按 W R 恢复";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.desktop.for.is.ready" = "「%1$@」的桌面已建好";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.switch.to.desktop.and.press.w.r" = "切到桌面 %1$@ 后按 W R 恢复到检查点。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.created.desktop.for.but.could.not.switch" = "已为「%1$@」新建桌面 %2$@，但没能切过去。";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.opened.arrange.the.windows.then.press.w" = "已打开「%1$@」，摆好窗口后按 W S 保存检查点";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.not.open" = "「%1$@」没有打开";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.released" = "已释放「%1$@」";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.its.desktop.was.kept.as.a.regular" = "，桌面留作普通桌面";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.released.and.removed.its.desktop" = "已释放「%1$@」，桌面已删除";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.released.but.could.not.remove.its.desktop" = "已释放「%1$@」，桌面没有删掉：%2$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.there.are.no.windows.on.this.desktop" = "这个桌面上没有窗口，检查点没有改动";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.window.desktop.membership.is.unavailable.captured.windows" = "读不到窗口在哪个桌面，收下了所有桌面的窗口";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.current.desktop.does.not.belong.to" = "当前桌面不属于任何工作空间";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.workspace.module.has.stopped" = "工作空间模块已停止";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.saved.the.checkpoint.for.apps" = "已保存「%1$@」的检查点：%2$@ 个应用";
+
+"settings.language.system" = "跟随系统";
+
+"settings.language.title" = "语言";
+
+"settings.language.interface" = "界面语言";
+
+"settings.language.immediate" = "更改语言后立即生效，无需重新打开 Tangler。";
+
+"workspace.open.named" = "打开工作空间「%1$@」";
+
+"leader.leave" = "Esc 退出";
+
+"leader.release" = "松开右 Command 结束";
+
+"leader.linger" = "%1$@ 秒内可以继续按键";
+
+"leader.noSuchKey" = "没有这个键：%1$@";
+
+"workspace.detail.overview" = "概览";
+
+"workspace.detail.history" = "展开记录";
+
+"text.labelValue" = "%1$@：%2$@";
+
+"text.listSeparator" = "，";
+
+"text.sentence" = "%1$@。%2$@";
+
+"text.itemsWithReason" = "%1$@：%2$@";
+
+"text.itemSeparator" = "、";
+
+"text.reasonSeparator" = "；";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.savedList" = "已保存";
+
+/* Sources/CommandKit/CommandCatalog.swift */
+"commandkit.keyConflict" = "键位冲突：%1$@（%2$@）和 %3$@（%4$@）";
+"commandkit.shortcutConflict" = "全局快捷键冲突：%1$@ 和 %2$@ 都用 %3$@";

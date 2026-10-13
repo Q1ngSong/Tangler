@@ -1,0 +1,1558 @@
+{
+  "schema": 1,
+  "version": "0.0.1",
+  "files": {
+    ".github/workflows/pages.yml": {
+      "mode": "100644",
+      "oid": "f00103bfef7c39790d545e181de591a247676fd5"
+    },
+    ".github/workflows/release.yml": {
+      "mode": "100644",
+      "oid": "dc5d48ff4f071ca9aeab416cba4e6ce5ef62a0ca"
+    },
+    ".gitignore": {
+      "mode": "100644",
+      "oid": "d3a899c07c59e13f140960f9acd73b384531b1f1"
+    },
+    ".nojekyll": {
+      "mode": "100644",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "Configuration/Branding/Tangler.icns": {
+      "mode": "100644",
+      "oid": "9003805f945e51a64dafa7a7fa23bfd4f4c310d6"
+    },
+    "Configuration/Branding/Tangler.svg": {
+      "mode": "100644",
+      "oid": "a8cde190f6a6af2c7b984a8f6626c02c8c59d08a"
+    },
+    "Configuration/Localization/en.lproj/InfoPlist.strings": {
+      "mode": "100644",
+      "oid": "1d187ca17b4e54c003c8489bfdd433cae0b05b83"
+    },
+    "Configuration/Localization/zh-Hans.lproj/InfoPlist.strings": {
+      "mode": "100644",
+      "oid": "e6512b6987b5248bdc8ff4df976cfc97c23095ef"
+    },
+    "Configuration/updates.json": {
+      "mode": "100644",
+      "oid": "d77ca0a57af32142985af2ea06e26e704b6c4bd8"
+    },
+    "LICENSE": {
+      "mode": "100644",
+      "oid": "1a71cb64397535482ff19542d1093c0d4a6442d0"
+    },
+    "NOTICE": {
+      "mode": "100644",
+      "oid": "fcd1da026da55d92ab449c1f266405139e8cce4c"
+    },
+    "Package.resolved": {
+      "mode": "100644",
+      "oid": "4f479ad2fdce319b750c000bc223a8e28b9805dc"
+    },
+    "Package.swift": {
+      "mode": "100644",
+      "oid": "59dbd7c2a0d0babe5cfcc40be521ac2ba927a5f9"
+    },
+    "README.md": {
+      "mode": "100644",
+      "oid": "a51bf9edea1b1ceb8a922a9d2df7cef13d979e2d"
+    },
+    "Sources/App/AppDelegate.swift": {
+      "mode": "100644",
+      "oid": "9607ce824d37e4ddd13b7dd52ef7b7222fa927e1"
+    },
+    "Sources/App/AppSettings.swift": {
+      "mode": "100644",
+      "oid": "4639b85eedbf350fe514e8768946c7117553be8f"
+    },
+    "Sources/App/AppUpdates.swift": {
+      "mode": "100644",
+      "oid": "489bc4fcea563c6652010c97518130eef2bc2b9e"
+    },
+    "Sources/App/Composition.swift": {
+      "mode": "100644",
+      "oid": "ae467c4a36bb6e44231b63f4386c0a9af17ae450"
+    },
+    "Sources/App/FeatureCatalog.swift": {
+      "mode": "100644",
+      "oid": "8df8ae1f602d504aa5be4c13f1fa165df070d390"
+    },
+    "Sources/App/MenuModel.swift": {
+      "mode": "100644",
+      "oid": "cb5c24a08fead6fbfa6e7c47ca88152792b1f797"
+    },
+    "Sources/App/ModuleRunner.swift": {
+      "mode": "100644",
+      "oid": "345dab09faa14a78f7d8f4bd483b5b01a052378f"
+    },
+    "Sources/App/Permissions.swift": {
+      "mode": "100644",
+      "oid": "aaff9bf8130b195875a19fc2187b73d94746287c"
+    },
+    "Sources/App/Settings/SettingsModel.swift": {
+      "mode": "100644",
+      "oid": "e97c550e7e345a30203deccc533fe79b812c92d1"
+    },
+    "Sources/App/Settings/SettingsSkin.swift": {
+      "mode": "100644",
+      "oid": "fc1246b1aa153e6a9bce5f8c685dfb5938834450"
+    },
+    "Sources/App/Settings/SettingsView.swift": {
+      "mode": "100644",
+      "oid": "97c456900f67c3fa8afe9eab9b00293d0fa60739"
+    },
+    "Sources/App/Settings/SettingsWindowController.swift": {
+      "mode": "100644",
+      "oid": "10d58a9b5b27a73b11ea2610c19a1c5dbcb70d91"
+    },
+    "Sources/App/Settings/ShortcutsPage.swift": {
+      "mode": "100644",
+      "oid": "72b43ce1cfa4581bcb0224b9857d0d0d8f271639"
+    },
+    "Sources/App/Settings/UpdateSettingsSection.swift": {
+      "mode": "100644",
+      "oid": "fcd7117eb514f530304f49d09e63616f4e04e8db"
+    },
+    "Sources/App/StatusMenu.swift": {
+      "mode": "100644",
+      "oid": "b994b6dcb619c8cf8e4750c8de2fed7a07dd5537"
+    },
+    "Sources/App/TanglerMain.swift": {
+      "mode": "100644",
+      "oid": "bedbe22d3bbc0644098446c55ad0684b0bef3f86"
+    },
+    "Sources/CaptureKit/CaptureBackend.swift": {
+      "mode": "100644",
+      "oid": "34ed08d7265021b48f09c978cf021cbd69310afa"
+    },
+    "Sources/CaptureKit/CaptureGeometry.swift": {
+      "mode": "100644",
+      "oid": "79155f03173238b80adae89b1c403da690345f75"
+    },
+    "Sources/CaptureKit/FrameReceiver.swift": {
+      "mode": "100644",
+      "oid": "4de2de4790740fff4c1079d340aae99360e3aa29"
+    },
+    "Sources/CaptureKit/LiveSession.swift": {
+      "mode": "100644",
+      "oid": "479aeb975629763cfbcd55c78114c559349b0f31"
+    },
+    "Sources/CaptureKit/LiveWindowCapture.swift": {
+      "mode": "100644",
+      "oid": "e95a3c1ee79e50429d4331adea2231e8b0a9c3c2"
+    },
+    "Sources/CaptureKit/PixelBufferImage.swift": {
+      "mode": "100644",
+      "oid": "fcebd513da89497e819234e3e83698cf82e7a8c3"
+    },
+    "Sources/CaptureKit/ScreenCaptureBackend.swift": {
+      "mode": "100644",
+      "oid": "fbbe6a169e34a7fd84bb2e17ed9936b0b259c151"
+    },
+    "Sources/CaptureKit/SystemCaptureService.swift": {
+      "mode": "100644",
+      "oid": "4e63c8d4604f32144b84a72f250131c6c4781233"
+    },
+    "Sources/CaptureKit/ThumbnailCache.swift": {
+      "mode": "100644",
+      "oid": "144973cf0c5dcde641eeaffc91627d61f33132f3"
+    },
+    "Sources/CaptureKit/WindowLookup.swift": {
+      "mode": "100644",
+      "oid": "cfef431d63583895045fbdd6a05bb9b006bb8431"
+    },
+    "Sources/CommandKit/CommandCatalog.swift": {
+      "mode": "100644",
+      "oid": "ed8969516642b62cb1e31c2748a2bd27d5d7fa51"
+    },
+    "Sources/CommandKit/CommandKeySettings.swift": {
+      "mode": "100644",
+      "oid": "ec92c0c48113c43c8442d50b024a1582679ce21d"
+    },
+    "Sources/CommandKit/KeyOverrides.swift": {
+      "mode": "100644",
+      "oid": "5b6828918176f2e05925cd41cf33e32c459bffcb"
+    },
+    "Sources/CommandKit/LeaderMatcher.swift": {
+      "mode": "100644",
+      "oid": "6d2e4772315061cdd11df38ae61a10d0f06c116a"
+    },
+    "Sources/CommandKit/LiveCommandRegistry.swift": {
+      "mode": "100644",
+      "oid": "39a2cd4aaf70308ff77bcbb65fc4d5ff4090dc02"
+    },
+    "Sources/CommandKit/OverrideProblem.swift": {
+      "mode": "100644",
+      "oid": "5884cc2b5e2fb3097e212b0c704834f5bd739a75"
+    },
+    "Sources/CommandKit/ShortcutBindings.swift": {
+      "mode": "100644",
+      "oid": "f42a08bdd6d4e299cba0aa0ba6b02952f88c77b8"
+    },
+    "Sources/CommandPalette/CommandPaletteModule.swift": {
+      "mode": "100644",
+      "oid": "1d2587790c09e0ceef0e8efa8a4f35ecbb21843f"
+    },
+    "Sources/CommandPalette/Leader/LeaderHUD.swift": {
+      "mode": "100644",
+      "oid": "dd800d6b5c7c61dc44c84e2c44ac8835ae0c4af3"
+    },
+    "Sources/CommandPalette/Leader/LeaderMode.swift": {
+      "mode": "100644",
+      "oid": "8c899b458d4cc0822c2010fc024bbb5c38620a5f"
+    },
+    "Sources/CommandPalette/Leader/LeaderOverlay.swift": {
+      "mode": "100644",
+      "oid": "39e9f5d1c5c39f210232b4d53d98dd301f7e2dfc"
+    },
+    "Sources/CommandPalette/Leader/LeaderOverlayView.swift": {
+      "mode": "100644",
+      "oid": "e7b4ffbf4b7a10713ed3f2fed6e89ddc61375dee"
+    },
+    "Sources/CommandPalette/Leader/LeaderSession.swift": {
+      "mode": "100644",
+      "oid": "b4a40efa0a143b94f5901ae8889460449acbc13c"
+    },
+    "Sources/CommandPalette/Palette/OverlayPalettePresenter.swift": {
+      "mode": "100644",
+      "oid": "0ab49337d6ca1ee584649c0bcbb18c2cff7807da"
+    },
+    "Sources/CommandPalette/Palette/PaletteController.swift": {
+      "mode": "100644",
+      "oid": "ae727b55b24cd9bc891aeac7f821594f8890c67e"
+    },
+    "Sources/CommandPalette/Palette/PaletteItem.swift": {
+      "mode": "100644",
+      "oid": "6b27b6b1400f8b957901f88b81cb0c56249b6c21"
+    },
+    "Sources/CommandPalette/Palette/PaletteLayout.swift": {
+      "mode": "100644",
+      "oid": "dc0cae9a3a79d5b4c73f11c1a6bde233fa0299ff"
+    },
+    "Sources/CommandPalette/Palette/PaletteModel.swift": {
+      "mode": "100644",
+      "oid": "a9c5b38234fe0395cbd5e6b5b7f0fd4438e5e2a4"
+    },
+    "Sources/CommandPalette/Palette/PalettePresenting.swift": {
+      "mode": "100644",
+      "oid": "a72aff2f3ab506c8db65a91e27224834f1866b3a"
+    },
+    "Sources/CommandPalette/Palette/PaletteRowView.swift": {
+      "mode": "100644",
+      "oid": "47fafa48cfd6a9ce8f7186097e82453329648130"
+    },
+    "Sources/CommandPalette/Palette/PaletteSearch.swift": {
+      "mode": "100644",
+      "oid": "74c4c6d65525f48baf00914083067b832417032e"
+    },
+    "Sources/CommandPalette/Palette/PaletteView.swift": {
+      "mode": "100644",
+      "oid": "3bdcde960c4cc7c4c957e47960a9fe5790877b4d"
+    },
+    "Sources/CommandPalette/Palette/RecencyLog.swift": {
+      "mode": "100644",
+      "oid": "4ccc1ca47b231327f254f7fc0d140cac24956219"
+    },
+    "Sources/CommandPalette/PaletteCommands.swift": {
+      "mode": "100644",
+      "oid": "aa12396c499cd9e740ccd7b35f2f4e98c25f3f76"
+    },
+    "Sources/CommandPalette/PaletteEnvironment.swift": {
+      "mode": "100644",
+      "oid": "31bd4b3b5cd3c7ae1495ca0dc2ddbc54f5713fca"
+    },
+    "Sources/CommandPalette/PaletteSettings.swift": {
+      "mode": "100644",
+      "oid": "518e601b64658455bd8d31bb3a09f645fabe8478"
+    },
+    "Sources/CommandPalette/Settings/LeaderTriggerForm.swift": {
+      "mode": "100644",
+      "oid": "eba0067ae43fbb0bdc9fb98f725c584a211ba391"
+    },
+    "Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift": {
+      "mode": "100644",
+      "oid": "1642f6a125b8edc3b8ee388ca064e0169e7c996d"
+    },
+    "Sources/CommandPalette/Settings/PaletteSettingsView.swift": {
+      "mode": "100644",
+      "oid": "60ad46fc2562d59d9f882a1c1f37469a15aaf956"
+    },
+    "Sources/CommandPalette/Support/OverlayArea.swift": {
+      "mode": "100644",
+      "oid": "b3615e6d31c5fd4d7464883f669c58ababd17b7f"
+    },
+    "Sources/CommandPalette/Support/Scheduling.swift": {
+      "mode": "100644",
+      "oid": "d73fba39dd4550e76aa9618fc27925eac42aef3e"
+    },
+    "Sources/CommandPalette/Support/WindowErrorText.swift": {
+      "mode": "100644",
+      "oid": "55973555d7c22cd73a43d22212317a793fb86eac"
+    },
+    "Sources/Contracts/CaptureService.swift": {
+      "mode": "100644",
+      "oid": "bc2394b3ec54898886cba0d6b2f4827226b1814e"
+    },
+    "Sources/Contracts/Commands.swift": {
+      "mode": "100644",
+      "oid": "2018837bc513f4797d9d686118cdd9c0e6f26327"
+    },
+    "Sources/Contracts/DesktopOwnership.swift": {
+      "mode": "100644",
+      "oid": "21291664bf861ac79b2ca34b7c2b74782aba0103"
+    },
+    "Sources/Contracts/FeatureModule.swift": {
+      "mode": "100644",
+      "oid": "dc984132f4cd1a27f9f3927076953c6bc56f2993"
+    },
+    "Sources/Contracts/Geometry.swift": {
+      "mode": "100644",
+      "oid": "bb0d0e713c6a2168fe60bd05954966865c6c9ba1"
+    },
+    "Sources/Contracts/Identifiers.swift": {
+      "mode": "100644",
+      "oid": "d05672b0682c93497f8a445f32f4f097c2cf9069"
+    },
+    "Sources/Contracts/Input.swift": {
+      "mode": "100644",
+      "oid": "0fcdc4d0bdb837f8b56575770d66504d4838b5dc"
+    },
+    "Sources/Contracts/InputService.swift": {
+      "mode": "100644",
+      "oid": "5449affe612be10696f6baf8f64c525941c11142"
+    },
+    "Sources/Contracts/Placement.swift": {
+      "mode": "100644",
+      "oid": "b655060d1cb3e006930591040c1d09ab73c0b209"
+    },
+    "Sources/Contracts/Settings.swift": {
+      "mode": "100644",
+      "oid": "b2a7f0d3bf219b53fc96e46dfd44ecc8bff9703b"
+    },
+    "Sources/Contracts/TabGroups.swift": {
+      "mode": "100644",
+      "oid": "629a2de97809449b6a5efad467f4c10c77fe3f61"
+    },
+    "Sources/Contracts/WindowService.swift": {
+      "mode": "100644",
+      "oid": "928a4cd6c85e0495613252490cb3d6e8e647061d"
+    },
+    "Sources/Contracts/Windows.swift": {
+      "mode": "100644",
+      "oid": "14a45b44073e7437c5bd2debeb184acb77cdb760"
+    },
+    "Sources/CoreKit/Broadcaster.swift": {
+      "mode": "100644",
+      "oid": "1e501c3b320cbd6fe2f82296eba43c91c692a72e"
+    },
+    "Sources/CoreKit/DiagnosticLog.swift": {
+      "mode": "100644",
+      "oid": "9fc7e9a5bf7f965ae8b93474aa5d7b9e6d7bf8a1"
+    },
+    "Sources/CoreKit/EdgeSnap.swift": {
+      "mode": "100644",
+      "oid": "23c1cd97f62360730a58af19da108a6d59ce7aa3"
+    },
+    "Sources/CoreKit/KeyCodes.swift": {
+      "mode": "100644",
+      "oid": "104a3121244582272e741366ddc9a23521523386"
+    },
+    "Sources/CoreKit/Localization.swift": {
+      "mode": "100644",
+      "oid": "ac6cc3123c2899ca1cc5441888113d27ec362782"
+    },
+    "Sources/CoreKit/RectMath.swift": {
+      "mode": "100644",
+      "oid": "2ba331007ff6f6226a8298ab6ab540168a0c4721"
+    },
+    "Sources/CoreKit/Resources/en.lproj/Localizable.strings": {
+      "mode": "100644",
+      "oid": "1e3bb06202edb902addca58f9dad7e52c3d75a8a"
+    },
+    "Sources/CoreKit/Resources/en.lproj/Localizable.stringsdict": {
+      "mode": "100644",
+      "oid": "e5e74e02353dfefe5d2e395d3c369515051fec01"
+    },
+    "Sources/CoreKit/Resources/zh-Hans.lproj/Localizable.strings": {
+      "mode": "100644",
+      "oid": "2380eb15fa7131adfa3de5c6fbc778ef03b10c25"
+    },
+    "Sources/CoreKit/Resources/zh-Hans.lproj/Localizable.stringsdict": {
+      "mode": "100644",
+      "oid": "75bf9ad3434a7ff36169fd66bb70aa4205b133e0"
+    },
+    "Sources/CoreKit/ScreenCoordinates.swift": {
+      "mode": "100644",
+      "oid": "81cf0e43f94af685f9f40ad937e25eaedc0fdaea"
+    },
+    "Sources/CoreKit/SnapGrid.swift": {
+      "mode": "100644",
+      "oid": "f1b506b6dd1967170a4c596b53328f09940e0618"
+    },
+    "Sources/CoreKit/TextMatcher.swift": {
+      "mode": "100644",
+      "oid": "df388eb6b7491925048cc0e2ce2870bdf947a345"
+    },
+    "Sources/DockPreview/DockClickAction.swift": {
+      "mode": "100644",
+      "oid": "027f4a7652490ed97dc274342f431eeb95cb67a5"
+    },
+    "Sources/DockPreview/DockClickBehavior.swift": {
+      "mode": "100644",
+      "oid": "f9df18359ef5ef88e0f664222f2a74b85a54ac19"
+    },
+    "Sources/DockPreview/DockClickGesture.swift": {
+      "mode": "100644",
+      "oid": "3c8bf667aa2dbe5d0f1455b4a16b7a8c0fc183c1"
+    },
+    "Sources/DockPreview/DockHoverMachine.swift": {
+      "mode": "100644",
+      "oid": "43a8d841d8024a8b3214ebbbf73ecf4f2557b223"
+    },
+    "Sources/DockPreview/DockPreferences.swift": {
+      "mode": "100644",
+      "oid": "1e29141505e8c12aae2ff7c0b1a88b649ed41b67"
+    },
+    "Sources/DockPreview/DockPreviewContent.swift": {
+      "mode": "100644",
+      "oid": "3eca4a72aa21f611b3c639f5aedcf302947ffea4"
+    },
+    "Sources/DockPreview/DockPreviewController+Clicks.swift": {
+      "mode": "100644",
+      "oid": "b3eaf8b831024307551d25d2247244da6325abb8"
+    },
+    "Sources/DockPreview/DockPreviewController+Preview.swift": {
+      "mode": "100644",
+      "oid": "416b063cebbcf2c80dec5bd883ffac5b89f380bf"
+    },
+    "Sources/DockPreview/DockPreviewController.swift": {
+      "mode": "100644",
+      "oid": "4af08a87a26f8d47940c93c50ad72c48a6853f78"
+    },
+    "Sources/DockPreview/DockPreviewGeometry.swift": {
+      "mode": "100644",
+      "oid": "963c52f3137204124d3dc02682d8533a1f7e912a"
+    },
+    "Sources/DockPreview/DockPreviewLayout.swift": {
+      "mode": "100644",
+      "oid": "a33eaa2ec3da8023ac6816e11bfab4523f0ad0ed"
+    },
+    "Sources/DockPreview/DockPreviewModule.swift": {
+      "mode": "100644",
+      "oid": "8affe413c836c976fc368d5e4c988f4c63cc6c80"
+    },
+    "Sources/DockPreview/DockPreviewMotion.swift": {
+      "mode": "100644",
+      "oid": "94ed0a0ec8fd833c08d619e5d3b55b1831f65645"
+    },
+    "Sources/DockPreview/DockPreviewPanel.swift": {
+      "mode": "100644",
+      "oid": "45a3af54d5b59c48a61be1dcfe43196b6c7f6a3d"
+    },
+    "Sources/DockPreview/DockPreviewPresenting.swift": {
+      "mode": "100644",
+      "oid": "0187290ae471b58639d4be8b404a8dfcde0792b7"
+    },
+    "Sources/DockPreview/DockPreviewSession.swift": {
+      "mode": "100644",
+      "oid": "c746b8bdd35c58de0ab459e531fd6c74627d9915"
+    },
+    "Sources/DockPreview/DockPreviewSettings.swift": {
+      "mode": "100644",
+      "oid": "9b211c3bac8163c0725fc9f753b0262f8c39b749"
+    },
+    "Sources/DockPreview/DockPreviewSettingsView.swift": {
+      "mode": "100644",
+      "oid": "4c7d95504718d19c844261e617c2930016fb1e4d"
+    },
+    "Sources/DockPreview/DockPreviewView.swift": {
+      "mode": "100644",
+      "oid": "22fc73444f1cba455d9b908bd073d7495cd077a1"
+    },
+    "Sources/DockPreview/DockScheduler.swift": {
+      "mode": "100644",
+      "oid": "bc3513ba227341aeb73c053e77f048ad94803e45"
+    },
+    "Sources/DockPreview/DockShield.swift": {
+      "mode": "100644",
+      "oid": "f1e19fe88356535cb5c43085f14d2b178c6b04d3"
+    },
+    "Sources/InputKit/EventHub.swift": {
+      "mode": "100644",
+      "oid": "2c9f4877f7340c37d344b05b222cd683e00cd010"
+    },
+    "Sources/InputKit/EventReading.swift": {
+      "mode": "100644",
+      "oid": "5ade87555937e3c87256757106bf91b888bfab95"
+    },
+    "Sources/InputKit/EventTapDriver.swift": {
+      "mode": "100644",
+      "oid": "a3e793e49b9dc2f7038c3a00162d7c4207d5cc3c"
+    },
+    "Sources/InputKit/InputRouter.swift": {
+      "mode": "100644",
+      "oid": "4a9398164c7efac69073990d6c302ac8b6edbe40"
+    },
+    "Sources/InputKit/KeyTranslation.swift": {
+      "mode": "100644",
+      "oid": "e1dcaf4bfd6201b05379aa9c0ae55260e801103e"
+    },
+    "Sources/InputKit/LeaderDetector.swift": {
+      "mode": "100644",
+      "oid": "03ec57a9db009fcb31bf3314dc4d955870d65882"
+    },
+    "Sources/InputKit/Private/SymbolicHotKeys.swift": {
+      "mode": "100644",
+      "oid": "cae73d52f242f9c832c56fd28b54e58954281a0c"
+    },
+    "Sources/InputKit/RawInputEvent.swift": {
+      "mode": "100644",
+      "oid": "3c4ae83cd7c4c05f1d7319377c9b29f8f00f181b"
+    },
+    "Sources/InputKit/RunLoopThread.swift": {
+      "mode": "100644",
+      "oid": "0cc2e9a152f84e1e936ebac0e3b90a6432167486"
+    },
+    "Sources/InputKit/ShortcutTable.swift": {
+      "mode": "100644",
+      "oid": "38cabce39cbfd277ae480e1950d40d402f38f781"
+    },
+    "Sources/InputKit/SwitcherHotKeys.swift": {
+      "mode": "100644",
+      "oid": "463e8f43b37d439e4cca901e5016f326820f5baf"
+    },
+    "Sources/InputKit/SystemEventTap.swift": {
+      "mode": "100644",
+      "oid": "9c3c8f9bfbc02c4fbc3c6880628d5ce6fa5ad916"
+    },
+    "Sources/InputKit/SystemInputService.swift": {
+      "mode": "100644",
+      "oid": "e742980826a2f5eeabf9daf2edac75b743a0fdb8"
+    },
+    "Sources/InputKit/SystemKeyCapture.swift": {
+      "mode": "100644",
+      "oid": "954e03b80e8c49f76f92c7328fecc9a12a34ca39"
+    },
+    "Sources/OverlayKit/AppIconImage.swift": {
+      "mode": "100644",
+      "oid": "38352d220f713b35ee34adc25155811ef0a41ac6"
+    },
+    "Sources/OverlayKit/AppIconProvider.swift": {
+      "mode": "100644",
+      "oid": "f1614cd452b6ac4a6d9cb5f2f483b3474041b5a8"
+    },
+    "Sources/OverlayKit/ClassicSkin.swift": {
+      "mode": "100644",
+      "oid": "d34ec332d648d2ec098d9a1db6bbee1479668972"
+    },
+    "Sources/OverlayKit/HighlightView.swift": {
+      "mode": "100644",
+      "oid": "613f21010d1b97a0aedb2950defaccaa5a1e3601"
+    },
+    "Sources/OverlayKit/HintPanelView.swift": {
+      "mode": "100644",
+      "oid": "05da525f7feda1e516460caeceffa34e65a51f58"
+    },
+    "Sources/OverlayKit/HintRow.swift": {
+      "mode": "100644",
+      "oid": "a9a202b58874c9474d6a09626a945001a2accd6e"
+    },
+    "Sources/OverlayKit/HoverTracker.swift": {
+      "mode": "100644",
+      "oid": "802b051dda0506f79743426be16ac573b7ffd02a"
+    },
+    "Sources/OverlayKit/LiquidGlassSkin.swift": {
+      "mode": "100644",
+      "oid": "280068c83ee542f2d298f76b14091c2d122c4e72"
+    },
+    "Sources/OverlayKit/OverlayGeometry.swift": {
+      "mode": "100644",
+      "oid": "58d5a88cb444f94a6b2d7040900a52fc17a031de"
+    },
+    "Sources/OverlayKit/OverlayHost.swift": {
+      "mode": "100644",
+      "oid": "27c29156cff06836986d7babf175b619f5c9a8a7"
+    },
+    "Sources/OverlayKit/OverlayHostingView.swift": {
+      "mode": "100644",
+      "oid": "535205f015052e88d3911ae7d4d411a5edc873b2"
+    },
+    "Sources/OverlayKit/OverlayPanel.swift": {
+      "mode": "100644",
+      "oid": "c208a1e5e10de039026fa312263bce7c94017d81"
+    },
+    "Sources/OverlayKit/OverlayPlacement.swift": {
+      "mode": "100644",
+      "oid": "032833b22553f030758fe61727ff586b6a9ff3f7"
+    },
+    "Sources/OverlayKit/OverlayStyle.swift": {
+      "mode": "100644",
+      "oid": "7bcfd41da78718a1a555c0db02c71b4cf2f41ae5"
+    },
+    "Sources/OverlayKit/PickerSurfaceView.swift": {
+      "mode": "100644",
+      "oid": "9a6d52140508e02c6c71a8fbd8cd7fbc27b77402"
+    },
+    "Sources/OverlayKit/ScreenPickerPresenter.swift": {
+      "mode": "100644",
+      "oid": "90727abc899a9c36c2be9c716b9d1c09cf725ef9"
+    },
+    "Sources/OverlayKit/SearchField.swift": {
+      "mode": "100644",
+      "oid": "419743f85de3ffa5720d34dc1c71b971e3183f36"
+    },
+    "Sources/OverlayKit/SearchFieldCommand.swift": {
+      "mode": "100644",
+      "oid": "948ac55b9a7983e17ca6a0d06befff0297903ea3"
+    },
+    "Sources/OverlayKit/SearchTextField.swift": {
+      "mode": "100644",
+      "oid": "6b75f9cfead321ab5dfd4c7364ea04d24030c3c7"
+    },
+    "Sources/OverlayKit/SettingsFeaturePreview.swift": {
+      "mode": "100644",
+      "oid": "4acef2af204a224f884879d7b2e206f4e2c66003"
+    },
+    "Sources/OverlayKit/SettingsPageTemplate.swift": {
+      "mode": "100644",
+      "oid": "d843a7857c02462dd1524059e5c120da67a84c6e"
+    },
+    "Sources/OverlayKit/SettingsPreview.swift": {
+      "mode": "100644",
+      "oid": "1511e689e60b73bfac3c6b140978e3c5055af2e0"
+    },
+    "Sources/OverlayKit/SettingsPreviewInput.swift": {
+      "mode": "100644",
+      "oid": "62d8d8d6e2c99cbb2aea813c7526298158d1cf09"
+    },
+    "Sources/OverlayKit/SettingsPreviewPlayback.swift": {
+      "mode": "100644",
+      "oid": "3dc70078eb8303a82c1f9b998b7517f288ee6cb5"
+    },
+    "Sources/OverlayKit/SettingsSidebarStyle.swift": {
+      "mode": "100644",
+      "oid": "0411e52368d34066fba3f3458f6883bb217b481a"
+    },
+    "Sources/OverlayKit/SettingsSkinViews.swift": {
+      "mode": "100644",
+      "oid": "18f3efc9778f8be2a6c1ec2b56ccac22f12b7256"
+    },
+    "Sources/OverlayKit/SettingsStyle.swift": {
+      "mode": "100644",
+      "oid": "627693ea6822d2fabeadd7c8591e5fbf1445796c"
+    },
+    "Sources/OverlayKit/SettingsTrashIcon.swift": {
+      "mode": "100644",
+      "oid": "3c28f5536565ca1d1d53e3a27692dfc8c39f8f84"
+    },
+    "Sources/OverlayKit/SettingsWindowIllustration.swift": {
+      "mode": "100644",
+      "oid": "a7b7878bdae6df73cba245f3d6437faacb19458e"
+    },
+    "Sources/OverlayKit/ShortcutKeycaps.swift": {
+      "mode": "100644",
+      "oid": "be531762e23898a1911e1bc3bff8e102aa165a7b"
+    },
+    "Sources/OverlayKit/ShortcutRecorder.swift": {
+      "mode": "100644",
+      "oid": "e755517fa3c3aaa306cebcdbf462ac3f649a62e1"
+    },
+    "Sources/OverlayKit/ShortcutRecorderSession.swift": {
+      "mode": "100644",
+      "oid": "612edded09fae0640131a9690d4b57877c43f108"
+    },
+    "Sources/OverlayKit/ShortcutRecording.swift": {
+      "mode": "100644",
+      "oid": "988f4d9ef16fd749564d58198d429346bc2230b5"
+    },
+    "Sources/OverlayKit/Skin.swift": {
+      "mode": "100644",
+      "oid": "09bce156363aa706cdb072f66af696dbba9f6e3d"
+    },
+    "Sources/OverlayKit/SkinViews.swift": {
+      "mode": "100644",
+      "oid": "91e0e84d5ba6657f047b784045d88b918d019bd4"
+    },
+    "Sources/OverlayKit/SkinnedRoot.swift": {
+      "mode": "100644",
+      "oid": "aacaddaab29f9ca43d3b402398ee39ac2c014536"
+    },
+    "Sources/OverlayKit/SurfaceRole.swift": {
+      "mode": "100644",
+      "oid": "5f4e6117c4eff91e64bb6ba12f7429702b26bb7f"
+    },
+    "Sources/OverlayKit/TanglerMark.swift": {
+      "mode": "100644",
+      "oid": "2f6375027afd3f0f6e0c4e5f671b8de611deb1c1"
+    },
+    "Sources/OverlayKit/ThumbnailCard.swift": {
+      "mode": "100644",
+      "oid": "741c6efc2220face468a533257a1e3e955419bb6"
+    },
+    "Sources/OverlayKit/ThumbnailCardLayout.swift": {
+      "mode": "100644",
+      "oid": "a8302a6afc5663dd07796e87d1066db3ac1f05ac"
+    },
+    "Sources/OverlayKit/WindowPicker.swift": {
+      "mode": "100644",
+      "oid": "d647ebe447cb9bdea5e3b241b461e60405e217e4"
+    },
+    "Sources/OverlayKit/WindowPickerModel.swift": {
+      "mode": "100644",
+      "oid": "23273fa78a947797e6fe2544f0f51ff2b556d394"
+    },
+    "Sources/OverlayKit/WindowPickerOverlay.swift": {
+      "mode": "100644",
+      "oid": "1aad44b561960062d583076fe2e6efbd92a0596d"
+    },
+    "Sources/OverlayKit/ZoneStyle.swift": {
+      "mode": "100644",
+      "oid": "cc86da838f7848a4dc999bfa65868665f37acbce"
+    },
+    "Sources/SettingsKit/UserDefaultsSettingsStore.swift": {
+      "mode": "100644",
+      "oid": "e89d6834bb505fdf01cf505de2b4a700026679f5"
+    },
+    "Sources/Switcher/HoldModifiers.swift": {
+      "mode": "100644",
+      "oid": "fac95d47015f3deb93b81286718400be4a11a3cd"
+    },
+    "Sources/Switcher/SwitcherCommands.swift": {
+      "mode": "100644",
+      "oid": "0bed019c5762f91ed4f57ce5295eff922997223b"
+    },
+    "Sources/Switcher/SwitcherController.swift": {
+      "mode": "100644",
+      "oid": "053c9b74311199534b3a8818b5d3ea55c8bce02a"
+    },
+    "Sources/Switcher/SwitcherEnvironment.swift": {
+      "mode": "100644",
+      "oid": "2640faa1181c4909eafcea80ffe727d13b28e5c9"
+    },
+    "Sources/Switcher/SwitcherKeys.swift": {
+      "mode": "100644",
+      "oid": "d794fae3379b5fe6bf12305678b0fdde81d098e4"
+    },
+    "Sources/Switcher/SwitcherLayout.swift": {
+      "mode": "100644",
+      "oid": "9fcc0242adb7eb8e51d2b37f307e597e8cba7404"
+    },
+    "Sources/Switcher/SwitcherModel.swift": {
+      "mode": "100644",
+      "oid": "0e81c2a1d3bde1baf873f7024366a5b98deba2cf"
+    },
+    "Sources/Switcher/SwitcherModule.swift": {
+      "mode": "100644",
+      "oid": "ecd04526089fd3dd53c568ec385b08be70da377b"
+    },
+    "Sources/Switcher/SwitcherPresenter.swift": {
+      "mode": "100644",
+      "oid": "d8f5eb160edc75eb6ad2bc508b5e0bb269dffd69"
+    },
+    "Sources/Switcher/SwitcherRequest.swift": {
+      "mode": "100644",
+      "oid": "e7134ef6c158cfcc09fb31ec4d1e3dc477ec72d8"
+    },
+    "Sources/Switcher/SwitcherScope.swift": {
+      "mode": "100644",
+      "oid": "2aa29cc0d518f0ee7d322d94bc541abd5cff048a"
+    },
+    "Sources/Switcher/SwitcherSession.swift": {
+      "mode": "100644",
+      "oid": "7fd08a53520b6cfdab76d5e7b2461b4d2dba7c2c"
+    },
+    "Sources/Switcher/SwitcherSettings.swift": {
+      "mode": "100644",
+      "oid": "172cf1e73301aab0a8f89b0547324eeb7de82c18"
+    },
+    "Sources/Switcher/SwitcherSettingsView.swift": {
+      "mode": "100644",
+      "oid": "316bb8047637284eee8c4cd14b567c846f6c934d"
+    },
+    "Sources/Switcher/SwitcherText.swift": {
+      "mode": "100644",
+      "oid": "1f6fd51ce7c9414251b42f6b4bb01d46e2f40655"
+    },
+    "Sources/Switcher/SwitcherView.swift": {
+      "mode": "100644",
+      "oid": "437a3018997696842f3d5b50a2bc214d8f5840d6"
+    },
+    "Sources/Switcher/ThumbnailFeed.swift": {
+      "mode": "100644",
+      "oid": "bebe7d1ceb1e9e77e04991452974f7e9f0bd709d"
+    },
+    "Sources/Switcher/WindowCatalog.swift": {
+      "mode": "100644",
+      "oid": "2e5f24af6cef9ec97a3ae5bc84622ac8d765c2b7"
+    },
+    "Sources/TabGroups/Bar/TabBarPanels.swift": {
+      "mode": "100644",
+      "oid": "12096b5bd732127fc9ad26e21e6d15305152c4f1"
+    },
+    "Sources/TabGroups/Bar/TabBarPresenting.swift": {
+      "mode": "100644",
+      "oid": "189d4a5769aafd100a65b21fb377aef352e7de47"
+    },
+    "Sources/TabGroups/Bar/TabBarView.swift": {
+      "mode": "100644",
+      "oid": "db5e553df5ce3d32ac6e73ad4fb1f3da031b295d"
+    },
+    "Sources/TabGroups/Control/JoinDragTracker.swift": {
+      "mode": "100644",
+      "oid": "49982646b102fbbfb57fcbde5eb84e2c5862cce7"
+    },
+    "Sources/TabGroups/Control/SettleTracker.swift": {
+      "mode": "100644",
+      "oid": "9a85bf927acae29f2292439239c7cbf2204cd525"
+    },
+    "Sources/TabGroups/Control/TabScheduler.swift": {
+      "mode": "100644",
+      "oid": "e528a4b1067096aa5b8ce4cf63af939467f9dd83"
+    },
+    "Sources/TabGroups/Control/TabsController+Grouping.swift": {
+      "mode": "100644",
+      "oid": "20257b3dd8e511eee231013cb30238d4cfe4dbcf"
+    },
+    "Sources/TabGroups/Control/TabsController+Service.swift": {
+      "mode": "100644",
+      "oid": "91e0cba18167fe9cef2c9300f61967ab8e067a04"
+    },
+    "Sources/TabGroups/Control/TabsController.swift": {
+      "mode": "100644",
+      "oid": "6ce68de27192eb9f392e922ca60a8fdc82345cd4"
+    },
+    "Sources/TabGroups/Model/TabBarArrangement.swift": {
+      "mode": "100644",
+      "oid": "a3eb87adf26f18d10f3902ed1c322e82af913f36"
+    },
+    "Sources/TabGroups/Model/TabBarLayout.swift": {
+      "mode": "100644",
+      "oid": "8422cb33fb4c23defd3b43e44489ff7ed59f787d"
+    },
+    "Sources/TabGroups/Model/TabBook.swift": {
+      "mode": "100644",
+      "oid": "68553f1ab241197e790ba4fb151ed49ca474f7e3"
+    },
+    "Sources/TabGroups/Model/TabGeometry.swift": {
+      "mode": "100644",
+      "oid": "419cff6f4fece6ddb5b939c2937dd2da71e28340"
+    },
+    "Sources/TabGroups/Model/TabGroup.swift": {
+      "mode": "100644",
+      "oid": "13798f062a93ecfd4043fe11f9a2ac640f1e8500"
+    },
+    "Sources/TabGroups/TabCommands.swift": {
+      "mode": "100644",
+      "oid": "3019941c5321e98a9f93d8bc5bba1a3c552b5a90"
+    },
+    "Sources/TabGroups/TabGroupProvider.swift": {
+      "mode": "100644",
+      "oid": "ad65970bd867852eb80b95f769ebb72e9867948c"
+    },
+    "Sources/TabGroups/TabGroupsModule.swift": {
+      "mode": "100644",
+      "oid": "6febc8fb57eb2b3db340dfc6cf47f2b4e07dc814"
+    },
+    "Sources/TabGroups/TabGroupsSettings.swift": {
+      "mode": "100644",
+      "oid": "793506992fc703644643c48107d95604e1a9f32b"
+    },
+    "Sources/TabGroups/TabGroupsSettingsModel.swift": {
+      "mode": "100644",
+      "oid": "a4d9beb206329f269685238d1eeae0a12883d64a"
+    },
+    "Sources/TabGroups/TabGroupsSettingsView.swift": {
+      "mode": "100644",
+      "oid": "1938e895b24c139e958b758e3fe87aa52cf42be8"
+    },
+    "Sources/WindowKit/AX/AXFailure.swift": {
+      "mode": "100644",
+      "oid": "75116aa49425b6f9d54b78ac57c1d671454314ea"
+    },
+    "Sources/WindowKit/AX/AXHandle.swift": {
+      "mode": "100644",
+      "oid": "d958ba7a2263c65639ed35c3a44da40f9cefdaf4"
+    },
+    "Sources/WindowKit/AX/AXRead.swift": {
+      "mode": "100644",
+      "oid": "68e2986bde07b362895a0437476ef243a25b8e17"
+    },
+    "Sources/WindowKit/AX/AppMenuReader.swift": {
+      "mode": "100644",
+      "oid": "c7862c61351a2abe15755f8810a16d2225804e60"
+    },
+    "Sources/WindowKit/AX/NewWindowMenu.swift": {
+      "mode": "100644",
+      "oid": "e35b5a80eed49f7f921181c75369e2931e53bf89"
+    },
+    "Sources/WindowKit/AX/NewWindowOpener.swift": {
+      "mode": "100644",
+      "oid": "3e31d328b12eee36c1fa91de4b9c1f3b37a86264"
+    },
+    "Sources/WindowKit/Displays/DisplayConversion.swift": {
+      "mode": "100644",
+      "oid": "8e0a41f3bf7fd79a079baad984c493c8403dd022"
+    },
+    "Sources/WindowKit/Displays/DisplayLocator.swift": {
+      "mode": "100644",
+      "oid": "847571ca9d0802cf4d34e370dd79fc09a2aa29a6"
+    },
+    "Sources/WindowKit/Displays/ScreenReader.swift": {
+      "mode": "100644",
+      "oid": "8a054f6d278e32904e68f79db7295999d672879e"
+    },
+    "Sources/WindowKit/Dock/DockGeometry.swift": {
+      "mode": "100644",
+      "oid": "a95ff87578e070c0bee241f7822d968797a25016"
+    },
+    "Sources/WindowKit/Dock/DockReader.swift": {
+      "mode": "100644",
+      "oid": "0cd9e35c45b2a6fa4237b130b4870a3f0b88b41e"
+    },
+    "Sources/WindowKit/Dock/ExposeObserver.swift": {
+      "mode": "100644",
+      "oid": "7e995f4690a81012bb5413c2c9877998692b9af0"
+    },
+    "Sources/WindowKit/Dock/ExposeWatcher.swift": {
+      "mode": "100644",
+      "oid": "fbb883ac39628683e36a5cc8c4d0d6b6e7421785"
+    },
+    "Sources/WindowKit/Dock/MissionControlReader.swift": {
+      "mode": "100644",
+      "oid": "00a41545acf2467f3f3b317850b20c7d7d84b77d"
+    },
+    "Sources/WindowKit/Events/AXObserverBackend.swift": {
+      "mode": "100644",
+      "oid": "ad23beabcbc54b08ee44d4c1060c4fc8f61e3e44"
+    },
+    "Sources/WindowKit/Events/NotificationDispatch.swift": {
+      "mode": "100644",
+      "oid": "4dd860b38fb445d1552fbacdcf2c2f84e6b68c87"
+    },
+    "Sources/WindowKit/Events/ObserverHub.swift": {
+      "mode": "100644",
+      "oid": "b969697e65a7edd4faf96dde7a2ec2d052f7c4f1"
+    },
+    "Sources/WindowKit/Events/PendingKeys.swift": {
+      "mode": "100644",
+      "oid": "9301e6bcf669584a36e9e1f410a7174718c89811"
+    },
+    "Sources/WindowKit/Events/PermissionMonitor.swift": {
+      "mode": "100644",
+      "oid": "eeb283ccd5886b8bcee18bb7557427ea77d349a9"
+    },
+    "Sources/WindowKit/Events/RunLoopThread.swift": {
+      "mode": "100644",
+      "oid": "da93336dc6e403571e219939f1ee40310be0f874"
+    },
+    "Sources/WindowKit/Events/WindowEventHandler.swift": {
+      "mode": "100644",
+      "oid": "352a722f1a45f7f184a926fa62f459834eb83cf0"
+    },
+    "Sources/WindowKit/Events/WindowNotification.swift": {
+      "mode": "100644",
+      "oid": "657e8bc8614991244ace38c2676c746a6a7b186e"
+    },
+    "Sources/WindowKit/Events/WorkspaceChange.swift": {
+      "mode": "100644",
+      "oid": "5141c6a23c46d47e6be8c1d8b23458530009633d"
+    },
+    "Sources/WindowKit/Events/WorkspaceMonitor.swift": {
+      "mode": "100644",
+      "oid": "b4f95a342596e985ee8d5a58ee68f6edc1300eea"
+    },
+    "Sources/WindowKit/Frames/AXFrameBackend.swift": {
+      "mode": "100644",
+      "oid": "2f143d8d0d615f66e41b53aacf8a54726716ed27"
+    },
+    "Sources/WindowKit/Frames/DispatchAnimationClock.swift": {
+      "mode": "100644",
+      "oid": "f23dab3aa0683712e7a929e116ba784626e28859"
+    },
+    "Sources/WindowKit/Frames/FrameApplier.swift": {
+      "mode": "100644",
+      "oid": "8c6b16099d749bdb528238514fbe60ed5eb640b0"
+    },
+    "Sources/WindowKit/Frames/FramePipeline.swift": {
+      "mode": "100644",
+      "oid": "c0afba7c768def79d663066b4b271755f6ffa5df"
+    },
+    "Sources/WindowKit/Frames/FrameTransition.swift": {
+      "mode": "100644",
+      "oid": "fd87d8ecd3fb45444fe40b8edf48eed1db49244d"
+    },
+    "Sources/WindowKit/Frames/FrameWriter.swift": {
+      "mode": "100644",
+      "oid": "e7821880c5582f20b6ea749224a61c119f14912f"
+    },
+    "Sources/WindowKit/Frames/WindowAnimator.swift": {
+      "mode": "100644",
+      "oid": "31778a1f759cf1c89ecad7520e276e9719e9995e"
+    },
+    "Sources/WindowKit/Inventory/AXInventorySource.swift": {
+      "mode": "100644",
+      "oid": "9cef9d7e9bb82c451af4d111e2c652544f6b8431"
+    },
+    "Sources/WindowKit/Inventory/DocumentURL.swift": {
+      "mode": "100644",
+      "oid": "68b0d694dd5fd7c31d274e1581fee212c7ef684e"
+    },
+    "Sources/WindowKit/Inventory/InventoryScanner.swift": {
+      "mode": "100644",
+      "oid": "508ec6bc9081165ee6964498bc3f91829798686f"
+    },
+    "Sources/WindowKit/Inventory/InventorySource.swift": {
+      "mode": "100644",
+      "oid": "6fd7d832f7b0cb7ab8e434aee1084099a9f7ea86"
+    },
+    "Sources/WindowKit/Inventory/ReadStamps.swift": {
+      "mode": "100644",
+      "oid": "e9f073ad6e4f68bbf929cd31a7d2855e8d722b88"
+    },
+    "Sources/WindowKit/Inventory/ScanCoordinator.swift": {
+      "mode": "100644",
+      "oid": "00c7bddbd72b8bdc63fb7f3adbf8fcd444cb62a4"
+    },
+    "Sources/WindowKit/Inventory/ScanResult.swift": {
+      "mode": "100644",
+      "oid": "095f260a0679d1660521dd908ea2acdce41bc69a"
+    },
+    "Sources/WindowKit/Inventory/ScanScope.swift": {
+      "mode": "100644",
+      "oid": "91be4e60409455d63032356a2eefc03759899357"
+    },
+    "Sources/WindowKit/Inventory/UnlistedWindows.swift": {
+      "mode": "100644",
+      "oid": "c9844bea2c516c9d064cd4f09de782ee391a6ad5"
+    },
+    "Sources/WindowKit/Inventory/WindowDiff.swift": {
+      "mode": "100644",
+      "oid": "a2aa9daefe8c6aec98c65833edaba2606016aabf"
+    },
+    "Sources/WindowKit/Inventory/WindowFields.swift": {
+      "mode": "100644",
+      "oid": "707f8ccf2dae6c3d93f57b7df80eff07a8518c08"
+    },
+    "Sources/WindowKit/Inventory/WindowHitTest.swift": {
+      "mode": "100644",
+      "oid": "632f4e732678fbcb042cd419d1b47751ad0037f2"
+    },
+    "Sources/WindowKit/Inventory/WindowMatcher.swift": {
+      "mode": "100644",
+      "oid": "a9f3765ba2bab71d19545451ce6ec024683e5602"
+    },
+    "Sources/WindowKit/Inventory/WindowRegistry.swift": {
+      "mode": "100644",
+      "oid": "a73cfa8814ec9888b9809742eede52b8b374ff9a"
+    },
+    "Sources/WindowKit/Inventory/WindowServerRecord.swift": {
+      "mode": "100644",
+      "oid": "506f2b1a55d5c0e6935bdd2f3f284f19c61f76db"
+    },
+    "Sources/WindowKit/Inventory/WindowSnapshotInfo.swift": {
+      "mode": "100644",
+      "oid": "8745ecace5b8f45431899a4a0a5f2c378f29d6bc"
+    },
+    "Sources/WindowKit/Private/CapabilityProbe.swift": {
+      "mode": "100644",
+      "oid": "00760b53fd37d1e153cc759e6ef2d556bd86c9ef"
+    },
+    "Sources/WindowKit/Private/DockNotification.swift": {
+      "mode": "100644",
+      "oid": "89adfacceb558ec247d4eac2be04e08821971e6f"
+    },
+    "Sources/WindowKit/Private/DockSwipe.swift": {
+      "mode": "100644",
+      "oid": "fa2eeb5ecdb5caeaf3dd84ced0b8d2db16686fcd"
+    },
+    "Sources/WindowKit/Private/LiveProbe.swift": {
+      "mode": "100644",
+      "oid": "99344a4835b5ce3343cbd28df315bf521cbdaa66"
+    },
+    "Sources/WindowKit/Private/PreciseFocus.swift": {
+      "mode": "100644",
+      "oid": "91fd8421d6fd95e1958fba912a8b8da08905bac2"
+    },
+    "Sources/WindowKit/Private/PrivateSpaces.swift": {
+      "mode": "100644",
+      "oid": "b6377767e148ec5de4e89453472e2a9c47bdf003"
+    },
+    "Sources/WindowKit/Private/PrivateSymbol.swift": {
+      "mode": "100644",
+      "oid": "d8ae31650b8322032172a9c38a9ad1b9a2e8caa5"
+    },
+    "Sources/WindowKit/Private/RemoteWindowFinder.swift": {
+      "mode": "100644",
+      "oid": "b0df36ce7f3f7a6e0407fe9320aea3e45f41f456"
+    },
+    "Sources/WindowKit/Private/ScreenLock.swift": {
+      "mode": "100644",
+      "oid": "0df2221322462619395744eb1ccf1ee87d588aec"
+    },
+    "Sources/WindowKit/Private/SpaceMover.swift": {
+      "mode": "100644",
+      "oid": "d2b7f98ce35ad9a0c1d199ecdfffd51d59cbbbfc"
+    },
+    "Sources/WindowKit/Private/WindowIdentity.swift": {
+      "mode": "100644",
+      "oid": "778ce7aa447586ce9914bc3107601d4b158b5ae0"
+    },
+    "Sources/WindowKit/Spaces/DesktopReports.swift": {
+      "mode": "100644",
+      "oid": "90bee6cb9344b0b29c41fc449b21270fd31fdb3b"
+    },
+    "Sources/WindowKit/Spaces/DesktopSwipe.swift": {
+      "mode": "100644",
+      "oid": "07b29dc50b532db2047fbce6afb30649696c6880"
+    },
+    "Sources/WindowKit/Spaces/DesktopSwitch.swift": {
+      "mode": "100644",
+      "oid": "e0d34de6041a6803dcba5ca97e77ff03043d1340"
+    },
+    "Sources/WindowKit/Spaces/DesktopWatch.swift": {
+      "mode": "100644",
+      "oid": "2aa590ddc3ac6e07569384608e1631a10a7fd0b8"
+    },
+    "Sources/WindowKit/Spaces/MissionControl.swift": {
+      "mode": "100644",
+      "oid": "f9eca1dbecbc7fe67623232fab09ab97af35453e"
+    },
+    "Sources/WindowKit/Spaces/SeparateSpaces.swift": {
+      "mode": "100644",
+      "oid": "d0c0cc272c3be9c491d36e8ff247919d0e6f5141"
+    },
+    "Sources/WindowKit/Spaces/SpaceMoves.swift": {
+      "mode": "100644",
+      "oid": "203d726b4a50ff7837ee896ceb100da546c01b46"
+    },
+    "Sources/WindowKit/Spaces/SpaceOccupancy.swift": {
+      "mode": "100644",
+      "oid": "c61d14c908f0bd8506a6b40d36bd54a749e9de0b"
+    },
+    "Sources/WindowKit/Spaces/SpaceParser.swift": {
+      "mode": "100644",
+      "oid": "8db1b98fc7a289a6bacceff9a6f5ccb429804066"
+    },
+    "Sources/WindowKit/Support/LatestLookup.swift": {
+      "mode": "100644",
+      "oid": "2f1f0bca98efc42c4a586b542e94ecf23f32c419"
+    },
+    "Sources/WindowKit/Support/Lifecycle.swift": {
+      "mode": "100644",
+      "oid": "f1c79b9e3e7e54517ddd829dfba45d78fed39558"
+    },
+    "Sources/WindowKit/Support/Locked.swift": {
+      "mode": "100644",
+      "oid": "370c9eca95d0b927ffc7a9f1ad5825a870f0db9e"
+    },
+    "Sources/WindowKit/SystemWindowService+Actions.swift": {
+      "mode": "100644",
+      "oid": "641c34f5c1ae74076fe291af17c2ae921b636a32"
+    },
+    "Sources/WindowKit/SystemWindowService+Reads.swift": {
+      "mode": "100644",
+      "oid": "0ee7c13068e7d5434925028710976e6a97a616b6"
+    },
+    "Sources/WindowKit/SystemWindowService+Reasons.swift": {
+      "mode": "100644",
+      "oid": "36f98999d8b5f0d276b859993839ecb05d1ec9e8"
+    },
+    "Sources/WindowKit/SystemWindowService.swift": {
+      "mode": "100644",
+      "oid": "e22a48ee4ad7aa4dd47217ae17b5caa87f4a5ccd"
+    },
+    "Sources/WindowKit/WindowActions.swift": {
+      "mode": "100644",
+      "oid": "fe0c509d99ad647584bc13fbb5ef67b7bcd0223a"
+    },
+    "Sources/WindowKit/WindowCapabilityStatus.swift": {
+      "mode": "100644",
+      "oid": "5c3fdb64c9f68e1acba33a6e5c786298db84960d"
+    },
+    "Sources/WindowLayout/CommandOutcome.swift": {
+      "mode": "100644",
+      "oid": "1053056aa22c0f36a61142df2d838822ca2a5965"
+    },
+    "Sources/WindowLayout/DesktopTargets.swift": {
+      "mode": "100644",
+      "oid": "19a0e73aac176a43010937b86b68b7336d9670d5"
+    },
+    "Sources/WindowLayout/Desktops/DesktopCommands.swift": {
+      "mode": "100644",
+      "oid": "c6e9333595fb63e4ee1113d587a03f611808d0a5"
+    },
+    "Sources/WindowLayout/Desktops/DesktopController.swift": {
+      "mode": "100644",
+      "oid": "96a54996156ae543cdb981c49d39804c08a5e3e8"
+    },
+    "Sources/WindowLayout/Desktops/DesktopKeys.swift": {
+      "mode": "100644",
+      "oid": "7dcfe3dcda6b921a071630bdb2717f17a3cc1de3"
+    },
+    "Sources/WindowLayout/Desktops/DesktopPicker.swift": {
+      "mode": "100644",
+      "oid": "6035212a535e71242c309d2172bc3f48c6e29bff"
+    },
+    "Sources/WindowLayout/DisplayLookup.swift": {
+      "mode": "100644",
+      "oid": "cb914c213677dd756a2a5029ffdc97f73c9a586e"
+    },
+    "Sources/WindowLayout/DisplayNeighbors.swift": {
+      "mode": "100644",
+      "oid": "fdf1fc2413108e7966505ebb62266082266b9a83"
+    },
+    "Sources/WindowLayout/DragController.swift": {
+      "mode": "100644",
+      "oid": "420bceaf3032956d2f507cd140885cd5ee0096c7"
+    },
+    "Sources/WindowLayout/DragTracker.swift": {
+      "mode": "100644",
+      "oid": "013f1b9859c3dfbdf1ed0be28829c1c2ee4c993c"
+    },
+    "Sources/WindowLayout/LayoutCommand.swift": {
+      "mode": "100644",
+      "oid": "d342f4cd85915dcafb4584668132e059d04ff2a4"
+    },
+    "Sources/WindowLayout/LayoutCommandRunner.swift": {
+      "mode": "100644",
+      "oid": "afda34a5cb37dfcacfb96045a51ec2b4c44d999a"
+    },
+    "Sources/WindowLayout/LayoutCommands.swift": {
+      "mode": "100644",
+      "oid": "669d3161dca0eb2c7e717c3bbb65e9b49b4c19a0"
+    },
+    "Sources/WindowLayout/LayoutGeometry.swift": {
+      "mode": "100644",
+      "oid": "11be741ec4130079749201e93565d659413e39a6"
+    },
+    "Sources/WindowLayout/LayoutPlacementService.swift": {
+      "mode": "100644",
+      "oid": "79c2fe8ad4d61ba040788750f4eeea923c4e6eab"
+    },
+    "Sources/WindowLayout/LayoutSettings.swift": {
+      "mode": "100644",
+      "oid": "c7c8cf562dc51bd42261e08de6a341017a961636"
+    },
+    "Sources/WindowLayout/LayoutSettingsModel.swift": {
+      "mode": "100644",
+      "oid": "6d92d557e7a0851a068f32ff482093a5c8e6af09"
+    },
+    "Sources/WindowLayout/LayoutSettingsView.swift": {
+      "mode": "100644",
+      "oid": "03e823b904932c4b7dbf7839892e9e59eb67fce9"
+    },
+    "Sources/WindowLayout/OuterEdges.swift": {
+      "mode": "100644",
+      "oid": "dd177761aab3ab584bde8c7f7dd6f8e2ff1a7262"
+    },
+    "Sources/WindowLayout/SnapPreviewChange.swift": {
+      "mode": "100644",
+      "oid": "a3c05a0d91c3d90b86744ffad4c4dc8c67da7202"
+    },
+    "Sources/WindowLayout/SnapPreviewLayerView.swift": {
+      "mode": "100644",
+      "oid": "dc2f863d9797c93bcd32ff1e44a82d81fc52d4d9"
+    },
+    "Sources/WindowLayout/SnapPreviewOverlay.swift": {
+      "mode": "100644",
+      "oid": "37ec04773557220fd46da55c8e31913aedae9058"
+    },
+    "Sources/WindowLayout/SystemTiling.swift": {
+      "mode": "100644",
+      "oid": "87ef419ed2ee0abc0522c2c4b137afdd66551b41"
+    },
+    "Sources/WindowLayout/WindowLayoutModule.swift": {
+      "mode": "100644",
+      "oid": "51ae8968fbd917495610e674d527dbd604c84ef8"
+    },
+    "Sources/WindowLayout/WindowMemory.swift": {
+      "mode": "100644",
+      "oid": "2cb6c90567339c8f2176a7bdfcb428628f2a3a29"
+    },
+    "Sources/WindowLayout/WindowMover.swift": {
+      "mode": "100644",
+      "oid": "84b39c21b71ecc03194c9f23cd27537d99418745"
+    },
+    "Sources/Workspaces/Desktops/WorkspaceDesktops.swift": {
+      "mode": "100644",
+      "oid": "b72912d397a83dad15461bcc9f37cfe2cea309fd"
+    },
+    "Sources/Workspaces/Expanding/ExpansionPlanner.swift": {
+      "mode": "100644",
+      "oid": "10bc6711824be42c97e8a4ce6a125b5e05b945d8"
+    },
+    "Sources/Workspaces/Expanding/ExpansionReport.swift": {
+      "mode": "100644",
+      "oid": "eef94c6b2aa71ec86912bf5666cb18c4a98291d6"
+    },
+    "Sources/Workspaces/Expanding/WorkspaceExpander.swift": {
+      "mode": "100644",
+      "oid": "fcd737109ef92fb6358080bc6b7fb2c701a4847b"
+    },
+    "Sources/Workspaces/Feedback/HUDNotifier.swift": {
+      "mode": "100644",
+      "oid": "551aaf69243242e011677ccc5645448225f6cc1e"
+    },
+    "Sources/Workspaces/Feedback/WorkspaceHUDView.swift": {
+      "mode": "100644",
+      "oid": "61751fb807c71318d54ba450a946f6cfee1cff63"
+    },
+    "Sources/Workspaces/Feedback/WorkspaceNotifying.swift": {
+      "mode": "100644",
+      "oid": "1de1c507a3e1ba21e407c5622c62959cfd38f9f4"
+    },
+    "Sources/Workspaces/Model/OpenRequest.swift": {
+      "mode": "100644",
+      "oid": "afa2a65e6e6a09327ee9ae781426aa52cd3d6119"
+    },
+    "Sources/Workspaces/Model/ReopenTarget.swift": {
+      "mode": "100644",
+      "oid": "3705d4d2a2bc01bba8bdf963929c7502a422c8a2"
+    },
+    "Sources/Workspaces/Model/SavedTabGroup.swift": {
+      "mode": "100644",
+      "oid": "44e9021a9b283e0b3ade8b6f29dec397bc54f987"
+    },
+    "Sources/Workspaces/Model/SavedWindow.swift": {
+      "mode": "100644",
+      "oid": "abceae3bae053fb54ff3bcddca720a0cd3f73535"
+    },
+    "Sources/Workspaces/Model/Windowing.swift": {
+      "mode": "100644",
+      "oid": "ba7a2561d7272fe5940c70277bdc65e1ca0a0a47"
+    },
+    "Sources/Workspaces/Model/Workspace.swift": {
+      "mode": "100644",
+      "oid": "1201fa83d8a08165a9d962f6b0f1a37b9ea02b65"
+    },
+    "Sources/Workspaces/Model/WorkspaceMigration.swift": {
+      "mode": "100644",
+      "oid": "5b1e9a90093ee4e90e82086c2a7a676c726fbc3e"
+    },
+    "Sources/Workspaces/Model/WorkspaceSettings.swift": {
+      "mode": "100644",
+      "oid": "3cb09cedfd6766ac74977b7e096861072e686cd3"
+    },
+    "Sources/Workspaces/Opening/ApplicationOpener.swift": {
+      "mode": "100644",
+      "oid": "18c0b32df93d35bd76ca816b208fbfe6b900fe8f"
+    },
+    "Sources/Workspaces/Opening/ApplicationOpening.swift": {
+      "mode": "100644",
+      "oid": "9263f41d1b811d6508aa99173a2e8e666683bd56"
+    },
+    "Sources/Workspaces/Opening/OpenEnvironment.swift": {
+      "mode": "100644",
+      "oid": "f5a6aac8f2ee76f83008d249d1885a14b82e5876"
+    },
+    "Sources/Workspaces/Opening/SystemOpenEnvironment.swift": {
+      "mode": "100644",
+      "oid": "8b372c156e02b509d4c85f6fd06baf46fe48eb90"
+    },
+    "Sources/Workspaces/Restoring/RestoreOutcomeText.swift": {
+      "mode": "100644",
+      "oid": "15413ba636e04af7782074af3b1a40f235d54c3b"
+    },
+    "Sources/Workspaces/Restoring/RestoreTiming.swift": {
+      "mode": "100644",
+      "oid": "22f064b1d0511712e483046081813263e602ed1c"
+    },
+    "Sources/Workspaces/Restoring/WindowIdentity.swift": {
+      "mode": "100644",
+      "oid": "db8506e7f5f67383dba6b2ecc046c6cb1dc66f5b"
+    },
+    "Sources/Workspaces/Restoring/WindowMatcher.swift": {
+      "mode": "100644",
+      "oid": "9c12171413b5bd423dcd19c7a5ae628ede6bd103"
+    },
+    "Sources/Workspaces/Saving/Checkpoint.swift": {
+      "mode": "100644",
+      "oid": "e6f9f24bf06771e2a276ab10e1868f671f0daf65"
+    },
+    "Sources/Workspaces/Saving/CheckpointAutoSaver.swift": {
+      "mode": "100644",
+      "oid": "c8d1058a031ade953baf521369e56be0457d04b7"
+    },
+    "Sources/Workspaces/Saving/WindowCapture.swift": {
+      "mode": "100644",
+      "oid": "d82ecd77589b5eb0013587d16250f63a2cab5d92"
+    },
+    "Sources/Workspaces/Saving/WorkspaceLibrary.swift": {
+      "mode": "100644",
+      "oid": "fbc31797254bf479fe5e2f464d091b28df0e792e"
+    },
+    "Sources/Workspaces/Saving/WorkspaceLibraryError.swift": {
+      "mode": "100644",
+      "oid": "b87f4bd2ac5af94f1b9eea8dea89b5f38c5906e5"
+    },
+    "Sources/Workspaces/Settings/EntrySummary.swift": {
+      "mode": "100644",
+      "oid": "0b1e63b170654a69729a172b094c105936a85a28"
+    },
+    "Sources/Workspaces/Settings/ItemEditor.swift": {
+      "mode": "100644",
+      "oid": "7c268a85c8e58354d59f47248ef679c23f965fad"
+    },
+    "Sources/Workspaces/Settings/PreviewLayout.swift": {
+      "mode": "100644",
+      "oid": "4f8ed8227956f885c6964addbf72d60d8f01468b"
+    },
+    "Sources/Workspaces/Settings/WorkspaceAppList.swift": {
+      "mode": "100644",
+      "oid": "783df66945194fed7d2fb75c5129916254aba3b9"
+    },
+    "Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift": {
+      "mode": "100644",
+      "oid": "3e1941eb71989bc3ca1cb0e47b3621c20e29fb0b"
+    },
+    "Sources/Workspaces/Settings/WorkspaceBinDetailView.swift": {
+      "mode": "100644",
+      "oid": "6f6553a36562b9d864598caf6c66b389a6efe519"
+    },
+    "Sources/Workspaces/Settings/WorkspaceDetailView.swift": {
+      "mode": "100644",
+      "oid": "7a1f775553b644abe48cd8213a6cfde6261ef72d"
+    },
+    "Sources/Workspaces/Settings/WorkspacePreview.swift": {
+      "mode": "100644",
+      "oid": "1afb11018d9fc38fa5f68350e11a53aa694fcb5d"
+    },
+    "Sources/Workspaces/Settings/WorkspaceSettingsNavigation.swift": {
+      "mode": "100644",
+      "oid": "500b5f601f5f020a23ff34d127d13d19af9b172f"
+    },
+    "Sources/Workspaces/Settings/WorkspaceSettingsView.swift": {
+      "mode": "100644",
+      "oid": "0b8b381f75f9e1650c44a36b781be154d065a0c3"
+    },
+    "Sources/Workspaces/Settings/ZoneName.swift": {
+      "mode": "100644",
+      "oid": "201f94c1ad8433a42ec2652cfeef26a0043de0b9"
+    },
+    "Sources/Workspaces/WorkspaceCommandSource.swift": {
+      "mode": "100644",
+      "oid": "5caa00b42cf1c8e85abf983827d4f0824b628974"
+    },
+    "Sources/Workspaces/WorkspaceCommands.swift": {
+      "mode": "100644",
+      "oid": "857a217918026e2969cc8b91027b1952c40321da"
+    },
+    "Sources/Workspaces/WorkspaceEnvironment.swift": {
+      "mode": "100644",
+      "oid": "00c96c74bcee1001c84a7168bec8f69cedf7ba57"
+    },
+    "Sources/Workspaces/WorkspacesController.swift": {
+      "mode": "100644",
+      "oid": "0be4b4bf2682b31b98e1ead3cec72eae6b73fce7"
+    },
+    "Sources/Workspaces/WorkspacesModule.swift": {
+      "mode": "100644",
+      "oid": "68c90a1da7f37595ef9e200fbbfa191f0221764e"
+    },
+    "docs/COMMANDS.macos.md": {
+      "mode": "100644",
+      "oid": "72e8dff992bd4cc4b0cc29239d82c8b3d5901211"
+    },
+    "docs/COMMANDS.md": {
+      "mode": "100644",
+      "oid": "4ff9aa51ddbe889d4dd9b46453f21a8a4679bfa2"
+    },
+    "docs/README.zh-CN.md": {
+      "mode": "100644",
+      "oid": "c5bf98552ef0990247597146321d7193ec4a77a6"
+    },
+    "docs/assets/badge-commands.svg": {
+      "mode": "100644",
+      "oid": "311f9d764a8fee9f398aa4bacc8ec63ada1a4228"
+    },
+    "docs/assets/badge-download.svg": {
+      "mode": "100644",
+      "oid": "5429c7fce0838db2c7080c599ee2b39ca353f2a3"
+    },
+    "docs/assets/badge-license.svg": {
+      "mode": "100644",
+      "oid": "0ce442ec21f40dbcd81b2c10ab4b3256938e97e2"
+    },
+    "docs/assets/badge-macos.svg": {
+      "mode": "100644",
+      "oid": "f07a639f5374c3a410ef75baf30b78d0e599b2ba"
+    },
+    "docs/assets/badge-quick-start.svg": {
+      "mode": "100644",
+      "oid": "be03d28cc44b8ad252d2dd86cdbaca7073769289"
+    },
+    "docs/assets/badge-releases.svg": {
+      "mode": "100644",
+      "oid": "48349c45d8a0e0c39fd4d3c53cd8b343fdeded76"
+    },
+    "docs/assets/badge-swift.svg": {
+      "mode": "100644",
+      "oid": "af2628c6b43e100cf0c2a8edae05e57ca7857c49"
+    },
+    "docs/assets/badge-website.svg": {
+      "mode": "100644",
+      "oid": "a3e7314fc8858e710a1ab4f922ce7669d410e92a"
+    },
+    "docs/assets/banner.svg": {
+      "mode": "100644",
+      "oid": "6367df53dcacfb9af1d648a991f5b55acc0bac21"
+    },
+    "docs/assets/layout-demo.svg": {
+      "mode": "100644",
+      "oid": "e863f8e6721918b569c93dc846bbd5a43e1285ee"
+    },
+    "docs/assets/tabs-demo.svg": {
+      "mode": "100644",
+      "oid": "00852255812d9673ec562e5bbc6903ab7a168d7a"
+    },
+    "docs/assets/workspace-demo.svg": {
+      "mode": "100644",
+      "oid": "740a84414e9343aab30bc40dc21aff3e54c3cd89"
+    },
+    "index.html": {
+      "mode": "100644",
+      "oid": "63ae1ff1fee2d84ea9dcf90ef219108d36e440d6"
+    },
+    "scripts/build-app.sh": {
+      "mode": "100755",
+      "oid": "9434183fcbc2414ac17f4ec0ec7576b1b22f37aa"
+    },
+    "scripts/env.sh": {
+      "mode": "100755",
+      "oid": "bcabef489d853d46f68418bbb8d03d32ab1d496c"
+    },
+    "scripts/install-app.sh": {
+      "mode": "100755",
+      "oid": "fa9705f9e0f675ca5e46193ee5d9583fbdd33830"
+    },
+    "scripts/package-release.sh": {
+      "mode": "100755",
+      "oid": "d3f675c95b28fffc212f0d0f33d3e911931315ed"
+    },
+    "site/build.py": {
+      "mode": "100644",
+      "oid": "989a585d82058fe9e93f81df074474b6a9e264e6"
+    },
+    "site/index.html": {
+      "mode": "100644",
+      "oid": "f5a818907eb828e748ac36ad77047535a7c3b826"
+    },
+    "site/main.js": {
+      "mode": "100644",
+      "oid": "54d8efead9d7e4e7c0977b2c66b71096c0bd4b81"
+    },
+    "site/mark.svg": {
+      "mode": "100644",
+      "oid": "a8cde190f6a6af2c7b984a8f6626c02c8c59d08a"
+    },
+    "site/requirements.txt": {
+      "mode": "100644",
+      "oid": "6bbc8459c27e834c9186cdb4364ae873ed12d25a"
+    },
+    "site/style.css": {
+      "mode": "100644",
+      "oid": "e9a547dd89fbb4b00525add9db08c7f7d8894d31"
+    }
+  }
+}

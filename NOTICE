@@ -1,0 +1,22 @@
+Tangler
+
+Tangler's original code is provided under the PolyForm Noncommercial License
+1.0.0 in LICENSE. The license permits noncommercial purposes; it does not
+grant permission for commercial use, including internal business use by
+for-profit companies. The complete license governs, including its specified
+permissions for noncommercial organizations and its fair-use provision.
+
+Third-party components retain their own copyrights and license terms.
+Tangler's noncommercial license does not replace or restrict rights granted
+under those third-party licenses.
+
+Sparkle 2.10.0
+https://github.com/sparkle-project/Sparkle
+
+Sparkle is resolved separately by Swift Package Manager. The build script
+embeds Sparkle and copies its complete license and third-party notices to
+Tangler.app/Contents/Resources/Sparkle-LICENSE.txt. Preserve that file when
+redistributing the application.
+
+The build also includes Tangler's LICENSE and this NOTICE as
+Tangler-LICENSE.txt and Tangler-NOTICE.txt in the same Resources directory.

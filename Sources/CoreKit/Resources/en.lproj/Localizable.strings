@@ -1,0 +1,1761 @@
+/* Tangler interface text. Keys are stable; edit values in both languages together. */
+
+/* Sources/App/AppUpdates.swift */
+"app.the.update.service.is.unavailable" = "The update service is unavailable: %1$@";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.manually" = "Check Manually";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.automatically.and.notify" = "Check Automatically and Notify";
+
+/* Sources/App/AppUpdates.swift */
+"app.download.and.install.automatically" = "Download and Install Automatically";
+
+/* Sources/App/AppUpdates.swift */
+"app.look.for.updates.only.when.you.click" = "Look for updates only when you click Check for Updates.";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.about.every.hours.while.tangler.is" = "Check about every 6 hours while Tangler is running. New versions appear here and in the menu; you choose when to download and install.";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.for.and.download.updates.automatically.usually" = "Check for and download updates automatically, usually installing on quit. Tangler will ask if authorization or an immediate restart is needed.";
+
+/* Sources/App/AppUpdates.swift */
+"app.check.for.a.newer.version" = "Check for a newer version.";
+
+/* Sources/App/AppUpdates.swift */
+"app.checking.for.updates" = "Checking for updates…";
+
+/* Sources/App/AppUpdates.swift */
+"app.you.re.up.to.date" = "You’re up to date";
+
+/* Sources/App/AppUpdates.swift */
+"app.version.is.available" = "Version %1$@ is available";
+
+/* Sources/App/AppUpdates.swift */
+"app.version.has.been.downloaded" = "Version %1$@ has been downloaded";
+
+/* Sources/App/AppUpdates.swift */
+"app.update.check.or.download.failed" = "Update check or download failed: %1$@";
+
+/* Sources/App/AppUpdates.swift */
+"app.this.version.is.newer.than.the.latest" = "This version is newer than the latest release. No update is needed.";
+
+/* Sources/App/AppUpdates.swift */
+"app.no.update.is.compatible.with.this.mac" = "No update is compatible with this Mac. %1$@";
+
+/* Sources/App/MenuModel.swift */
+"app.leader" = "Leader ";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.could.not.change.the.setting" = "Could not change the setting: %1$@";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.allow.tangler.in.system.settings.general.login" = "Allow Tangler in System Settings → General → Login Items.";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.conflicts.with.the.leader.key" = "Conflicts with the leader key";
+
+/* Sources/App/Settings/SettingsModel.swift */
+"app.already.used.by" = "Already used by “%1$@”";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.general" = "General";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.shortcuts" = "Shortcuts";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.modules" = "Modules";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.support" = "Support";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.diagnostics" = "Diagnostics";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.appearance" = "Appearance";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.startup" = "Startup";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.launch.tangler.at.login" = "Launch Tangler at login";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.restart.tangler.to.apply.changes.to.enabled" = "Restart Tangler to apply changes to enabled modules.";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.request.access" = "Request Access";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.open.system.settings" = "Open System Settings";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.this.module.has.no.settings" = "This module has no settings.";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.this.module.is.not.running.enable.it" = "This module is not running. Enable it in General.";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.grant.accessibility.access.in.diagnostics.to.start" = "Grant Accessibility access in Diagnostics to start the modules automatically.";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.needs.attention" = "Needs Attention";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.permissions" = "Permissions";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.accessibility" = "Accessibility";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.move.windows.list.windows.and.handle.global" = "Move windows, list windows, and handle global keys";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.screen.recording" = "Screen Recording";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.window.thumbnails.in.the.switcher.and.dock" = "Window thumbnails in the switcher and Dock previews";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.tangler.detects.newly.granted.access.automatically.screen" = "Tangler detects newly granted access automatically. Screen Recording may require restarting Tangler.";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.access.granted.but.still.not.working" = "Access granted but still not working?";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.macos.may.retain.a.signature.record.from" = "macOS may retain a signature record from an older version. Remove Tangler from the Accessibility list, then use Request Access to add it again.";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.system.capabilities" = "System Capabilities";
+
+/* Sources/App/Settings/SettingsView.swift */
+"app.version" = "Version";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.search" = "Search";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.all" = "All";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.filter.shortcuts.by.module" = "Filter shortcuts by module";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.record.then.save.esc.to.revert" = "Record, then save · Esc to revert";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.search.commands.modules.or.keys" = "Search commands, modules, or keys";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.clear.search" = "Clear Search";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.function" = "Function";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.command" = "Command";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.shortcut.commands" = "Shortcut commands";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.shortcut.for" = "Shortcut for %1$@";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.restore.default.shortcut" = "Restore Default Shortcut";
+
+/* Sources/App/Settings/ShortcutsPage.swift */
+"app.restore.the.default.shortcut.for" = "Restore the default shortcut for %1$@";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.software.updates" = "Software Updates";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.update.policy" = "Update Policy";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.online.updates.are.not.configured.in.this" = "Online updates are not configured in this build.";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.last.checked" = "Last checked: %1$@";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.not.checked.yet" = "Not checked yet";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.checking" = "Checking…";
+
+/* Sources/App/Settings/UpdateSettingsSection.swift */
+"app.check.for.updates" = "Check for Updates…";
+
+/* Sources/App/StatusMenu.swift */
+"app.settings" = "Settings…";
+
+/* Sources/App/StatusMenu.swift */
+"app.update.to" = "Update to %1$@…";
+
+/* Sources/App/StatusMenu.swift */
+"app.quit.tangler" = "Quit Tangler";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.needs.or.to.avoid.interfering.with.typing" = "%1$@ needs ⌃, ⌥, or ⌘ to avoid interfering with typing";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.this.command.cannot.use.a.leader.sequence" = "This command cannot use a leader sequence";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.a.key.sequence.cannot.be.empty" = "A key sequence cannot be empty";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.esc.is.reserved.for.leaving.leader.mode" = "Esc is reserved for leaving leader mode";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.and.conflict" = "%1$@ and %2$@ conflict";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.conflicts.with" = "%1$@ conflicts with “%2$@” (%3$@)";
+
+/* Sources/CommandKit/KeyOverrides.swift */
+"commandkit.is.already.used.by" = "%1$@ is already used by “%2$@”";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.global.shortcut" = "Global shortcut %1$@ %2$@";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.duplicate.group" = "Duplicate group %1$@";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.command.is.not.registered" = "Command %1$@ is not registered";
+
+/* Sources/CommandKit/LiveCommandRegistry.swift */
+"commandkit.no.longer.exists" = "“%1$@” no longer exists";
+
+/* Sources/CommandKit/ShortcutBindings.swift */
+"commandkit.already.used.by" = "Already used by %1$@";
+
+/* Sources/CommandKit/ShortcutBindings.swift */
+"commandkit.could.not.register" = "Could not register: %1$@";
+
+/* Sources/CommandPalette/CommandPaletteModule.swift */
+"commandpalette.command.search" = "Command Search";
+
+/* Sources/CommandPalette/CommandPaletteModule.swift */
+"commandpalette.command.search.is.disabled" = "Command search is disabled";
+
+/* Sources/CommandPalette/Palette/PaletteController.swift */
+"commandpalette.add.a.number.after.the.name.then" = "Add a number after the name, then press Return";
+
+/* Sources/CommandPalette/Palette/PaletteController.swift */
+"commandpalette.add.a.number.for.example" = "Add a number, for example “%1$@ 2”";
+
+/* Sources/CommandPalette/Palette/PaletteItem.swift */
+"commandpalette.minimized" = "%1$@ · Minimized";
+
+/* Sources/CommandPalette/Palette/PaletteItem.swift */
+"commandpalette.enter.a.number.after.the.name" = "Enter a number after the name";
+
+/* Sources/CommandPalette/Palette/PaletteRowView.swift */
+"commandpalette.leader" = "Leader %1$@";
+
+/* Sources/CommandPalette/Palette/PaletteRowView.swift */
+"commandpalette.shortcut" = "Shortcut %1$@";
+
+/* Sources/CommandPalette/Palette/PaletteView.swift */
+"commandpalette.search.windows.and.commands.including.pinyin" = "Search windows and commands, including pinyin";
+
+/* Sources/CommandPalette/Palette/PaletteView.swift */
+"commandpalette.no.matching.windows.or.commands" = "No matching windows or commands";
+
+/* Sources/CommandPalette/PaletteCommands.swift */
+"commandpalette.open.command.search" = "Open command search";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.leader.key" = "Leader Key";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.trigger" = "Trigger";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.right.command" = "Right Command";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.key.combination" = "Key Combination";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.hold.the.leader.key.then.enter.the" = "Hold the leader key, then enter the sequence";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.press.the.leader.key.then.enter.the" = "Press the leader key, then enter the sequence";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.global.shortcuts.work.without.the.leader.key" = "Global shortcuts work without the leader key.";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.hold.to.enter.keys" = "Hold to enter keys";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.use.left.command.for.regular.shortcuts.while" = "Use left Command for regular ⌘ shortcuts while holding the leader key.";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.press.and.release.right.command.then.enter" = "Press and release right Command, then enter the sequence.";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.record.combination" = "Record Combination";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.no.combination.is.set.right.command.is" = "No combination is set. Right Command is used for now.";
+
+/* Sources/CommandPalette/Settings/LeaderTriggerSettingsSection.swift */
+"commandpalette.uses.this.combination.too.setting.it.as" = "“%1$@” uses this combination too. Setting it as the leader key will disable that shortcut.";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.find.and.run.commands.and.quickly.locate" = "Find and run commands, and quickly locate windows and workspaces.";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.linger" = "Linger";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.stay.after.a.layout.command" = "Stay after a layout command";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.s" = "%1$@ s";
+
+/* Sources/CommandPalette/Settings/PaletteSettingsView.swift */
+"commandpalette.while.lingering.repeat.the.same.key.to" = "While lingering, repeat the same key to cycle through 1/2, 1/3, and 2/3. With no input, leader mode exits automatically so your next keystroke goes to the app.";
+
+/* Sources/CommandPalette/Support/WindowErrorText.swift */
+"commandpalette.accessibility.access.is.required" = "Accessibility access is required";
+
+/* Sources/CommandPalette/Support/WindowErrorText.swift */
+"commandpalette.this.window.has.closed" = "This window has closed";
+
+/* Sources/CommandPalette/Support/WindowErrorText.swift */
+"commandpalette.the.application.is.not.responding" = "The application is not responding";
+
+/* Sources/Contracts/Input.swift */
+"contracts.space" = "Space";
+
+/* Sources/Contracts/Input.swift */
+"contracts.return" = "Return";
+
+/* Sources/Contracts/Input.swift */
+"contracts.digit" = "Digit";
+
+/* Sources/Contracts/WindowService.swift */
+"contracts.empty.desktops.cannot.be.cleaned.up.safely" = "Empty desktops cannot be cleaned up safely";
+
+/* Sources/DockPreview/DockClickBehavior.swift */
+"dockpreview.system.default" = "System Default";
+
+/* Sources/DockPreview/DockClickBehavior.swift */
+"dockpreview.minimize.focused.window" = "Minimize Focused Window";
+
+/* Sources/DockPreview/DockClickBehavior.swift */
+"dockpreview.hide.application" = "Hide Application";
+
+/* Sources/DockPreview/DockPreviewController+Preview.swift */
+"dockpreview.enable.screen.recording.to.show.thumbnails" = "Enable Screen Recording to show thumbnails";
+
+/* Sources/DockPreview/DockPreviewController+Preview.swift */
+"dockpreview.only.windows.on.the.current.desktop.are" = "Only windows on the current desktop are shown";
+
+/* Sources/DockPreview/DockPreviewModule.swift */
+"dockpreview.dock.preview" = "Dock Preview";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hover.to.preview.application.windows" = "Hover to preview application windows";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hover" = "Hover";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.preview.windows.when.hovering.over.a.dock" = "Preview windows when hovering over a Dock icon";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.preview.apps.with.only.one.window" = "Preview apps with only one window";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.show.delay" = "Show Delay";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hide.delay" = "Hide Delay";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.animate.previews" = "Animate Previews";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.fade.in.and.slide.gently.from.the" = "Fade in and slide gently from the Dock, follow smoothly between icons, and fade out on close. With Reduce Motion enabled in System Settings, previews only fade.";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hide.dock.icon.labels" = "Hide Dock icon labels";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.hover.previews" = "Hover Previews";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.click.behavior" = "Click Behavior";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.clicking.a.dock.icon" = "Clicking a Dock Icon";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.applies.only.to.the.frontmost.app.s" = "Applies only to the frontmost app’s icon. Other icons keep their normal Dock behavior.";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.unavailable.when.the.dock.hides.automatically.pointer" = "Unavailable when the Dock hides automatically: pointer movement at the screen edge must reach the Dock to reveal it.";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.tangler.intercepts.pointer.movement.over.dock.icons" = "Tangler intercepts pointer movement over Dock icons, hiding their labels and magnification. Clicking, right-clicking, and dragging still work. Normal behavior returns when Tangler quits.";
+
+/* Sources/DockPreview/DockPreviewSettingsView.swift */
+"dockpreview.windows.on.other.desktops.are.excluded" = "Windows on other desktops are excluded: %1$@";
+
+/* Sources/OverlayKit/HintRow.swift */
+"overlaykit.more.keys.available" = "%1$@: %2$@, more keys available";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.notes" = "Notes";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.document" = "Document";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.design.draft" = "Design Draft";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.finder" = "Finder";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.start.page" = "Start Page";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.design.document" = "Design Document";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.search.commands.windows.and.workspaces" = "Search commands, windows, and workspaces";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.left.half" = "Left half";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.open.workspace" = "Open workspace";
+
+/* Sources/OverlayKit/SettingsFeaturePreview.swift */
+"overlaykit.click.a.window.preview" = "Click a window preview";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.leader" = "Leader: %1$@";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.then" = "Then";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.drag" = "Drag";
+
+/* Sources/OverlayKit/SettingsPreviewInput.swift */
+"overlaykit.no.shortcut.assigned" = "No shortcut assigned";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.preview.tab" = "Preview tab: %1$@";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.select.and.focus.it.when.opening.the" = "Select %1$@ and focus it when opening the workspace";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.bring.to.front.in.preview" = "Bring to front in preview: %1$@";
+
+/* Sources/OverlayKit/SettingsSkinViews.swift */
+"overlaykit.bring.to.front.in.the.preview.and" = "Bring to front in the preview and focus when opening the workspace";
+
+/* Sources/OverlayKit/SettingsWindowIllustration.swift */
+"overlaykit.ideas.and.plans" = "Ideas and Plans";
+
+/* Sources/OverlayKit/ShortcutKeycaps.swift */
+"overlaykit.right" = "Right ⌘";
+
+/* Sources/OverlayKit/ShortcutKeycaps.swift */
+"overlaykit.no.leader.sequence" = "No leader sequence";
+
+/* Sources/OverlayKit/ShortcutKeycaps.swift */
+"overlaykit.or" = ", or ";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.record.shortcut" = "Record Shortcut";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.press.a.key.combination.esc.cancels.delete" = "Press a key combination; Esc cancels, Delete clears";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.click.then.press.a.new.key.combination" = "Click, then press a new key combination";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.save" = "Save";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.record" = "Record";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.save.the.new.shortcut.esc.reverts" = "Save the new shortcut; Esc reverts";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.record.a.global.shortcut.then.save.to" = "Record a global shortcut, then save to apply";
+
+/* Sources/OverlayKit/ShortcutRecorder.swift */
+"overlaykit.click.save.after.recording.esc.reverts.delete" = "Click Save after recording; Esc reverts; Delete clears the global shortcut";
+
+/* Sources/OverlayKit/ShortcutRecorderSession.swift */
+"overlaykit.clear.shortcut" = "Clear Shortcut";
+
+/* Sources/OverlayKit/ShortcutRecorderSession.swift */
+"overlaykit.press.a.key.combination" = "Press a key combination…";
+
+/* Sources/OverlayKit/ShortcutRecording.swift */
+"overlaykit.this.key.is.not.supported" = "This key is not supported";
+
+/* Sources/OverlayKit/ShortcutRecording.swift */
+"overlaykit.hold.or.as.well" = "Hold ⌘, ⌥, or ⌃ as well";
+
+/* Sources/OverlayKit/Skin.swift */
+"overlaykit.liquid.glass" = "Liquid Glass";
+
+/* Sources/OverlayKit/Skin.swift */
+"overlaykit.classic" = "Classic";
+
+/* Sources/OverlayKit/ThumbnailCard.swift */
+"overlaykit.minimize.window" = "Minimize Window";
+
+/* Sources/OverlayKit/ThumbnailCard.swift */
+"overlaykit.close.window" = "Close Window";
+
+/* Sources/OverlayKit/WindowPicker.swift */
+"overlaykit.click.a.window.to.select.it" = "Click a window to select it";
+
+/* Sources/OverlayKit/WindowPickerOverlay.swift */
+"overlaykit.esc.to.cancel" = "%1$@ · Esc to cancel";
+
+/* Sources/OverlayKit/WindowPickerOverlay.swift */
+"overlaykit.nclick.to.select.esc.to.cancel" = "%1$@\nClick to select · Esc to cancel";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.windows" = "Switch windows";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.windows.of.the.same.app" = "Switch windows of the same app";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.windows.in.reverse" = "Switch windows in reverse";
+
+/* Sources/Switcher/SwitcherCommands.swift */
+"switcher.switch.same.app.windows.in.reverse" = "Switch same-app windows in reverse";
+
+/* Sources/Switcher/SwitcherModule.swift */
+"switcher.switcher" = "Switcher";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.include.minimized.windows" = "Include minimized windows";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.thumbnail.height" = "Thumbnail Height";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.pt" = "%1$@ pt";
+
+/* Sources/Switcher/SwitcherSettingsView.swift */
+"switcher.notes" = "Notes";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.accessibility.access.is.required.to.switch.windows" = "Accessibility access is required to switch windows";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.no.windows.available.to.switch.to" = "No windows available to switch to";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.current.app.has.no.windows.available" = "The current app has no windows available to switch to";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.system.tab.switcher.could.not.be" = "The system ⌘Tab switcher could not be disabled and may still appear when you press ⌘Tab.";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.switcher.has.stopped" = "The switcher has stopped";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.only.windows.on.the.current.desktop.are" = "Only windows on the current desktop are shown (%1$@)";
+
+/* Sources/Switcher/SwitcherText.swift */
+"switcher.the.window.has.closed" = "The window has closed";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.close" = "Close %1$@";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.remove.from.tab.group" = "Remove from tab group";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.ungroup.windows" = "Ungroup windows";
+
+/* Sources/TabGroups/Bar/TabBarView.swift */
+"tabgroups.will.join" = "Will join: %1$@";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.press.t.then.a.number" = "Press T, then a number";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.there.is.no.tab" = "There is no tab %1$@";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.no.focused.window" = "No focused window";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.no.other.windows.in.this.area" = "No other windows in this area";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.other.windows.minimum.sizes.exceed.this" = "The other windows’ minimum sizes exceed this area";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.these.windows.already.belong.to.another.tab" = "These windows already belong to another tab group";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.selected.window.is.already.focused" = "The selected window is already focused";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.window.from.does.not.fit.in" = "The window from %1$@ does not fit in this area";
+
+/* Sources/TabGroups/Control/TabsController+Grouping.swift */
+"tabgroups.the.selected.window.could.not.be.found" = "The selected window could not be found";
+
+/* Sources/TabGroups/Control/TabsController+Service.swift */
+"tabgroups.this.area.cannot.fit.the.tab.bar" = "This area cannot fit the tab bar and window";
+
+/* Sources/TabGroups/Control/TabsController+Service.swift */
+"tabgroups.a.tab.group.requires.at.least.two" = "A tab group requires at least two open windows";
+
+/* Sources/TabGroups/Control/TabsController+Service.swift */
+"tabgroups.the.window.s.minimum.size.exceeds.this" = "The window’s minimum size exceeds this area";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.the.focused.window.is.not.in.a" = "The focused window is not in a tab group";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.the.tab.group.module.has.stopped" = "The tab group module has stopped";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.these.windows.are.not.on.the.current" = "These windows are not on the current desktop";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.this.window.is.not.in.a.tab" = "This window is not in a tab group";
+
+/* Sources/TabGroups/Control/TabsController.swift */
+"tabgroups.the.window.could.not.be.found.it" = "The window could not be found; it may have closed";
+
+/* Sources/TabGroups/Model/TabGroup.swift */
+"tabgroups.tab.group" = "Tab group %1$@";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.tab.groups" = "Tab Groups";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.group.windows.in.the.same.area" = "Group windows in the same area";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.pick.a.window.to.add.to.a" = "Pick a window to add to a tab group";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.next.tab" = "Next tab";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.previous.tab" = "Previous tab";
+
+/* Sources/TabGroups/TabCommands.swift */
+"tabgroups.select.tab.n" = "Select tab N";
+
+/* Sources/TabGroups/TabGroupsModule.swift */
+"tabgroups.click.a.window.to.add.to.the" = "Click a window to add to the tab group";
+
+/* Sources/TabGroups/TabGroupsModule.swift */
+"tabgroups.the.tab.group.module.is.not.running" = "The tab group module is not running";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.adjust.tab.bar.height" = "Adjust tab bar height";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.add.any.window.to.a.tab.group" = "Add any window to a tab group";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.group.windows.snapped.to.the.same.area" = "Group windows snapped to the same area";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.when.a.window.settles.into.the.exact" = "When a window settles into the exact area occupied by another window or tab group, they form a tab group.";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.hold.and.drag.a.window.onto.a" = "Hold ⌘ and drag a window onto a tab bar to join";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.hold.before.dragging.to.detach.a.window" = "Hold ⌘ before dragging to detach a window from its tab group. Drop it on another tab bar to join that group.";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.grouping" = "Grouping";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.height" = "Height";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.tab.bar" = "Tab Bar";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.clicking.a.tab.brings.only.that.window" = "Clicking a tab brings only that window to the front. Other windows of the same app stay in place.";
+
+/* Sources/TabGroups/TabGroupsSettingsView.swift */
+"tabgroups.keys.after.the.leader.key" = "Keys After the Leader Key";
+
+/* Sources/WindowKit/AX/AXFailure.swift */
+"windowkit.does.not.support.this.operation" = "%1$@ does not support this operation";
+
+/* Sources/WindowKit/AX/AXFailure.swift */
+"windowkit.accessibility.call.failed.error" = "Accessibility call failed (error %1$@)";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.this.app.s.previous.new.window.has" = "This app’s previous new window has not appeared yet";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.this.app.has.no.new.window.menu" = "This app has no New Window menu item";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.cancelled" = "Cancelled";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.could.not.click.new.window" = "Could not click New Window";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.the.app.did.not.open.a.new" = "The app did not open a new window";
+
+/* Sources/WindowKit/AX/NewWindowOpener.swift */
+"windowkit.the.new.window.did.not.appear.in" = "The new window did not appear in the window list";
+
+/* Sources/WindowKit/Frames/FrameApplier.swift */
+"windowkit.does.not.allow.this.window.to.be" = "%1$@ does not allow this window to be moved or resized";
+
+/* Sources/WindowKit/Frames/FramePipeline.swift */
+"windowkit.the.window.service.has.stopped" = "The window service has stopped";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.matching.windows.by.process" = "Private API unavailable; matching windows by process, position, and title";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.exact.window.ids.are.required.only.current" = "Exact window IDs are required; only current-desktop and previously known windows are listed";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.only.current.desktop.and" = "Private API unavailable; only current-desktop and previously known windows are listed";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.cannot.read.the.desktop" = "Private API unavailable; cannot read the desktop list";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.window.server.did.not.return.a" = "The window server did not return a desktop list";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.cannot.read.the.desktop.list" = "Cannot read the desktop list";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.enable.displays.have.separate.spaces.in.system" = "Enable “Displays have separate Spaces” in System Settings → Desktop & Dock, then log in again";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.requires.macos.or.later" = "Requires macOS 26.4 or later";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.system.does.not.provide.an.api" = "The system does not provide an API to move windows between desktops";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.private.api.unavailable.activating.the.app.before" = "Private API unavailable; activating the app before bringing its window to the front";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.system.does.not.provide.an.api.capabilityprobe" = "The system does not provide an API to open Mission Control";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.the.system.cannot.report.window.desktop.membership" = "The system cannot report window desktop membership, so temporary desktops cannot be confirmed empty";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.exact.window.ids" = "Exact Window IDs";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.windows.on.other.desktops" = "Windows on Other Desktops";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.desktop.list" = "Desktop List";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.move.to.another.desktop" = "Move to another desktop";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.precise.window.focus" = "Precise Window Focus";
+
+/* Sources/WindowKit/Private/CapabilityProbe.swift */
+"windowkit.create.and.remove.desktops" = "Create and Remove Desktops";
+
+/* Sources/WindowKit/Spaces/DesktopSwitch.swift */
+"windowkit.could.not.read.the.desktop.list" = "Could not read the desktop list";
+
+/* Sources/WindowKit/Spaces/DesktopSwitch.swift */
+"windowkit.the.target.desktop.does.not.exist.or" = "The target desktop does not exist or is not a regular desktop";
+
+/* Sources/WindowKit/Spaces/DesktopSwitch.swift */
+"windowkit.could.not.switch.to.the.target.desktop" = "Could not switch to the target desktop";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.temporary.desktop.could.not.be.removed" = "The temporary desktop could not be removed. Remove the last desktop manually in Mission Control";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.could.not.read.mission.control.s.state" = "Could not read Mission Control’s state; it may still be open";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.did.not.close" = "Mission Control did not close";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.screen.is.locked" = "The screen is locked";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.previous.desktop.operation.has.not.finished" = "The previous desktop operation has not finished";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.could.not.read.mission.control.s.state.missioncontrol" = "Could not read Mission Control’s state";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.is.open.close.it.first" = "Mission Control is open; close it first";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.this.display.has.no.desktops" = "This display has no desktops";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.did.not.open" = "Mission Control did not open";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.no.new.desktop.appeared.mission.control.may" = "No new desktop appeared: Mission Control may have changed, or the desktop limit was reached";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.has.changed.the.target.desktop" = "Mission Control has changed; the target desktop could not be identified";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.last.desktop.on.this.display.cannot" = "The last desktop on this display cannot be removed";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.desktop.has.windows.or.could.not" = "The desktop has windows or could not be confirmed empty, so it was kept";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.the.desktop.has.windows.could.not.be" = "The desktop has windows, could not be confirmed empty, or is the last desktop, so it was kept";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.a.removal.request.was.sent.but.the" = "A removal request was sent, but the desktop is still present";
+
+/* Sources/WindowKit/Spaces/MissionControl.swift */
+"windowkit.mission.control.has.changed.the.desktop.to" = "Mission Control has changed; the desktop to remove could not be identified";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.this.window.s.previous.move.has.not" = "This window’s previous move has not finished";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.cannot.determine.which.desktop.contains.the.window" = "Cannot determine which desktop contains the window";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.only.windows.on.regular.desktops.can.be" = "Only windows on regular desktops can be moved; full-screen, Split View, and all-desktop windows are unsupported";
+
+/* Sources/WindowKit/Spaces/SpaceMoves.swift */
+"windowkit.the.move.was.requested.but.arrival.on" = "The move was requested, but arrival on the target desktop could not be confirmed";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.the.target.frame.is.invalid" = "The target frame is invalid";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.could.not.read.back.the.window.frame" = "Could not read back the window frame";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.did.not.switch.to.this.window" = "%1$@ did not switch to this window";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.the.app.could.not.be.found.it" = "The app could not be found; it may have quit";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.application" = "Application";
+
+/* Sources/WindowKit/SystemWindowService+Actions.swift */
+"windowkit.refused.to.hide" = "%1$@ refused to hide";
+
+/* Sources/WindowKit/SystemWindowService.swift */
+"windowkit.unavailable.on.this.mac" = "Unavailable on this Mac";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.left" = "Left";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.right" = "Right";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.above" = "Above";
+
+/* Sources/WindowLayout/CommandOutcome.swift */
+"windowlayout.below" = "Below";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.cannot.determine.this.window.s.desktop" = "Cannot determine this window’s desktop";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.no.desktop.to.the.left" = "No desktop to the left";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.no.desktop.to.the.right" = "No desktop to the right";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.a.desktop.number.is.required" = "A desktop number is required";
+
+/* Sources/WindowLayout/DesktopTargets.swift */
+"windowlayout.there.is.no.desktop" = "There is no desktop %1$@";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.create.and.switch.to.a.desktop" = "Create and switch to a desktop";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.remove.current.desktop" = "Remove current desktop";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.clean.up.all.empty.desktops" = "Clean up all empty desktops";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.switch.to.desktop.n" = "Switch to desktop N";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.switch.to.desktop.on.the.left" = "Switch to desktop on the left";
+
+/* Sources/WindowLayout/Desktops/DesktopCommands.swift */
+"windowlayout.switch.to.desktop.on.the.right" = "Switch to desktop on the right";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.could.not.read.the.display.list" = "Could not read the display list";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktop.cleanup.is.already.running" = "Empty desktop cleanup is already running";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.cannot.manage.desktops" = "Cannot manage desktops";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed.cleanup.was.cancelled" = "Empty desktops removed: %1$@. Cleanup was cancelled";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed.could.not.read.the" = "Empty desktops removed: %1$@. Could not read the desktop list";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.removal.failed" = "Removal failed";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed" = "Empty desktops removed: %1$@. %2$@";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.empty.desktops.removed.kept.desktops.with.uncertain" = "Empty desktops removed: %1$@. Kept %2$@ desktops with uncertain window membership. Show hidden windows and restore minimized windows, then try again";
+
+/* Sources/WindowLayout/Desktops/DesktopController.swift */
+"windowlayout.created.desktop.but.could.not.switch.to" = "Created desktop %1$@, but could not switch to it";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.the.current.space.is.not.a.regular" = "The current Space is not a regular desktop";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.already.on.the.leftmost.desktop" = "Already on the leftmost desktop";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.already.on.the.rightmost.desktop" = "Already on the rightmost desktop";
+
+/* Sources/WindowLayout/Desktops/DesktopPicker.swift */
+"windowlayout.desktop.does.not.exist.total" = "Desktop %1$@ does not exist (total: %2$@)";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.this.mac.cannot.move.windows.between.desktops" = "This Mac cannot move windows between desktops";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.no.window.available.to.operate.on" = "No window available to operate on";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.full.screen.windows.cannot.be.moved" = "Full-screen windows cannot be moved";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.the.window.is.minimized" = "The window is minimized";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.this.window.has.no.earlier.position" = "This window has no earlier position";
+
+/* Sources/WindowLayout/LayoutCommandRunner.swift */
+"windowlayout.no.other.display.in.this.direction" = "No other display in this direction: %1$@";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.displays.and.desktops" = "Displays and desktops";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.right.half" = "Right half";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.top.half" = "Top half";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.bottom.half" = "Bottom half";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.top.left.quarter" = "Top-left quarter";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.top.right.quarter" = "Top-right quarter";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.bottom.left.quarter" = "Bottom-left quarter";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.bottom.right.quarter" = "Bottom-right quarter";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.maximize" = "Maximize";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.center" = "Center";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.restore.previous.position" = "Restore previous position";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.left.display" = "Move to left display";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.right.display" = "Move to right display";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.display.above" = "Move to display above";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.display.below" = "Move to display below";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.desktop.on.the.left" = "Move to desktop on the left";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.desktop.on.the.right" = "Move to desktop on the right";
+
+/* Sources/WindowLayout/LayoutCommands.swift */
+"windowlayout.move.to.desktop.n" = "Move to desktop N";
+
+/* Sources/WindowLayout/LayoutSettingsModel.swift */
+"windowlayout.move.left.a.space" = "Move left a space";
+
+/* Sources/WindowLayout/LayoutSettingsModel.swift */
+"windowlayout.move.right.a.space" = "Move right a space";
+
+/* Sources/WindowLayout/LayoutSettingsModel.swift */
+"windowlayout.switch.to.desktop" = "Switch to Desktop 1…";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.arrange.windows.on.a.grid" = "Arrange windows on a grid";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.dragging.windows" = "Dragging Windows";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.snap.windows.at.screen.edges" = "Snap windows at screen edges";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.show.the.grid.when.dragging.with.modifiers" = "Show the grid when dragging with modifiers";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.grid.modifiers" = "Grid Modifiers";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.grid.columns" = "Grid columns: %1$@";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.grid.rows" = "Grid rows: %1$@";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.use.glass.for.snap.previews" = "Use glass for snap previews";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.with.liquid.glass.appearance.show.the.target" = "With Liquid Glass appearance, show the target area as a glass surface instead of an outline.";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.placement" = "Placement";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.window.gap.pt" = "Window gap: %1$@ pt";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.animation.duration" = "Animation duration: %1$@";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.desktops" = "Desktops";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.let.tangler.handle.desktop.shortcuts" = "Let Tangler handle desktop shortcuts";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.use.and.number.to.switch.desktops.through" = "Use ⌃←, ⌃→, and ⌃number to switch desktops through Tangler without waiting for the system animation";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.disable.system.desktop.shortcuts" = "Disable System Desktop Shortcuts…";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.tangler.does.not.change.system.settings.in" = "Tangler does not change system settings. In System Settings › Keyboard › Keyboard Shortcuts… › Mission Control, deselect:\n";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.system.window.tiling.conflicts" = "System Window Tiling Conflicts";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.tangler.does.not.change.system.settings.turn" = "Tangler does not change system settings. Turn off the options above in System Settings › Desktop & Dock › Windows.";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.open.desktop.dock.settings" = "Open Desktop & Dock Settings";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.check.again" = "Check Again";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"windowlayout.no.animation" = "No animation";
+
+/* Sources/WindowLayout/LayoutSettingsView.swift */
+"layout.animation.secondsFormat" = "%.2f s";
+
+/* Sources/WindowLayout/SystemTiling.swift */
+"windowlayout.drag.windows.to.left.or.right.edge" = "“Drag windows to left or right edge of screen to tile” is enabled in System Settings, so macOS also tiles windows dragged to either side.";
+
+/* Sources/WindowLayout/SystemTiling.swift */
+"windowlayout.drag.windows.to.menu.bar.to.fill" = "“Drag windows to menu bar to fill screen” is enabled in System Settings, so macOS also fills the screen when dragging to the top.";
+
+/* Sources/WindowLayout/SystemTiling.swift */
+"windowlayout.hold.key.while.dragging.windows.to.tile" = "“Hold ⌥ key while dragging windows to tile” is enabled in System Settings, so macOS also tiles windows dragged with Option.";
+
+/* Sources/WindowLayout/WindowLayoutModule.swift */
+"windowlayout.layout" = "Layout";
+
+/* Sources/WindowLayout/WindowLayoutModule.swift */
+"windowlayout.the.layout.module.is.not.running" = "The layout module is not running";
+
+/* Sources/Workspaces/Desktops/WorkspaceDesktops.swift */
+"workspaces.open.desktop" = "Open · Desktop %1$@";
+
+/* Sources/Workspaces/Desktops/WorkspaceDesktops.swift */
+"workspaces.closed" = "Closed";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.contents.not.opened" = "Contents not opened";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.this.entry.has.no.application.identifier" = "This entry has no application identifier";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.could.not.read.the.application.menu" = "Could not read the application menu";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.the.app.has.no.available.windows" = "The app has no available windows";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.matched.by.application" = "Matched by application";
+
+/* Sources/Workspaces/Expanding/ExpansionPlanner.swift */
+"workspaces.cannot.open.this.target" = "Cannot open this target.";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.waiting" = "Waiting";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.already.on.the.desktop" = "Already on the desktop";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.moved.here" = "Moved here";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.opened.a.new.window" = "Opened a new window";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.launched.the.app" = "Launched the app";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.app.not.running" = "App not running";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.no.new.window.opened" = "No new window opened";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.not.moved" = "Not moved";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.timed.out.waiting.for.a.window" = "Timed out waiting for a window";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.expansion.countWithStatus" = "%1$@ %2$@";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.not.running" = "not running";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.without.a.new.window" = "without a new window";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.timed.out" = "timed out";
+
+/* Sources/Workspaces/Expanding/ExpansionReport.swift */
+"workspaces.windows.ready" = "Windows ready: %1$@/%2$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.expansion.stopped.because.accessibility.access.was.revoked" = "Expansion stopped because Accessibility access was revoked. Enable Tangler again in System Settings › Privacy & Security › Accessibility.";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.target.desktop.no.longer.exists" = "The target desktop no longer exists";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.switch.to.the.target.desktop" = "Could not switch to the target desktop: %1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.you.left.this.desktop.no.more.windows" = "You left this desktop; no more windows were opened";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.you.have.left.this.desktop" = "You have left this desktop";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.contents.appeared.in.an.existing.app.window" = "Contents appeared in an existing app window";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.app.s.process.could.not.be" = "The app’s process could not be found, so its menu could not be clicked";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.open.contents" = "Could not open contents: %1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.window.opened.on.another.desktop.and" = "The window opened on another desktop and could not be moved here: %1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.only.one.tab.group.window.arrived.placed" = "Only one tab group window arrived; placed individually";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.you.left.this.desktop.windows.were.placed" = "You left this desktop; windows were placed individually instead of grouped";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.join.the.tab.group.placed" = "Could not join the tab group; placed individually";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.form.the.tab.group.placed" = "Could not form the tab group (%1$@); placed individually";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.tab.group.module.is.disabled.windows" = "The tab group module is disabled; windows were placed individually";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.read.the.display.list.or" = "Could not read the display list or form the tab group";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.saved.display.is.unavailable.placed.on" = "The saved display is unavailable; placed on the main display";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.window.closed.before.placement" = "The window closed before placement";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.could.not.place.the.window" = "Could not place the window: %1$@";
+
+/* Sources/Workspaces/Expanding/WorkspaceExpander.swift */
+"workspaces.the.placement.service.returned.no.result" = "The placement service returned no result";
+
+/* Sources/Workspaces/Feedback/WorkspaceHUDView.swift */
+"workspaces.workspace" = "Workspace “%1$@”";
+
+/* Sources/Workspaces/Feedback/WorkspaceHUDView.swift */
+"workspaces.expanding.workspace" = "Expanding workspace “%1$@”";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.document" = "Document";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.folder" = "Folder";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.web.page" = "Web Page";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.this.app.has.no.valid.identifier.and" = "This app has no valid identifier and cannot be reopened.";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.enter.an.absolute.path.a.file.url" = "Enter an absolute path, a file:// URL, or a complete http(s) URL.";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.web.urls.must.begin.with.http.or" = "Web URLs must begin with http:// or https://.";
+
+/* Sources/Workspaces/Model/ReopenTarget.swift */
+"workspaces.documents.and.folders.require.an.absolute.path" = "Documents and folders require an absolute path or a file:// URL.";
+
+/* Sources/Workspaces/Model/Windowing.swift */
+"workspaces.automatic" = "Automatic";
+
+/* Sources/Workspaces/Model/Windowing.swift */
+"workspaces.open.a.new.window" = "Open a New Window";
+
+/* Sources/Workspaces/Model/Windowing.swift */
+"workspaces.use.its.only.window" = "Use Its Only Window";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.accessibility.access.is.missing.windows.cannot.be" = "Accessibility access is missing; windows cannot be moved";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.window.rejected.this.position" = "The window rejected this position: %1$@";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.app.could.not.be.found" = "The app could not be found";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.system.did.not.respond.while.launching" = "The system did not respond while launching the app";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.the.system.did.not.respond.while.reopening" = "The system did not respond while reopening";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.could.not.launch.the.app" = "Could not launch the app";
+
+/* Sources/Workspaces/Restoring/RestoreOutcomeText.swift */
+"workspaces.could.not.reopen.some.apps.require.automation" = "Could not reopen; some apps require Automation access in System Settings";
+
+/* Sources/Workspaces/Saving/WorkspaceLibrary.swift */
+"workspaces.workspace.workspacelibrary" = "Workspace %1$@";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.there.are.no.windows.to.save" = "There are no windows to save.";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.a.workspace.name.cannot.be.empty" = "A workspace name cannot be empty.";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.this.workspace.no.longer.exists" = "This workspace no longer exists.";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.this.entry.no.longer.exists" = "This entry no longer exists.";
+
+/* Sources/Workspaces/Saving/WorkspaceLibraryError.swift */
+"workspaces.the.system.did.not.identify.this.desktop" = "The system did not identify this desktop, so it cannot be bound to a workspace.";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.place.only" = "Place only";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.tab" = "Tab %1$@";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.no.checkpoint.yet" = "No checkpoint yet";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.checkpoint" = "Checkpoint %1$@ · %2$@";
+
+/* Sources/Workspaces/Settings/EntrySummary.swift */
+"workspaces.checkpoint.entrysummary" = "Checkpoint · %1$@";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.open.contents" = "Open Contents";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.type" = "Type";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.absolute.path.to.file.or.folder" = "/absolute/path/to/file-or-folder";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.remove.this.item" = "Remove This Item";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.add" = "Add";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.only.absolute.paths.file.urls.and.complete" = "Only absolute paths, file:// URLs, and complete http(s) URLs are accepted. Shell commands and AppleScript are not executed.";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.window.behavior" = "Window Behavior";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.remove.this.entry" = "Remove This Entry";
+
+/* Sources/Workspaces/Settings/ItemEditor.swift */
+"workspaces.cancel" = "Cancel";
+
+/* Sources/Workspaces/Settings/WorkspaceAppList.swift */
+"workspaces.apps.and.windows" = "Apps and Windows";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.workspace.settings" = "Workspace Settings";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.autosave" = "Autosave";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.autosave.interval" = "Autosave interval";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.locked.templates.are.saved.manually.only.empty" = "Locked templates are saved manually only. Empty desktops never overwrite checkpoints.";
+
+/* Sources/Workspaces/Settings/WorkspaceAutoSaveSettings.swift */
+"workspaces.save.the.current.workspace.periodically.and.when" = "Save the current workspace periodically and when leaving, releasing, or quitting. Empty desktops never overwrite checkpoints.";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.restore" = "Restore";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.delete.permanently" = "Delete Permanently";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.no.saved.windows" = "No Saved Windows";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.restore.workspace" = "Restore Workspace";
+
+/* Sources/Workspaces/Settings/WorkspaceBinDetailView.swift */
+"workspaces.window.layout.of.the.deleted.workspace" = "Window layout of the deleted workspace";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.workspace.details" = "Workspace Details";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.window.layout" = "Window Layout";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.focus.on.open.click.a.tab.or" = "Focus on open: %1$@ · Click a tab or window to change";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.click.a.tab.or.window.to.focus" = "Click a tab or window to focus it when opening";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.rename.workspace" = "Rename Workspace";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.name" = "Name";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.more" = "More";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.rename" = "Rename";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.release" = "Release";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.release.and.remove.desktop" = "Release and Remove Desktop";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.more.workspace.actions" = "More workspace actions";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.cancel.expansion" = "Cancel Expansion";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.moved.to.trash.you.can.restore.it" = "Moved “%1$@” to Trash. You can restore it within %2$@ days.";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.launch.options" = "Launch Options";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.lock.as.template.manual.saves.only" = "Lock as template (manual saves only)";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.launch.apps.that.are.not.running" = "Launch apps that are not running";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.open.recorded.contents" = "Open recorded contents";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.existing.windows.are.placed.without.opening.duplicates" = "Existing windows are placed without opening duplicates. Only the contents recorded for each entry above are opened. Shell commands and AppleScript are never run, and paths are not guessed from window titles.";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.last.expansion" = "Last Expansion";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.expanding" = "Expanding";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.no.expansion.history" = "No Expansion History";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.open.the.workspace.to.see.the.restoration" = "Open the workspace to see the restoration result for each window here.";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.open" = "Open";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.switch.to.desktop" = "Switch to Desktop";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.save.checkpoint" = "Save checkpoint";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.restore.checkpoint" = "Restore checkpoint";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.delete" = "Delete";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.expansion.is.in.progress.wait.before.saving" = "Expansion is in progress; wait before saving";
+
+/* Sources/Workspaces/Settings/WorkspaceDetailView.swift */
+"workspaces.this.workspace.s.desktop.is.not.visible" = "This workspace’s desktop is not visible; %1$@";
+
+/* Sources/Workspaces/Settings/WorkspacePreview.swift */
+"workspaces.no.checkpoint.yet.open.this.workspace.arrange" = "No checkpoint yet. Open this workspace, arrange its windows, then save a checkpoint.";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash" = "Trash";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.workspaces" = "Workspaces";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.new.workspace" = "New Workspace";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.empty.workspace" = "Empty Workspace";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.save.current.desktop" = "Save Current Desktop";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.deleted.workspaces.stay.in.trash.for.days" = "Deleted workspaces stay in Trash for %1$@ days, then are removed automatically.";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.back.to.workspaces" = "Back to Workspaces";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.open.trash" = "Open Trash";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash.is.open" = "Trash is open";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash.is.closed" = "Trash is closed";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.workspace.name.optional" = "Workspace name (optional)";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.create" = "Create";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.permanently.delete" = "Permanently delete “%1$@”?";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.delete.now" = "Delete Now";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.this.cannot.be.undone" = "This cannot be undone.";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.select.a.workspace.to.inspect.and.restore" = "Select a workspace to inspect and restore it";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.double.click.to.open.drag.to.reorder" = "Double-click to open; drag to reorder leader shortcuts";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.trash.is.empty" = "Trash Is Empty";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.no.workspaces.yet" = "No Workspaces Yet";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.template.locked" = "Template (Locked)";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.was.restored" = "“%1$@” was restored.";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.empty" = "Empty";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.select.a.workspace" = "Select a Workspace";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.custom.area" = "Custom Area";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.entire.screen" = "Entire Screen";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.top.left" = "Top Left";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.top.right" = "Top Right";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.bottom.left" = "Bottom Left";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.bottom.right" = "Bottom Right";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.left.third" = "Left Third";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.middle.third" = "Middle Third";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.right.third" = "Right Third";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.left.two.thirds" = "Left Two Thirds";
+
+/* Sources/Workspaces/Settings/ZoneName.swift */
+"workspaces.right.two.thirds" = "Right Two Thirds";
+
+/* Sources/Workspaces/WorkspaceCommands.swift */
+"workspaces.open.workspace.n" = "Open workspace N";
+
+/* Sources/Workspaces/WorkspaceCommands.swift */
+"workspaces.release.current.workspace" = "Release current workspace";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.layout.module.is.disabled.so.the" = "The layout module is disabled, so the placement service cannot expand the workspace.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.accessibility.access.is.missing.windows.cannot.be.workspacescontroller" = "Accessibility access is missing; windows cannot be read or moved.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.layout.module.is.disabled.the.placement" = "The layout module is disabled; the placement service is unavailable.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.accessibility.access.is.missing.windows.cannot.be.workspacescontroller.2" = "Accessibility access is missing; windows cannot be read.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.saved.desktop.as" = "Saved desktop %1$@ as “%2$@”";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.saved" = "Saved “%1$@”";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.apps.workspacescontroller" = ". Apps: %1$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.press.to.open" = "; press %1$@ to open";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.read.the.desktop.list.no" = ". Could not read the desktop list; no desktop was bound.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.not.open.its.checkpoint.was.not" = "“%1$@” is not open; its checkpoint was not changed";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.expanding.wait.for.it.to.finish" = "“%1$@” is expanding. Wait for it to finish before saving.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.no.workspaces.yet.press.w.s.to" = "No workspaces yet. Press W S to save the current desktop as one.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.press.w.and.a.number.or.search" = "Press W and a number, or search for the workspace name in command search.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.workspace.does.not.exist.total" = "Workspace %1$@ does not exist (total: %2$@).";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.placement.service.is.unavailable" = "The placement service is unavailable.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.expanding" = "“%1$@” is expanding";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.has.no.checkpoint.arrange.the.windows.then" = "“%1$@” has no checkpoint. Arrange the windows, then press W S to save";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.already.in" = "Already in “%1$@”";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.switch.to.the.desktop.for" = "Could not switch to the desktop for “%1$@”: %2$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.read.the.display.list.to" = "Could not read the display list to create a desktop for “%1$@”";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.could.not.open" = "Could not open “%1$@”: %2$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.deleted.the.newly.created.desktop.was.kept" = "Deleted “%1$@”; the newly created desktop was kept as a regular desktop";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.created.desktop.for" = "Created desktop %2$@ for “%1$@”. ";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.expansion.was.cancelled.go.to.that.desktop" = "; expansion was cancelled. Go to that desktop and press W R to restore";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.desktop.for.is.ready" = "The desktop for “%1$@” is ready";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.switch.to.desktop.and.press.w.r" = "Switch to desktop %1$@ and press W R to restore the checkpoint.";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.created.desktop.for.but.could.not.switch" = "Created desktop %2$@ for “%1$@”, but could not switch to it. ";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.opened.arrange.the.windows.then.press.w" = "Opened “%1$@”. Arrange the windows, then press W S to save a checkpoint";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.is.not.open" = "“%1$@” is not open";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.released" = "Released “%1$@”";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.its.desktop.was.kept.as.a.regular" = "; its desktop was kept as a regular desktop";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.released.and.removed.its.desktop" = "Released “%1$@” and removed its desktop";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.released.but.could.not.remove.its.desktop" = "Released “%1$@”, but could not remove its desktop: %2$@";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.there.are.no.windows.on.this.desktop" = "There are no windows on this desktop; the checkpoint was not changed";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.window.desktop.membership.is.unavailable.captured.windows" = "Window desktop membership is unavailable; captured windows from all desktops";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.current.desktop.does.not.belong.to" = "The current desktop does not belong to a workspace";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.the.workspace.module.has.stopped" = "The workspace module has stopped";
+
+/* Sources/Workspaces/WorkspacesController.swift */
+"workspaces.saved.the.checkpoint.for.apps" = "Saved the checkpoint for “%1$@”. Apps: %2$@";
+
+"settings.language.system" = "Follow System";
+
+"settings.language.title" = "Language";
+
+"settings.language.interface" = "App Language";
+
+"settings.language.immediate" = "Language changes take effect immediately.";
+
+"workspace.open.named" = "Open workspace “%1$@”";
+
+"leader.leave" = "Esc to exit";
+
+"leader.release" = "Release right Command to finish";
+
+"leader.linger" = "Enter another key within %1$@ s";
+
+"leader.noSuchKey" = "No command for this key: %1$@";
+
+"workspace.detail.overview" = "Overview";
+
+"workspace.detail.history" = "Expansion History";
+
+"text.labelValue" = "%1$@: %2$@";
+
+"text.listSeparator" = ", ";
+
+"text.sentence" = "%1$@. %2$@";
+
+"text.itemsWithReason" = "%1$@: %2$@";
+
+"text.itemSeparator" = ", ";
+
+"text.reasonSeparator" = "; ";
+
+/* Sources/Workspaces/Settings/WorkspaceSettingsView.swift */
+"workspaces.savedList" = "Saved";
+
+/* Sources/CommandKit/CommandCatalog.swift */
+"commandkit.keyConflict" = "Key conflict: %1$@ (%2$@) and %3$@ (%4$@)";
+"commandkit.shortcutConflict" = "Global shortcut conflict: %1$@ and %2$@ both use %3$@";

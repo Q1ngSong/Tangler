@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tangler is a native macOS window manager. Arrange windows, group apps into tabs, and restore saved workspaces."
+    />
+    <meta name="theme-color" content="#f5f6fa" />
+    <meta property="og:title" content="Tangler — Your windows. In place." />
+    <meta
+      property="og:description"
+      content="Keyboard-driven layouts, cross-app tab groups, and saved workspaces for macOS."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://q1ngsong.github.io/Tangler/docs/assets/banner.svg"
+    />
+    <link rel="canonical" href="https://q1ngsong.github.io/Tangler/" />
+    <link rel="icon" href="site/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="site/style.css" />
+    <script src="site/main.js" defer></script>
+    <title>Tangler — Your windows. In place.</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#guide">Skip to the guide</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tangler home"
+        ><img src="site/mark.svg" width="28" height="28" alt="" />Tangler</a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#guide">Guide</a>
+        <a href="https://github.com/Q1ngSong/Tangler"
+          >GitHub <span aria-hidden="true">↗</span></a
+        >
+        <a class="nav-download" href="#download"
+          >Get Tangler <span aria-hidden="true">↓</span></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Made for macOS 26
+          </p>
+          <h1 id="hero-title">Tangler<span class="wordmark-dot">.</span></h1>
+          <p class="hero-promise">Your windows. In place.</p>
+          <p class="hero-description">
+            Layouts, tab groups, and workspaces.<br />A little less arranging. A
+            little more doing.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download"
+              >Download for Mac <span aria-hidden="true">↓</span></a
+            ><a class="text-link" href="#guide"
+              >See how it works <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="demo-wrap">
+          <div
+            class="desktop"
+            data-mode="layout"
+            data-scene="layout"
+            data-phase="rest"
+            data-active="browser"
+            role="group"
+            aria-label="Interactive illustration of Tangler window management"
+          >
+            <svg
+              class="wallpaper"
+              viewBox="0 0 1200 610"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="compass-blue" x2="0.8" y2="1">
+                  <stop stop-color="#64d2ff" /><stop offset="1" stop-color="#1878db" />
+                </linearGradient>
+                <symbol id="preview-safari" viewBox="0 0 64 64">
+                  <rect x="3" y="3" width="58" height="58" rx="14" fill="#f9fcff" stroke="#fff" />
+                  <circle cx="32" cy="32" r="23" fill="url(#compass-blue)" />
+                  <circle cx="32" cy="32" r="19.5" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width=".8" />
+                  <path d="M32 11v4m0 34v4M11 32h4m34 0h4M17 17l3 3m24 24 3 3M17 47l3-3m24-24 3-3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" />
+                  <path d="m43 20-7 16-16 8 8-16Z" fill="#fff" />
+                  <path d="m43 20-7 16-8-8Z" fill="#fa7067" />
+                  <circle cx="32" cy="32" r="2" fill="#fff" />
+                </symbol>
+                <symbol id="preview-notes" viewBox="0 0 64 64">
+                  <rect x="3" y="3" width="58" height="58" rx="14" fill="#fffef9" stroke="#fff" />
+                  <path d="M17 3h30a14 14 0 0 1 14 14v7H3v-7A14 14 0 0 1 17 3Z" fill="#f3ce62" />
+                  <path d="M3 24h58" stroke="#dfb951" />
+                  <path d="M15 34h34M15 42h34M15 50h24" stroke="#c9c6ba" stroke-width="2" stroke-linecap="round" />
+                </symbol>
+                <symbol id="preview-files" viewBox="0 0 64 64">
+                  <rect x="3" y="3" width="58" height="58" rx="14" fill="#eff8ff" stroke="#fff" />
+                  <path d="M12 21a4 4 0 0 1 4-4h13l5 5h14a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4Z" fill="#75bff2" />
+                  <path d="M12 28h40" stroke="#c4e9ff" stroke-width="2" />
+                </symbol>
+                <linearGradient id="sky" x2="1" y2="1">
+                  <stop stop-color="#c3d6f8" />
+                  <stop offset=".46" stop-color="#b9c2ef" />
+                  <stop offset="1" stop-color="#91d5e2" />
+                </linearGradient>
+                <linearGradient id="flow" x2=".5" y2="1">
+                  <stop stop-color="#e4f9ff" stop-opacity=".35" />
+                  <stop offset=".48" stop-color="#86b9ed" stop-opacity=".65" />
+                  <stop offset="1" stop-color="#7872cc" />
+                </linearGradient>
+                <linearGradient id="lilac" x2="1" y2=".4">
+                  <stop stop-color="#7982cc" />
+                  <stop offset=".5" stop-color="#b0a3dd" />
+                  <stop offset="1" stop-color="#d7eff8" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#sky)" d="M0 0h1200v610H0z" />
+              <g class="ribbon ribbon-back">
+                <path
+                  d="M-180 620C95 696 407 28 1350 140L1370 690H-180Z"
+                  fill="url(#lilac)"
+                />
+                <path
+                  d="M-180 617C95 693 407 25 1350 137"
+                  fill="none"
+                  stroke="#e7edff"
+                  stroke-width="2"
+                />
+              </g>
+              <g class="ribbon ribbon-front">
+                <path
+                  d="M-140 692C65 220 735 897 1290 146L1390 720H-140Z"
+                  fill="url(#flow)"
+                />
+                <path
+                  d="M-140 686C65 214 735 891 1290 140"
+                  fill="none"
+                  stroke="#f6ffff"
+                  stroke-width="2.5"
+                />
+              </g>
+            </svg>
+            <div class="desktop-menubar" aria-hidden="true">
+              <span class="mini-mark">⌘</span><strong>Tangler</strong
+              ><span>Window</span><span>Workspace</span
+              ><span class="menubar-right">Tue 9:41</span>
+            </div>
+            <div class="workspace-label">
+              <span class="tiny-stack" aria-hidden="true">▱</span> Design
+              workspace <span class="workspace-check">✓</span>
+            </div>
+            <div class="app-window browser-window">
+              <div class="window-chrome">
+                <span class="traffic" aria-hidden="true"
+                  ><i></i><i></i><i></i></span
+                ><span class="window-title">Field Notes</span
+                ><span class="window-tool" aria-hidden="true">⊞</span>
+              </div>
+              <div class="browser-address" aria-hidden="true">
+                <span>‹ &nbsp; ›</span><span class="url">fieldnotes.studio</span
+                ><span>↗</span>
+              </div>
+              <div class="browser-page">
+                <div class="editorial-label">
+                  FIELD NOTES &nbsp; / &nbsp; JOURNAL 07
+                </div>
+                <h2>Room to<br />think.</h2>
+                <div class="editorial-art" aria-hidden="true">
+                  <span></span><i></i><b></b>
+                </div>
+                <p>
+                  A collection of places, ideas,<br />and the spaces in between.
+                </p>
+                <span class="editorial-footer"
+                  >Take a closer look <span>↗</span></span
+                >
+              </div>
+            </div>
+            <div class="app-window reading-window" aria-hidden="true">
+              <div class="window-chrome">
+                <span class="traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="window-title">Reading list</span>
+              </div>
+              <div class="reading-page">
+                <p>FIELD NOTES / SAVED FOR LATER</p>
+                <h2>A little<br />inspiration.</h2>
+                <div class="reading-lines" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="app-window notes-window">
+              <div class="window-chrome">
+                <span class="traffic" aria-hidden="true"
+                  ><i></i><i></i><i></i></span
+                ><span class="window-title">Notes</span
+                ><span class="window-tool" aria-hidden="true">✎</span>
+              </div>
+              <div class="note-page">
+                <p class="note-date">TODAY, 9:41 AM</p>
+                <h2>A clearer<br />headspace.</h2>
+                <p>
+                  Keep the things you need.<br />Make room for the next idea.
+                </p>
+                <div class="note-rule"></div>
+                <div class="note-check"><span>✓</span> Gather inspiration</div>
+                <div class="note-check"><span>✓</span> Find a little focus</div>
+                <div class="note-check">
+                  <span class="empty-check"></span> Make something good
+                </div>
+                <p class="note-signature">One thing at a time.</p>
+              </div>
+            </div>
+            <div class="app-window files-window" aria-hidden="true">
+              <div class="window-chrome">
+                <span class="traffic"><i></i><i></i><i></i></span
+                ><span class="window-title">Ideas</span>
+              </div>
+              <div class="folder-icon"></div>
+              <p>Everything, together.</p>
+            </div>
+            <div class="tab-group" role="group" aria-label="Preview app tabs">
+              <button data-app="browser" aria-pressed="true">
+                <span class="app-icon safari-icon">↗</span>Field Notes</button
+              ><button data-app="notes" aria-pressed="false">
+                <span class="app-icon notes-icon">≡</span>Notes</button
+              ><span class="tab-add" aria-hidden="true">+</span>
+            </div>
+            <div class="preview-panel switcher-preview" role="group" aria-label="Window switcher preview" aria-hidden="true" inert>
+              <div class="preview-heading"><strong>Every window, in view.</strong><span>Choose one to focus</span></div>
+              <div class="switcher-windows"></div>
+            </div>
+            <div class="preview-panel dock-preview" role="group" aria-label="Dock window previews" aria-hidden="true" inert>
+              <div class="preview-heading"><strong class="dock-preview-title">Safari</strong><span>Choose a window</span></div>
+              <div class="dock-windows"></div>
+            </div>
+            <div class="dock-stage" role="group" aria-label="Preview Dock apps" aria-hidden="true" inert>
+              <button class="dock-app" data-app="browser" aria-label="Preview Safari windows" aria-pressed="true"><svg class="dock-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#preview-safari" /></svg></button>
+              <button class="dock-app" data-app="notes" aria-label="Preview Notes windows" aria-pressed="false"><svg class="dock-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#preview-notes" /></svg></button>
+            </div>
+            <div class="preview-panel search-preview" role="group" aria-label="Command search preview" aria-hidden="true" inert>
+              <label class="search-field">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+                <input class="command-search-input" type="search" aria-label="Search demo commands and windows" placeholder="Search commands and windows…" autocomplete="off" spellcheck="false" />
+              </label>
+              <div class="search-results"></div>
+              <p class="search-empty" hidden>No matches. Try “Notes” or “Layout”.</p>
+              <div class="search-footer"><span class="search-count">4 results</span><span>↵ Run first result · Esc close</span></div>
+            </div>
+            <div class="snap-outline" aria-hidden="true"></div>
+            <div class="command-hint">
+              <kbd>right ⌘</kbd><span class="command-plus">+</span
+              ><kbd class="demo-key">←</kbd
+              ><span class="command-label">Left half</span>
+            </div>
+          </div>
+          <div class="demo-toolbar">
+            <div
+              class="mode-picker"
+              role="group"
+              aria-label="Choose a feature to preview"
+            >
+              <button data-mode="layout" aria-pressed="true">
+                <span aria-hidden="true">◫</span> Arrange</button
+              ><button data-mode="tabs" aria-pressed="false">
+                <span aria-hidden="true">⊞</span> Group</button
+              ><button data-mode="workspace" aria-pressed="false">
+                <span aria-hidden="true">▱</span> Restore
+              </button><button data-mode="switcher" aria-pressed="false">
+                <span aria-hidden="true">▣</span> Switcher
+              </button><button data-mode="dock" aria-pressed="false">
+                <span aria-hidden="true">▥</span> Dock preview
+              </button><button data-mode="search" aria-pressed="false">
+                <span aria-hidden="true">⌕</span> Search
+              </button>
+            </div>
+            <button
+              class="motion-toggle"
+              type="button"
+              aria-pressed="true"
+              aria-label="Pause automatic preview"
+            >
+              <span class="motion-symbol" aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+          <p class="demo-caption">
+            Interactive illustration. Select a feature to try it.
+          </p>
+          <p class="sr-only" role="status" id="demo-status"></p>
+        </div>
+      </section>
+      <section
+        class="download-section section-width"
+        id="download"
+        aria-labelledby="download-title"
+      >
+        <div>
+          <p class="eyebrow">A NATIVE MAC APP</p>
+          <h2 id="download-title">Make yourself<br />at home.</h2>
+          <p>
+            Built with Swift, AppKit, and SwiftUI.<br />Liquid Glass or Classic.
+            Your choice.
+          </p>
+        </div>
+        <div class="download-details">
+          <img
+            class="download-mark"
+            src="site/mark.svg"
+            alt=""
+            width="58"
+            height="58"
+          />
+          <h3>Tangler for macOS</h3>
+          <p>macOS 26 or later · Apple Silicon &amp; Intel</p>
+          <a
+            class="button primary"
+            href="https://github.com/Q1ngSong/Tangler/releases/latest"
+            >Download the latest release <span aria-hidden="true">↓</span></a
+          ><a
+            class="release-link"
+            href="https://github.com/Q1ngSong/Tangler/releases"
+            >All releases &amp; release notes
+            <span aria-hidden="true">↗</span></a
+          >
+          <p class="install-note">
+            Drag Tangler into Applications. This build is not notarized; macOS
+            may ask you to allow it in Privacy &amp; Security.
+            <a href="https://support.apple.com/en-us/102445"
+              >Opening instructions ↗</a
+            >
+          </p>
+          <p class="license-note">
+            Free for noncommercial use.
+            <a href="https://github.com/Q1ngSong/Tangler/blob/main/LICENSE"
+              >License ↗</a
+            >
+          </p>
+        </div>
+      </section>
+      <section
+        class="guide-section section-width"
+        id="guide"
+        aria-labelledby="guide-title"
+      >
+        <div class="guide-heading">
+          <p class="eyebrow">GET TO KNOW TANGLER</p>
+          <h2 id="guide-title">A few keys.<br />A familiar rhythm.</h2>
+          <a
+            class="text-link"
+            href="https://github.com/Q1ngSong/Tangler/blob/main/docs/README.zh-CN.md"
+            >简体中文指南 <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="guide-layout">
+          <aside class="guide-nav" aria-label="Guide sections">__TOC__</aside>
+          <article class="readme-content">__README__</article>
+        </div>
+      </section>
+    </main>
+    <footer class="section-width">
+      <a class="brand" href="#top"
+        ><img src="site/mark.svg" width="25" height="25" alt="" />Tangler</a
+      >
+      <p>A little more space for what matters.</p>
+      <div>
+        <a href="https://github.com/Q1ngSong/Tangler">Source code ↗</a
+        ><a href="https://github.com/Q1ngSong/Tangler/issues">Feedback ↗</a
+        ><a href="https://github.com/Q1ngSong/Tangler/blob/main/LICENSE"
+          >Noncommercial license ↗</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
