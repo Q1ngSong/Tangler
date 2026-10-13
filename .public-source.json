@@ -364,7 +364,7 @@
     },
     "Sources/CoreKit/Localization.swift": {
       "mode": "100644",
-      "oid": "ac6cc3123c2899ca1cc5441888113d27ec362782"
+      "oid": "2b41fbfaa00af5bd82611ab07a4b52560181b460"
     },
     "Sources/CoreKit/RectMath.swift": {
       "mode": "100644",
@@ -1532,7 +1532,11 @@
     },
     "scripts/build-app.sh": {
       "mode": "100755",
-      "oid": "eda028cd880901fb889982916e30fdb38a4c03db"
+      "oid": "e7c65aeb5fb2a7d7ca0177da3942b591b04e2a1a"
+    },
+    "scripts/check-package-privacy.py": {
+      "mode": "100644",
+      "oid": "845cfc5228c23833df90d07f879587081d5aa8e1"
     },
     "scripts/ci-package-release.sh": {
       "mode": "100755",
@@ -1548,7 +1552,7 @@
     },
     "scripts/package-release.sh": {
       "mode": "100755",
-      "oid": "8221267a88afe69c581137a977108fd9c47f982d"
+      "oid": "7156e9b2b84bf400d841ba340a2226a32fc9b364"
     },
     "scripts/signing.sh": {
       "mode": "100644",

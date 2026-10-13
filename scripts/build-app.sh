@@ -22,10 +22,16 @@ CHECK
 
 ARCHS=(${=TANGLER_ARCHS:-$(uname -m)})
 BINARIES=()
+# Keep debugging and source-cache paths out of shipped executables. Development tests
+# keep their normal symbols and SwiftPM resource fallback.
+APP_BUILD_FLAGS=(-c release --product Tangler -debug-info-format none --disable-index-store
+  -Xswiftc -DTANGLER_APP_BUNDLE
+  -Xswiftc -file-prefix-map -Xswiftc "$ROOT=/Tangler"
+  -Xswiftc -file-prefix-map -Xswiftc "$BUILD_ROOT=/Build")
 for arch in "${ARCHS[@]}"; do
   [[ "$arch" == arm64 || "$arch" == x86_64 ]] || { print -u2 "Unsupported architecture: $arch"; exit 1; }
-  swift build -c release "${SWIFTPM_PATHS[@]}" --arch "$arch"
-  BIN=$(swift build -c release "${SWIFTPM_PATHS[@]}" --arch "$arch" --show-bin-path)
+  swift build "${APP_BUILD_FLAGS[@]}" "${SWIFTPM_PATHS[@]}" --arch "$arch"
+  BIN=$(swift build "${APP_BUILD_FLAGS[@]}" "${SWIFTPM_PATHS[@]}" --arch "$arch" --show-bin-path)
   BINARIES+=("$BIN/Tangler")
 done
 
@@ -67,6 +73,10 @@ info={
 if key: info['SUPublicEDKey']=key
 Path(sys.argv[1]).write_bytes(plistlib.dumps(info))
 PLIST
+# Strip only debug entries on the bundle copy, then sign the final bytes.
+xcrun strip -S "$APP/Contents/MacOS/Tangler"
+xattr -cr "$APP"
+python3 "$ROOT/scripts/check-package-privacy.py" "$APP"
 SIGN_ARGS=(--force --sign "$IDENTITY" "${KEYCHAIN_ARGS[@]}")
 for nested in "$FRAMEWORK"/Versions/B/XPCServices/*.xpc(N) "$FRAMEWORK/Versions/B/Updater.app" "$FRAMEWORK/Versions/B/Autoupdate"; do
   codesign "${SIGN_ARGS[@]}" --preserve-metadata=entitlements "$nested"

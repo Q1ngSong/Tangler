@@ -34,11 +34,16 @@ public struct Localizer: Sendable {
         bundle = Self.languageBundle(self.language) ?? Self.english
     }
 
-    /// A packaged app stores SwiftPM resources in Contents/Resources. Tests use Bundle.module.
+    /// Packaged apps require embedded resources; source builds and tests retain SwiftPM lookup.
     public static var resources: Bundle {
         if let url = Bundle.main.url(forResource: "Tangler_CoreKit", withExtension: "bundle"),
            let bundle = Bundle(url: url) { return bundle }
+        #if TANGLER_APP_BUNDLE
+        // SwiftPM's generated fallback embeds the developer's absolute build directory.
+        fatalError("Missing embedded Tangler language resources")
+        #else
         return Bundle.module
+        #endif
     }
 
     public func text(_ key: String) -> String {

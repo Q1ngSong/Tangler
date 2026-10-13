@@ -18,7 +18,21 @@ OUT="${TANGLER_RELEASE_OUTPUT:-$ROOT/build/release}"
 mkdir -p "$OUT"
 [[ -z "$(ls -A "$OUT")" ]] || { print -u2 "Output directory must be empty: $OUT"; exit 1; }
 WORK=$(mktemp -d "$ROOT/build/package.XXXXXX")
-trap 'rm -rf "$WORK"' EXIT
+MOUNT=""
+cleanup() {
+  local result=$?
+  trap - EXIT HUP INT TERM
+  if [[ -n "$MOUNT" ]] && ! hdiutil detach "$MOUNT"; then
+    print -u2 'Could not detach the validation volume; preserving the temporary directory.'
+    return 1
+  fi
+  rm -rf "$WORK"
+  return $result
+}
+trap cleanup EXIT
+trap 'exit 129' HUP
+trap 'exit 130' INT
+trap 'exit 143' TERM
 codesign --verify --deep --strict --verbose=2 "$APP"
 # Assessment is diagnostic: a fixed self-signed identity does not provide notarization.
 spctl -a -vv "$APP" || true
@@ -31,6 +45,35 @@ if [[ "$ARCHS" == *arm64* && "$ARCHS" == *x86_64* ]]; then SUFFIX=universal
 else SUFFIX="$ARCHS"; fi
 DMG="$OUT/Tangler_${VERSION}_${SUFFIX}.dmg"
 hdiutil create -volname Tangler -srcfolder "$WORK" -format UDZO "$DMG"
+# Check the shipped copy, including compressed-image contents, before update signing.
+MOUNT="$WORK/mounted"
+mkdir "$MOUNT"
+if ! hdiutil attach -readonly -nobrowse -mountpoint "$MOUNT" "$DMG"; then
+  MOUNT=""; exit 1
+fi
+python3 "$ROOT/scripts/check-package-privacy.py" "$MOUNT"
+python3 "$ROOT/scripts/check-package-privacy.py" "$DMG"
+codesign --verify --deep --strict "$MOUNT/Tangler.app"
+python3 - "$APP" "$MOUNT/Tangler.app" <<'COMPARE'
+from pathlib import Path
+import hashlib, os, sys
+
+def manifest(root):
+    entries = {}
+    for path in root.rglob('*'):
+        name = str(path.relative_to(root))
+        if path.is_symlink():
+            entries[name] = ('link', os.readlink(path))
+        elif path.is_file():
+            entries[name] = ('file', path.stat().st_mode & 0o777,
+                             hashlib.sha256(path.read_bytes()).hexdigest())
+    return entries
+
+assert manifest(Path(sys.argv[1])) == manifest(Path(sys.argv[2])), 'Mounted App differs from signed build'
+print('Mounted App matches signed build, including link targets and file modes.')
+COMPARE
+hdiutil detach "$MOUNT"
+MOUNT=""
 TOOLS="$BUILD_ROOT/artifacts/artifacts/sparkle/Sparkle/bin"
 "$TOOLS/generate_appcast" --ed-key-file "$SPARKLE_PRIVATE_KEY_FILE" \
   --download-url-prefix "https://github.com/$REPO/releases/download/v$VERSION/" \
