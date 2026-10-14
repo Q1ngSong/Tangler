@@ -32,10 +32,15 @@ cleanup() {
   local result=$?
   trap - EXIT HUP INT TERM
   print 'Cleaning up the temporary signing identity.'
-  if (( TRUST_ADDED )); then run_bounded 20 sudo -n security remove-trusted-cert -d "$WORK/certificate.pem" || result=1; fi
+  # macOS hosted runners can hang removing public trust (runner-images#12116).
+  # The job's VM is disposable; private key/search-list cleanup still must succeed.
+  if (( TRUST_ADDED )) && ! run_bounded 20 sudo -n security remove-trusted-cert -d "$WORK/certificate.pem"; then
+    print '::warning::Temporary public certificate trust could not be removed; the hosted VM is discarded after this job. Private key cleanup continues.'
+  fi
   if (( SEARCH_LIST_CHANGED )); then run_bounded 20 security list-keychains -d user -s "${ORIGINAL_KEYCHAINS[@]}" || result=1; fi
   if (( KEYCHAIN_CREATED )); then run_bounded 20 security delete-keychain "$TANGLER_KEYCHAIN" || result=1; fi
-  rm -rf -- "$WORK"
+  rm -rf -- "$WORK" || result=1
+  [[ ! -e "$WORK" ]] || result=1
   exit "$result"
 }
 trap cleanup EXIT
