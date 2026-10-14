@@ -70,6 +70,9 @@ enum ClassicSkin {
             content.glassEffect(.regular, in: RoundedRectangle(cornerRadius: panelRadius(.hints(dimmed: dimmed)), style: .continuous))
                 .opacity(dimmed ? hintsDimmedOpacity : 1)
                 .animation(.easeOut(duration: 0.15), value: dimmed)
+        case .panel(.palette(let band)):
+            let shape = RoundedRectangle(cornerRadius: panelRadius(.palette(fieldBandHeight: band)), style: .continuous)
+            content.glassEffect(.regular, in: shape).clipShape(shape)
         case .panel(let kind):
             content.glassEffect(.regular, in: RoundedRectangle(cornerRadius: panelRadius(kind), style: .continuous))
         case .card(let state, _):

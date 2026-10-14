@@ -5,7 +5,9 @@ import SwiftUI
 
 /// Which overlay the one shell belongs to.
 public enum PanelKind: Hashable, Sendable {
-    case switcher, dockPreview, palette, notice, toast, report, tabBar, tabGhost
+    case switcher, dockPreview, notice, toast, report, tabBar, tabGhost
+    /// The search band height lets skins clip the shell to its visible surfaces.
+    case palette(fieldBandHeight: CGFloat)
     /// The leader's hint panel; `dimmed` while it lingers after a command.
     case hints(dimmed: Bool)
 }

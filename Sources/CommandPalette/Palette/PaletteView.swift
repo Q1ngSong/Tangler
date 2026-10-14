@@ -36,7 +36,7 @@ struct PaletteView: View {
             .surface(.results)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .surface(.panel(.palette))
+        .surface(.panel(.palette(fieldBandHeight: PaletteLayout.fieldHeight + PaletteLayout.dividerHeight)))
     }
 
     private var queryBinding: Binding<String> {

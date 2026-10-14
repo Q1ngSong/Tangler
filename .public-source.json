@@ -252,7 +252,7 @@
     },
     "Sources/CommandPalette/Palette/PaletteView.swift": {
       "mode": "100644",
-      "oid": "3bdcde960c4cc7c4c957e47960a9fe5790877b4d"
+      "oid": "5bff01c556764f2b48eadb8e6400a5dc5342ff38"
     },
     "Sources/CommandPalette/Palette/RecencyLog.swift": {
       "mode": "100644",
@@ -548,7 +548,7 @@
     },
     "Sources/OverlayKit/ClassicSkin.swift": {
       "mode": "100644",
-      "oid": "d34ec332d648d2ec098d9a1db6bbee1479668972"
+      "oid": "59fb5d7c9f7a10a3eb52830d393f6cba6ffc1df0"
     },
     "Sources/OverlayKit/HighlightView.swift": {
       "mode": "100644",
@@ -568,7 +568,7 @@
     },
     "Sources/OverlayKit/LiquidGlassSkin.swift": {
       "mode": "100644",
-      "oid": "280068c83ee542f2d298f76b14091c2d122c4e72"
+      "oid": "b3ef74c295fda64688c89a436758a999f1752158"
     },
     "Sources/OverlayKit/OverlayGeometry.swift": {
       "mode": "100644",
@@ -696,7 +696,7 @@
     },
     "Sources/OverlayKit/SurfaceRole.swift": {
       "mode": "100644",
-      "oid": "5f4e6117c4eff91e64bb6ba12f7429702b26bb7f"
+      "oid": "56c67f4dd384bf749b80893488aac54883cf33ad"
     },
     "Sources/OverlayKit/TanglerMark.swift": {
       "mode": "100644",

@@ -41,6 +41,20 @@ enum LiquidGlassSkin {
                                   gridCell: ZoneStyle(cornerRadius: 10, fillOpacity: 0.05, strokeOpacity: 0.25, lineWidth: 1),
                                   glassZone: ZoneStyle(cornerRadius: 16, fillOpacity: 0.2, strokeOpacity: 0.6, lineWidth: 1.5))
 
+    private struct PaletteShape: Shape {
+        let fieldBandHeight: CGFloat
+
+        func path(in rect: CGRect) -> Path {
+            let field = CGRect(x: rect.minX, y: rect.minY, width: rect.width,
+                               height: max(0, min(rect.height, fieldBandHeight - fieldGap)))
+            let results = CGRect(x: rect.minX, y: rect.minY + fieldBandHeight, width: rect.width,
+                                 height: max(0, rect.height - fieldBandHeight))
+            var path = Capsule().path(in: field)
+            path.addPath(RoundedRectangle(cornerRadius: resultsRadius, style: .continuous).path(in: results))
+            return path
+        }
+    }
+
     /// A shell's fixed corner radius, or nil for a capsule, whose height decides (the tab bar's
     /// glass is (h − 2) / 2).
     static func panelRadius(_ kind: PanelKind) -> CGFloat? {
@@ -90,10 +104,13 @@ enum LiquidGlassSkin {
     @ViewBuilder
     static func paint<V: View>(_ content: V, as role: SurfaceRole, strong: Bool, reduceMotion: Bool) -> some View {
         switch role {
-        case .panel(.palette):
+        case .panel(.palette(let band)):
             // Spotlight: the field capsule (.field) and the results (.results) are two glasses side
             // by side; the shell is only their container.
             GlassEffectContainer(spacing: paletteContainerSpacing) { content }
+                // A key panel adds glass shadows outside both surfaces, clipped to the window
+                // as a gray rectangle. Clip the container so only the two glass shapes remain.
+                .clipShape(PaletteShape(fieldBandHeight: band))
         case .panel(.hints(let dimmed)):
             // Lingering fades the content only; the glass stays at full strength.
             content.opacity(dimmed ? hintsDimmedOpacity : 1).animation(.easeOut(duration: 0.15), value: dimmed)
